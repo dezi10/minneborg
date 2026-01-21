@@ -1,0 +1,41 @@
+<svg width="700" height="180" viewBox="0 0 700 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- VARIASJON 8: Arial Contemporary Overlap -->
+  <defs>
+    <linearGradient id="var8grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0a0a0a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#333333;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="var8grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#a78bfa;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:0.9" />
+    </linearGradient>
+    <filter id="blur8">
+      <feGaussianBlur stdDeviation="1" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- CYBER - Bold, Dark -->
+  <text x="50" y="90" 
+        font-family="Arial, sans-serif" 
+        font-size="76" 
+        font-weight="700" 
+        fill="url(#var8grad1)"
+        letter-spacing="-3">CYBER</text>
+  
+  <!-- WITH DEJAN - Light, overlapping, purple -->
+  <text x="260" y="105" 
+        font-family="Arial, sans-serif" 
+        font-size="62" 
+        font-weight="300" 
+        fill="url(#var8grad2)"
+        letter-spacing="8"
+        filter="url(#blur8)">WITH DEJAN</text>
+  
+  <!-- Accent elements -->
+  <rect x="50" y="100" width="3" height="30" fill="url(#var8grad2)" opacity="0.6"/>
+  <rect x="650" y="80" width="2" height="40" fill="url(#var8grad2)" opacity="0.4"/>
+</svg>

@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logo Forslag - Cyber With Dejan</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            background: #000000;
+            color: #ffffff;
+            padding: 4rem 2rem;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            text-align: center;
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #a78bfa, #8b5cf6, #7c3aed);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: -1px;
+        }
+        
+        .subtitle {
+            text-align: center;
+            font-size: 1.15rem;
+            color: #71717a;
+            margin-bottom: 5rem;
+            font-weight: 400;
+            letter-spacing: 0.5px;
+        }
+        
+        .logo-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 4rem;
+            margin-bottom: 4rem;
+        }
+        
+        .logo-card {
+            background: #0a0a0a;
+            border: 1px solid #1a1a1a;
+            border-radius: 16px;
+            padding: 3.5rem;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .logo-card:hover {
+            border-color: #7c3aed;
+            box-shadow: 0 20px 60px rgba(124, 58, 237, 0.15);
+        }
+        
+        .logo-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 3rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #1a1a1a;
+        }
+        
+        .logo-number {
+            font-size: 3rem;
+            font-weight: 800;
+            color: #7c3aed;
+            font-family: 'SF Mono', 'Monaco', monospace;
+        }
+        
+        .logo-title {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: #ffffff;
+            letter-spacing: -0.5px;
+        }
+        
+        .select-btn {
+            background: linear-gradient(135deg, #7c3aed, #6d28d9);
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+            letter-spacing: 0.3px;
+        }
+        
+        .select-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(124, 58, 237, 0.4);
+            background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+        }
+        
+        .logo-display {
+            background: linear-gradient(135deg, #fafafa 0%, #f5f5f5 100%);
+            border-radius: 12px;
+            padding: 4rem 3rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 220px;
+            margin-bottom: 2.5rem;
+        }
+        
+        .logo-display img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .logo-description {
+            color: #a1a1aa;
+            line-height: 1.8;
+            font-size: 1.05rem;
+            margin-bottom: 2rem;
+        }
+        
+        .logo-description strong {
+            color: #e4e4e7;
+            font-weight: 600;
+        }
+        
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        
+        .feature-tag {
+            background: rgba(124, 58, 237, 0.1);
+            border: 1px solid rgba(124, 58, 237, 0.3);
+            padding: 0.6rem 1.2rem;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            color: #a78bfa;
+            font-weight: 500;
+            letter-spacing: 0.3px;
+        }
+        
+        .back-btn {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 1.25rem 2.5rem;
+            background: #0a0a0a;
+            border: 1px solid #1a1a1a;
+            border-radius: 8px;
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            letter-spacing: 0.3px;
+        }
+        
+        .back-btn:hover {
+            border-color: #7c3aed;
+            transform: translateX(-5px);
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            .logo-card {
+                padding: 2rem;
+            }
+            
+            .logo-display {
+                padding: 2rem 1.5rem;
+            }
+            
+            .logo-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Arial Logo Variasjoner</h1>
+        <p class="subtitle">Profesjonelle design med Arial Bold × Arial Light</p>
+        
+        <div class="logo-grid">
+            <!-- Variasjon 1 -->
+            <div class="logo-card">
+                <div class="logo-header">
+                    <div>
+                        <span class="logo-number">01</span>
+                        <h2 class="logo-title">Klassisk Split</h2>
+                    </div>
+                    <button class="select-btn" onclick="selectLogo(1)">Velg denne ✓</button>
+                </div>
+                <div class="logo-display">
+                    <img src="logo-var-1.svg" alt="Logo Variation 1">
+                </div>
+                <p class="logo-description">
+                    <strong>Konsept:</strong> "CYBER" i Arial Bold (sort), "WITH DEJAN" i Arial Light (lilla). Vertikal separator-linje mellom. Klassisk, balansert og ekstremt lesbar.
+                </p>
+                <div class="features">
+                    <span class="feature-tag">Bold/Light kontrast</span>
+                    <span class="feature-tag">Vertikal separator</span>
+                    <span class="feature-tag">Høy lesbarhet</span>
+                </div>
+            </div>
+            
+            <!-- Variasjon 2 -->
+            <div class="logo-card">
+                <div class="logo-header">
+                    <div>
+                        <span class="logo-number">02</span>
+                        <h2 class="logo-title">Stacked Elegant</h2>
+                    </div>
+                    <button class="select-btn" onclick="selectLogo(2)">Velg denne ✓</button>
+                </div>
+                <div class="logo-display">
+                    <img src="logo-var-2.svg" alt="Logo Variation 2">
+                </div>
+                <p class="logo-description">
+                    <strong>Konsept:</strong> To-nivå design. "CYBER WITH" i Arial Bold (sort) over, "DEJAN" i Arial Light (lilla, større) under. Dramatisk hierarki med ekstra letterspacing.
+                </p>
+                <div class="features">
+                    <span class="feature-tag">Stacked hierarchy</span>
+                    <span class="feature-tag">Extra spacing</span>
+                    <span class="feature-tag">Dramatisk</span>
+                </div>
+            </div>
+            
+            <!-- Variasjon 3 -->
+            <div class="logo-card">
+                <div class="logo-header">
+                    <div>
+                        <span class="logo-number">03</span>
+                        <h2 class="logo-title">Minimal Ultra Wide</h2>
+                    </div>
+                    <button class="select-btn" onclick="selectLogo(3)">Velg denne ✓</button>
+                </div>
+                <div class="logo-display">
+                    <img src="logo-var-3.svg" alt="Logo Variation 3">
+                </div>
+                <p class="logo-description">
+                    <strong>Konsept:</strong> Én linje i Arial Light med ekstra wide spacing. Accent dot før tekst. Ultraminialistisk, luftig og moderne. Fashion-inspirert estetikk.
+                </p>
+                <div class="features">
+                    <span class="feature-tag">Ultra minimalist</span>
+                    <span class="feature-tag">Wide spacing</span>
+                    <span class="feature-tag">Fashion-forward</span>
+                </div>
+            </div>
+            
+            <!-- Variasjon 4 -->
+            <div class="logo-card">
+                <div class="logo-header">
+                    <div>
+                        <span class="logo-number">04</span>
+                        <h2 class="logo-title">Bold Compressed</h2>
+                    </div>
+                    <button class="select-btn" onclick="selectLogo(4)">Velg denne ✓</button>
+                </div>
+                <div class="logo-display">
+                    <img src="logo-var-4.svg" alt="Logo Variation 4">
+                </div>
+                <p class="logo-description">
+                    <strong>Konsept:</strong> "CYBER" i stor Arial Bold (lilla, compressed), "WITH DEJAN" i liten Arial Light under. Impact og kontrast. Moderne og kraftfull.
+                </p>
+                <div class="features">
+                    <span class="feature-tag">Compressed type</span>
+                    <span class="feature-tag">Strong impact</span>
+                    <span class="feature-tag">Size contrast</span>
+                </div>
+            </div>
+            
+            <!-- Variasjon 5 -->
+            <div class="logo-card">
+                <div class="logo-header">
+                    <div>
+                        <span class="logo-number">05</span>
+                        <h2 class="logo-title">Asymmetric Mixed</h2>
+                    </div>
+                    <button class="select-btn" onclick="selectLogo(5)">Velg denne ✓</button>
+                </div>
+                <div class="logo-display">
+                    <img src="logo-var-5.svg" alt="Logo Variation 5">
+                </div>
+                <p class="logo-description">
+                    <strong>Konsept:</strong> Asymmetrisk layout. "CYBER" bold sort, "WITH" liten light, "DEJAN" bold lilla. Dynamisk og unik. Glow-effekt bakgrunn for dybde.
+                </p>
+                <div class="features">
+                    <span class="feature-tag">Asymmetric</span>
+                    <span class="feature-tag">Mixed sizes</span>
+                    <span class="feature-tag">Dynamic flow</span>
+                </div>
+            </div>
+            
+            <!-- Variasjon 6 -->
+            <div class="logo-card">
+                <div class="logo-header">
+                    <div>
+                        <span class="logo-number">06</span>
+                        <h2 class="logo-title">Outlined Bold</h2>
+                    </div>
+                    <button class="select-btn" onclick="selectLogo(6)">Velg denne ✓</button>
+                </div>
+                <div class="logo-display">
+                    <img src="logo-var-6.svg" alt="Logo Variation 6">
+                </div>
+                <p class="logo-description">
+                    <strong>Konsept:</strong> "CYBER" outlined, "WITH" light, "DEJAN" filled. Alle i én linje. Sofistikert mix av outline og solid. Premium følelse.
+                </p>
+                <div class="features">
+                    <span class="feature-tag">Outline effect</span>
+                    <span class="feature-tag">One-line layout</span>
+                    <span class="feature-tag">Premium aesthetic</span>
+                </div>
+            </div>
+            
+            <!-- Variasjon 7 -->
+            <div class="logo-card">
+                <div class="logo-header">
+                    <div>
+                        <span class="logo-number">07</span>
+                        <h2 class="logo-title">Minimal Box Frame</h2>
+                    </div>
+                    <button class="select-btn" onclick="selectLogo(7)">Velg denne ✓</button>
+                </div>
+                <div class="logo-display">
+                    <img src="logo-var-7.svg" alt="Logo Variation 7">
+                </div>
+                <p class="logo-description">
+                    <strong>Konsept:</strong> Tekst inni subtil box frame. "CYBER" light, "WITH DEJAN" bold, separert med vertikal linje. Strukturert og corporate-profesjonell.
+                </p>
+                <div class="features">
+                    <span class="feature-tag">Box frame</span>
+                    <span class="feature-tag">Structural</span>
+                    <span class="feature-tag">Corporate clean</span>
+                </div>
+            </div>
+            
+            <!-- Variasjon 8 -->
+            <div class="logo-card">
+                <div class="logo-header">
+                    <div>
+                        <span class="logo-number">08</span>
+                        <h2 class="logo-title">Contemporary Overlap</h2>
+                    </div>
+                    <button class="select-btn" onclick="selectLogo(8)">Velg denne ✓</button>
+                </div>
+                <div class="logo-display">
+                    <img src="logo-var-8.svg" alt="Logo Variation 8">
+                </div>
+                <p class="logo-description">
+                    <strong>Konsept:</strong> "CYBER" bold mørk, "WITH DEJAN" light lilla som overlapper. Layered depth-effekt. Moderne, sofistikert og distinkt.
+                </p>
+                <div class="features">
+                    <span class="feature-tag">Overlapping layers</span>
+                    <span class="feature-tag">Depth effect</span>
+                    <span class="feature-tag">Contemporary</span>
+                </div>
+            </div>
+        </div>
+        
+        <div style="text-align: center;">
+            <a href="index.html" class="back-btn">← Tilbake til nettsiden</a>
+        </div>
+    </div>
+    
+    <script>
+        function selectLogo(number) {
+            if (confirm(`Vil du bruke Logo ${number} på nettsiden?`)) {
+                alert(`Perfekt! Si ifra så oppdaterer jeg nettsiden med Logo ${number}! 🎨`);
+            }
+        }
+    </script>
+</body>
+</html>

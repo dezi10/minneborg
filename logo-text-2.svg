@@ -1,0 +1,29 @@
+<svg width="700" height="180" viewBox="0 0 700 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- TYPOGRAFI KONSEPT 2: Monospace Tech -->
+  <defs>
+    <linearGradient id="mono1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#a78bfa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Full text in monospace -->
+  <text x="50" y="100" 
+        font-family="'SF Mono', 'Courier New', Monaco, monospace" 
+        font-size="64" 
+        font-weight="700" 
+        fill="url(#mono1)"
+        letter-spacing="2">CYBER_WITH_DEJAN</text>
+  
+  <!-- Terminal prompt style -->
+  <text x="30" y="100" 
+        font-family="'SF Mono', 'Courier New', Monaco, monospace" 
+        font-size="64" 
+        font-weight="700" 
+        fill="#7c3aed">&gt;</text>
+  
+  <!-- Blinking cursor -->
+  <rect x="660" y="55" width="4" height="50" fill="#7c3aed">
+    <animate attributeName="opacity" values="1;0;1" dur="1.2s" repeatCount="indefinite"/>
+  </rect>
+</svg>

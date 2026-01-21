@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minneborg Logo - Norrøn Stil</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f5f5f5;
+            padding: 40px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+            color: #1a1a2e;
+        }
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 40px;
+            font-style: italic;
+        }
+        .logo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        .logo-card {
+            background: white;
+            border-radius: 16px;
+            padding: 45px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+        .logo-card.dark {
+            background: #1a1a2e;
+        }
+        .logo-card.parchment {
+            background: #f4e4c1;
+            border: 2px solid #c9a227;
+        }
+        .logo-card.stone {
+            background: linear-gradient(145deg, #5a5a5a 0%, #3a3a3a 100%);
+        }
+        .logo-card.wood {
+            background: linear-gradient(145deg, #8B4513 0%, #654321 100%);
+        }
+        .logo-card svg {
+            max-width: 180px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .logo-name {
+            font-size: 1.3em;
+            font-weight: 700;
+            color: #1a1a2e;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+        }
+        .logo-card.dark .logo-name,
+        .logo-card.stone .logo-name,
+        .logo-card.wood .logo-name {
+            color: #fff;
+        }
+        .logo-card.parchment .logo-name {
+            color: #5a3e1b;
+        }
+        .description {
+            font-size: 0.85em;
+            color: #666;
+            margin-top: 10px;
+        }
+        .logo-card.dark .description,
+        .logo-card.stone .description,
+        .logo-card.wood .description {
+            color: #aaa;
+        }
+        .logo-card.parchment .description {
+            color: #7a5e3b;
+        }
+    </style>
+</head>
+<body>
+    <h1>Minneborg – Norrøn Inspirasjon</h1>
+    <p class="subtitle">Unike, kunstneriske logoer med norrøn sjel</p>
+    
+    <div class="logo-grid">
+        
+        <!-- 1: Muninn (Minneravnen) stilisert -->
+        <div class="logo-card parchment">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <!-- Stilisert ravn i norrøn kunststil -->
+                <path d="M50 15 Q65 15 72 25 Q78 35 75 48 Q72 58 60 62 L55 75 Q52 82 48 82 Q44 82 45 75 L48 65 Q35 62 28 52 Q22 42 25 30 Q28 18 50 15" 
+                      fill="none" stroke="#5a3e1b" stroke-width="2.5"/>
+                <!-- Vinge utfoldet -->
+                <path d="M72 35 Q85 30 90 40 Q88 50 78 52 Q70 53 65 48" 
+                      fill="none" stroke="#5a3e1b" stroke-width="2"/>
+                <path d="M28 35 Q15 30 10 40 Q12 50 22 52 Q30 53 35 48" 
+                      fill="none" stroke="#5a3e1b" stroke-width="2"/>
+                <!-- Øye med visdom -->
+                <circle cx="58" cy="32" r="6" fill="none" stroke="#5a3e1b" stroke-width="2"/>
+                <circle cx="58" cy="32" r="2" fill="#5a3e1b"/>
+                <!-- Fjærmønster -->
+                <path d="M40 40 Q45 45 42 52" fill="none" stroke="#5a3e1b" stroke-width="1.5"/>
+                <path d="M48 38 Q52 44 48 50" fill="none" stroke="#5a3e1b" stroke-width="1.5"/>
+                <path d="M55 42 Q58 48 54 54" fill="none" stroke="#5a3e1b" stroke-width="1.5"/>
+            </svg>
+            <div class="logo-name">Minneborg</div>
+            <p class="description">Muninn – ravnen som husker alt</p>
+        </div>
+
+        <!-- 2: Yggdrasil med beskyttende røtter -->
+        <div class="logo-card dark">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <!-- Stamme -->
+                <path d="M50 90 L50 45" stroke="#c9a227" stroke-width="4" stroke-linecap="round"/>
+                <!-- Røtter som omfavner -->
+                <path d="M50 90 Q30 85 20 70 Q15 55 25 45" fill="none" stroke="#c9a227" stroke-width="2.5" stroke-linecap="round"/>
+                <path d="M50 90 Q70 85 80 70 Q85 55 75 45" fill="none" stroke="#c9a227" stroke-width="2.5" stroke-linecap="round"/>
+                <path d="M50 90 Q35 80 30 65" fill="none" stroke="#c9a227" stroke-width="2" stroke-linecap="round"/>
+                <path d="M50 90 Q65 80 70 65" fill="none" stroke="#c9a227" stroke-width="2" stroke-linecap="round"/>
+                <!-- Krone/grener -->
+                <path d="M50 45 Q35 40 25 25 Q20 15 30 12" fill="none" stroke="#c9a227" stroke-width="2.5" stroke-linecap="round"/>
+                <path d="M50 45 Q65 40 75 25 Q80 15 70 12" fill="none" stroke="#c9a227" stroke-width="2.5" stroke-linecap="round"/>
+                <path d="M50 45 Q50 30 50 15" fill="none" stroke="#c9a227" stroke-width="3" stroke-linecap="round"/>
+                <!-- Små grener -->
+                <path d="M50 35 Q40 32 35 25" fill="none" stroke="#c9a227" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M50 35 Q60 32 65 25" fill="none" stroke="#c9a227" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+            <div class="logo-name">Minneborg</div>
+            <p class="description">Yggdrasil – verdenstreet</p>
+        </div>
+
+        <!-- 3: Algiz-runen (beskyttelse) kreativt -->
+        <div class="logo-card">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <!-- Algiz-rune stilisert som tre/menneske -->
+                <path d="M50 85 L50 35" stroke="#1a1a2e" stroke-width="4" stroke-linecap="round"/>
+                <!-- Armer/grener som strekker seg opp -->
+                <path d="M50 35 L30 15" stroke="#1a1a2e" stroke-width="3.5" stroke-linecap="round"/>
+                <path d="M50 35 L70 15" stroke="#1a1a2e" stroke-width="3.5" stroke-linecap="round"/>
+                <path d="M50 35 L50 10" stroke="#1a1a2e" stroke-width="3.5" stroke-linecap="round"/>
+                <!-- Subtile røtter -->
+                <path d="M50 85 Q40 88 35 92" stroke="#1a1a2e" stroke-width="2" stroke-linecap="round"/>
+                <path d="M50 85 Q60 88 65 92" stroke="#1a1a2e" stroke-width="2" stroke-linecap="round"/>
+                <!-- Sirkel rundt (helhet) -->
+                <circle cx="50" cy="50" r="42" fill="none" stroke="#1a1a2e" stroke-width="1.5"/>
+            </svg>
+            <div class="logo-name">Minneborg</div>
+            <p class="description">Algiz – runen for beskyttelse</p>
+        </div>
+
+        <!-- 4: Norrønt dyremønster (ulv/hund i ring) -->
+        <div class="logo-card stone">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <!-- Sirkulært dyremønster - ulv som biter egen hale -->
+                <path d="M50 10 Q75 10 85 35 Q90 55 75 75 Q55 90 35 80 Q15 70 12 45 Q10 25 30 12 Q40 8 50 10" 
+                      fill="none" stroke="#c9a227" stroke-width="3"/>
+                <!-- Hode -->
+                <path d="M50 10 Q55 5 60 8 L65 15 Q62 20 55 18 L50 10" 
+                      fill="none" stroke="#c9a227" stroke-width="2.5"/>
+                <!-- Øye -->
+                <circle cx="56" cy="13" r="2" fill="#c9a227"/>
+                <!-- Bein/detaljer langs kroppen -->
+                <path d="M80 45 Q85 42 88 45" fill="none" stroke="#c9a227" stroke-width="2"/>
+                <path d="M75 65 Q80 62 82 68" fill="none" stroke="#c9a227" stroke-width="2"/>
+                <path d="M45 82 Q42 87 48 88" fill="none" stroke="#c9a227" stroke-width="2"/>
+                <path d="M20 55 Q15 52 15 58" fill="none" stroke="#c9a227" stroke-width="2"/>
+                <!-- Hale som møter hodet -->
+                <path d="M30 12 Q35 8 42 10" fill="none" stroke="#c9a227" stroke-width="2.5"/>
+            </svg>
+            <div class="logo-name">Minneborg</div>
+            <p class="description">Evig syklus – ulven i ring</p>
+        </div>
+
+        <!-- 5: Gjallarhorn stilisert -->
+        <div class="logo-card parchment">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <!-- Horn -->
+                <path d="M20 70 Q15 60 18 50 Q22 35 35 28 Q50 20 70 22 Q82 24 88 35 Q90 42 85 45" 
+                      fill="none" stroke="#5a3e1b" stroke-width="3" stroke-linecap="round"/>
+                <!-- Horn åpning -->
+                <ellipse cx="22" cy="68" rx="8" ry="12" fill="none" stroke="#5a3e1b" stroke-width="2.5" transform="rotate(-20 22 68)"/>
+                <!-- Dekorative ringer -->
+                <path d="M35 42 Q38 38 42 40" fill="none" stroke="#5a3e1b" stroke-width="2"/>
+                <path d="M52 32 Q56 28 60 32" fill="none" stroke="#5a3e1b" stroke-width="2"/>
+                <path d="M70 30 Q74 27 78 32" fill="none" stroke="#5a3e1b" stroke-width="2"/>
+                <!-- Bånd/dekor -->
+                <path d="M40 50 Q42 48 45 50 Q47 52 44 54 Q41 52 40 50" fill="#5a3e1b"/>
+                <path d="M58 40 Q60 38 63 40 Q65 42 62 44 Q59 42 58 40" fill="#5a3e1b"/>
+            </svg>
+            <div class="logo-name">Minneborg</div>
+            <p class="description">Gjallarhorn – varsler og vokter</p>
+        </div>
+
+        <!-- 6: Helm of Awe (Ægishjálmur) forenklet -->
+        <div class="logo-card dark">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <!-- Sentralt punkt -->
+                <circle cx="50" cy="50" r="5" fill="#c9a227"/>
+                <!-- 8 armer -->
+                <line x1="50" y1="50" x2="50" y2="15" stroke="#c9a227" stroke-width="2.5"/>
+                <line x1="50" y1="50" x2="50" y2="85" stroke="#c9a227" stroke-width="2.5"/>
+                <line x1="50" y1="50" x2="15" y2="50" stroke="#c9a227" stroke-width="2.5"/>
+                <line x1="50" y1="50" x2="85" y2="50" stroke="#c9a227" stroke-width="2.5"/>
+                <line x1="50" y1="50" x2="25" y2="25" stroke="#c9a227" stroke-width="2.5"/>
+                <line x1="50" y1="50" x2="75" y2="75" stroke="#c9a227" stroke-width="2.5"/>
+                <line x1="50" y1="50" x2="75" y2="25" stroke="#c9a227" stroke-width="2.5"/>
+                <line x1="50" y1="50" x2="25" y2="75" stroke="#c9a227" stroke-width="2.5"/>
+                <!-- Ender med gafler -->
+                <path d="M50 15 L45 22 M50 15 L55 22" stroke="#c9a227" stroke-width="2"/>
+                <path d="M50 85 L45 78 M50 85 L55 78" stroke="#c9a227" stroke-width="2"/>
+                <path d="M15 50 L22 45 M15 50 L22 55" stroke="#c9a227" stroke-width="2"/>
+                <path d="M85 50 L78 45 M85 50 L78 55" stroke="#c9a227" stroke-width="2"/>
+                <path d="M25 25 L30 32 M25 25 L32 30" stroke="#c9a227" stroke-width="2"/>
+                <path d="M75 75 L70 68 M75 75 L68 70" stroke="#c9a227" stroke-width="2"/>
+                <path d="M75 25 L68 30 M75 25 L70 32" stroke="#c9a227" stroke-width="2"/>
+                <path d="M25 75 L32 70 M25 75 L30 68" stroke="#c9a227" stroke-width="2"/>
+            </svg>
+            <div class="logo-name">Minneborg</div>
+            <p class="description">Ægishjálmur – fryktens hjelm</p>
+        </div>
+
+        <!-- 7: To ravner (Huginn & Muninn) -->
+        <div class="logo-card">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <!-- Venstre ravn (Huginn) -->
+                <path d="M25 55 Q18 50 20 42 Q22 35 30 33 Q38 32 42 38 Q44 42 40 48 L35 58 Q32 62 28 60 Q24 58 25 55" 
+                      fill="none" stroke="#1a1a2e" stroke-width="2"/>
+                <path d="M42 38 L52 35" fill="none" stroke="#1a1a2e" stroke-width="2" stroke-linecap="round"/>
+                <circle cx="32" cy="40" r="2" fill="#1a1a2e"/>
+                <!-- Høyre ravn (Muninn) - speilet -->
+                <path d="M75 55 Q82 50 80 42 Q78 35 70 33 Q62 32 58 38 Q56 42 60 48 L65 58 Q68 62 72 60 Q76 58 75 55" 
+                      fill="none" stroke="#1a1a2e" stroke-width="2"/>
+                <path d="M58 38 L48 35" fill="none" stroke="#1a1a2e" stroke-width="2" stroke-linecap="round"/>
+                <circle cx="68" cy="40" r="2" fill="#1a1a2e"/>
+                <!-- Forbindelse mellom dem (tanke/minne) -->
+                <path d="M42 42 Q50 38 58 42" fill="none" stroke="#1a1a2e" stroke-width="1" stroke-dasharray="3,2"/>
+                <!-- Tekst-område under -->
+                <line x1="20" y1="75" x2="80" y2="75" stroke="#1a1a2e" stroke-width="1.5"/>
+            </svg>
+            <div class="logo-name">Minneborg</div>
+            <p class="description">Huginn & Muninn – tanke og minne</p>
+        </div>
+
+        <!-- 8: Vegvísir-inspirert (kompass) -->
+        <div class="logo-card wood">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <!-- Forenklet vegvisir -->
+                <circle cx="50" cy="50" r="8" fill="none" stroke="#f4e4c1" stroke-width="2"/>
+                <!-- Hovedretninger -->
+                <path d="M50 42 L50 15 L45 25 M50 15 L55 25" fill="none" stroke="#f4e4c1" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M50 58 L50 85 L45 75 M50 85 L55 75" fill="none" stroke="#f4e4c1" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M42 50 L15 50 L25 45 M15 50 L25 55" fill="none" stroke="#f4e4c1" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M58 50 L85 50 L75 45 M85 50 L75 55" fill="none" stroke="#f4e4c1" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <!-- Diagonaler med unike ender -->
+                <path d="M44 44 L25 25 M25 25 L32 28 M25 25 L28 32" fill="none" stroke="#f4e4c1" stroke-width="2" stroke-linecap="round"/>
+                <path d="M56 44 L75 25 M75 25 L68 28 M75 25 L72 32" fill="none" stroke="#f4e4c1" stroke-width="2" stroke-linecap="round"/>
+                <path d="M44 56 L25 75 M25 75 L32 72 M25 75 L28 68" fill="none" stroke="#f4e4c1" stroke-width="2" stroke-linecap="round"/>
+                <path d="M56 56 L75 75 M75 75 L68 72 M75 75 L72 68" fill="none" stroke="#f4e4c1" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <div class="logo-name">Minneborg</div>
+            <p class="description">Veiviseren – finner alltid hjem</p>
+        </div>
+
+        <!-- 9: Dragehode stilisert -->
+        <div class="logo-card parchment">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <!-- Dragehode i profil (vikingskip-stil) -->
+                <path d="M25 70 Q20 60 22 50 Q25 40 35 35 Q45 30 55 32 Q65 35 72 42 Q78 50 80 60 L75 58 Q70 52 62 50 Q55 48 48 50 Q42 52 38 58 Q35 65 38 72 L25 70" 
+                      fill="none" stroke="#5a3e1b" stroke-width="2.5"/>
+                <!-- Snute/kjeft -->
+                <path d="M80 60 Q88 55 92 60 Q90 68 82 70 L75 65" 
+                      fill="none" stroke="#5a3e1b" stroke-width="2"/>
+                <!-- Øye -->
+                <circle cx="55" cy="42" r="4" fill="none" stroke="#5a3e1b" stroke-width="2"/>
+                <circle cx="55" cy="42" r="1.5" fill="#5a3e1b"/>
+                <!-- Nesebor -->
+                <circle cx="82" cy="58" r="2" fill="#5a3e1b"/>
+                <!-- Kam/horn -->
+                <path d="M35 35 Q30 28 35 22 Q42 28 40 35" fill="none" stroke="#5a3e1b" stroke-width="2"/>
+                <path d="M45 32 Q42 24 48 18 Q54 24 50 32" fill="none" stroke="#5a3e1b" stroke-width="2"/>
+                <!-- Skjell-mønster -->
+                <path d="M42 55 Q45 52 48 55" fill="none" stroke="#5a3e1b" stroke-width="1.5"/>
+                <path d="M50 58 Q53 55 56 58" fill="none" stroke="#5a3e1b" stroke-width="1.5"/>
+            </svg>
+            <div class="logo-name">Minneborg</div>
+            <p class="description">Drakevokteren</p>
+        </div>
+
+        <!-- 10: Othala-runen (arv, hjem, minne) -->
+        <div class="logo-card dark">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <!-- Othala-rune -->
+                <path d="M30 85 L30 50 L50 30 L70 50 L70 85" 
+                      fill="none" stroke="#c9a227" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+                <!-- Føttene -->
+                <path d="M30 50 L20 60" stroke="#c9a227" stroke-width="4" stroke-linecap="round"/>
+                <path d="M70 50 L80 60" stroke="#c9a227" stroke-width="4" stroke-linecap="round"/>
+            </svg>
+            <div class="logo-name">Minneborg</div>
+            <p class="description">Othala – arv og tilhørighet</p>
+        </div>
+
+        <!-- 11: Abstrakt tre-knute -->
+        <div class="logo-card">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <!-- Tre sammenvevde former -->
+                <path d="M50 15 Q70 25 70 45 Q70 60 50 65 Q30 60 30 45 Q30 25 50 15" 
+                      fill="none" stroke="#1a1a2e" stroke-width="2.5"/>
+                <path d="M30 75 Q15 65 20 45 Q25 30 45 25 Q55 40 45 55 Q35 65 30 75" 
+                      fill="none" stroke="#1a1a2e" stroke-width="2.5"/>
+                <path d="M70 75 Q85 65 80 45 Q75 30 55 25 Q45 40 55 55 Q65 65 70 75" 
+                      fill="none" stroke="#1a1a2e" stroke-width="2.5"/>
+                <!-- Sentralt punkt -->
+                <circle cx="50" cy="45" r="4" fill="#1a1a2e"/>
+            </svg>
+            <div class="logo-name">Minneborg</div>
+            <p class="description">Tre verdener sammenvevd</p>
+        </div>
+
+        <!-- 12: Ulvehode frontalt -->
+        <div class="logo-card stone">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <!-- Ulvehode sett forfra -->
+                <path d="M50 85 Q35 80 28 65 Q22 50 25 38 Q28 28 35 22 L40 12 L45 25 Q48 22 50 22 Q52 22 55 25 L60 12 L65 22 Q72 28 75 38 Q78 50 72 65 Q65 80 50 85" 
+                      fill="none" stroke="#c9a227" stroke-width="2.5"/>
+                <!-- Øyne -->
+                <ellipse cx="38" cy="42" rx="5" ry="4" fill="none" stroke="#c9a227" stroke-width="2"/>
+                <ellipse cx="62" cy="42" rx="5" ry="4" fill="none" stroke="#c9a227" stroke-width="2"/>
+                <circle cx="38" cy="42" r="2" fill="#c9a227"/>
+                <circle cx="62" cy="42" r="2" fill="#c9a227"/>
+                <!-- Snute -->
+                <path d="M50 50 L50 62 Q45 68 50 72 Q55 68 50 62" fill="none" stroke="#c9a227" stroke-width="2"/>
+                <!-- Nese -->
+                <ellipse cx="50" cy="52" rx="4" ry="3" fill="#c9a227"/>
+                <!-- Pelsdetaljer -->
+                <path d="M35 55 Q40 52 45 55" fill="none" stroke="#c9a227" stroke-width="1.5"/>
+                <path d="M55 55 Q60 52 65 55" fill="none" stroke="#c9a227" stroke-width="1.5"/>
+            </svg>
+            <div class="logo-name">Minneborg</div>
+            <p class="description">Geri eller Freki – Odins ulver</p>
+        </div>
+
+        <!-- 13: Mjølnir minimalistisk -->
+        <div class="logo-card parchment">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <!-- Hammerhode -->
+                <path d="M25 40 L75 40 L78 55 Q78 62 70 65 L30 65 Q22 62 22 55 Z" 
+                      fill="none" stroke="#5a3e1b" stroke-width="2.5"/>
+                <!-- Skaft -->
+                <rect x="45" y="65" width="10" height="25" fill="none" stroke="#5a3e1b" stroke-width="2.5"/>
+                <!-- Dekor på hammeren -->
+                <path d="M35 48 Q50 52 65 48" fill="none" stroke="#5a3e1b" stroke-width="1.5"/>
+                <circle cx="50" cy="52" r="3" fill="none" stroke="#5a3e1b" stroke-width="1.5"/>
+                <!-- Håndtak-dekor -->
+                <line x1="45" y1="75" x2="55" y2="75" stroke="#5a3e1b" stroke-width="1.5"/>
+                <line x1="45" y1="82" x2="55" y2="82" stroke="#5a3e1b" stroke-width="1.5"/>
+            </svg>
+            <div class="logo-name">Minneborg</div>
+            <p class="description">Mjølnir – kraft og beskyttelse</p>
+        </div>
+
+        <!-- 14: Livets tre i sirkel -->
+        <div class="logo-card dark">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <!-- Ytre sirkel -->
+                <circle cx="50" cy="50" r="42" fill="none" stroke="#fff" stroke-width="2"/>
+                <!-- Tre -->
+                <path d="M50 85 L50 50" stroke="#c9a227" stroke-width="3"/>
+                <!-- Røtter innenfor sirkelen -->
+                <path d="M50 85 Q35 82 25 75" fill="none" stroke="#c9a227" stroke-width="2"/>
+                <path d="M50 85 Q65 82 75 75" fill="none" stroke="#c9a227" stroke-width="2"/>
+                <path d="M50 85 Q40 80 32 78" fill="none" stroke="#c9a227" stroke-width="1.5"/>
+                <path d="M50 85 Q60 80 68 78" fill="none" stroke="#c9a227" stroke-width="1.5"/>
+                <!-- Grener innenfor sirkelen -->
+                <path d="M50 50 Q35 45 25 25" fill="none" stroke="#c9a227" stroke-width="2"/>
+                <path d="M50 50 Q65 45 75 25" fill="none" stroke="#c9a227" stroke-width="2"/>
+                <path d="M50 50 Q50 35 50 18" fill="none" stroke="#c9a227" stroke-width="2.5"/>
+                <path d="M50 40 Q40 35 32 22" fill="none" stroke="#c9a227" stroke-width="1.5"/>
+                <path d="M50 40 Q60 35 68 22" fill="none" stroke="#c9a227" stroke-width="1.5"/>
+            </svg>
+            <div class="logo-name">Minneborg</div>
+            <p class="description">Livets tre i evig sirkel</p>
+        </div>
+
+        <!-- 15: Sleipnir abstrakt (8-beint hest) -->
+        <div class="logo-card">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <!-- Hestekropp stilisert -->
+                <path d="M20 45 Q25 35 40 35 Q55 35 65 40 Q75 45 78 50 Q80 55 75 58" 
+                      fill="none" stroke="#1a1a2e" stroke-width="2.5"/>
+                <!-- Hode -->
+                <path d="M75 58 Q82 55 88 58 Q90 62 85 65 Q80 67 75 63" 
+                      fill="none" stroke="#1a1a2e" stroke-width="2.5"/>
+                <circle cx="82" cy="58" r="1.5" fill="#1a1a2e"/>
+                <!-- 8 bein (stilisert) -->
+                <line x1="28" y1="45" x2="25" y2="70" stroke="#1a1a2e" stroke-width="2"/>
+                <line x1="32" y1="45" x2="30" y2="68" stroke="#1a1a2e" stroke-width="2"/>
+                <line x1="42" y1="42" x2="40" y2="70" stroke="#1a1a2e" stroke-width="2"/>
+                <line x1="48" y1="42" x2="47" y2="68" stroke="#1a1a2e" stroke-width="2"/>
+                <line x1="55" y1="44" x2="55" y2="70" stroke="#1a1a2e" stroke-width="2"/>
+                <line x1="60" y1="46" x2="62" y2="68" stroke="#1a1a2e" stroke-width="2"/>
+                <line x1="66" y1="50" x2="70" y2="70" stroke="#1a1a2e" stroke-width="2"/>
+                <line x1="70" y1="52" x2="75" y2="68" stroke="#1a1a2e" stroke-width="2"/>
+                <!-- Hale -->
+                <path d="M20 45 Q12 50 15 60 Q18 55 20 58" fill="none" stroke="#1a1a2e" stroke-width="2"/>
+            </svg>
+            <div class="logo-name">Minneborg</div>
+            <p class="description">Sleipnir – Odins åttebeinte</p>
+        </div>
+
+        <!-- 16: Runestav med M -->
+        <div class="logo-card wood">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <!-- Vertikal stav -->
+                <rect x="45" y="10" width="10" height="80" fill="none" stroke="#f4e4c1" stroke-width="2"/>
+                <!-- M-rune risset inn -->
+                <path d="M30 35 L30 65 M30 35 L50 50 L70 35 M70 35 L70 65" 
+                      fill="none" stroke="#c9a227" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                <!-- Dekorative hakk øverst og nederst -->
+                <line x1="42" y1="15" x2="58" y2="15" stroke="#f4e4c1" stroke-width="2"/>
+                <line x1="42" y1="85" x2="58" y2="85" stroke="#f4e4c1" stroke-width="2"/>
+                <!-- Små runedetaljer -->
+                <path d="M38 22 L42 18 L46 22" fill="none" stroke="#f4e4c1" stroke-width="1.5"/>
+                <path d="M54 22 L58 18 L62 22" fill="none" stroke="#f4e4c1" stroke-width="1.5"/>
+            </svg>
+            <div class="logo-name">Minneborg</div>
+            <p class="description">Runestav med Minneborg</p>
+        </div>
+
+    </div>
+
+</body>
+</html>

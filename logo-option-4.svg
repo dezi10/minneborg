@@ -1,0 +1,68 @@
+<svg width="500" height="140" viewBox="0 0 500 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- KONSEPT 4: Neon/Cyberpunk aesthetic med stark typografi -->
+  <defs>
+    <linearGradient id="neon1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ff006e;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#8338ec;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3a86ff;stop-opacity:1" />
+    </linearGradient>
+    <filter id="neonGlow">
+      <feGaussianBlur stdDeviation="5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="strongGlow">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Neon frame/border -->
+  <rect x="20" y="20" width="460" height="100" rx="10" fill="none" stroke="url(#neon1)" stroke-width="3" filter="url(#neonGlow)" opacity="0.6"/>
+  
+  <!-- Japanese/Cyberpunk inspired symbol -->
+  <g transform="translate(40, 50)">
+    <!-- Neon circle -->
+    <circle cx="30" cy="30" r="28" fill="none" stroke="#ff006e" stroke-width="4" filter="url(#strongGlow)"/>
+    <circle cx="30" cy="30" r="20" fill="none" stroke="#8338ec" stroke-width="3" filter="url(#strongGlow)"/>
+    
+    <!-- Kanji-inspired "D" -->
+    <line x1="30" y1="10" x2="30" y2="50" stroke="#3a86ff" stroke-width="4" stroke-linecap="round" filter="url(#strongGlow)"/>
+    <path d="M 30 15 Q 45 30 30 45" stroke="#ff006e" stroke-width="4" fill="none" stroke-linecap="round" filter="url(#strongGlow)"/>
+    
+    <!-- Pulserende dots -->
+    <circle cx="30" cy="10" r="3" fill="#ff006e">
+      <animate attributeName="r" values="3;5;3" dur="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;0.5;1" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Neon tekst -->
+  <g transform="translate(110, 80)">
+    <!-- CYBER med sterk neon -->
+    <text x="0" y="0" font-family="'Teko', 'Orbitron', 'Impact', sans-serif" font-size="64" font-weight="900" fill="url(#neon1)" filter="url(#neonGlow)" letter-spacing="3">CYBER</text>
+    
+    <!-- Neon underline -->
+    <rect x="0" y="10" width="220" height="4" fill="url(#neon1)" filter="url(#neonGlow)" opacity="0.8"/>
+    
+    <!-- WITH DEJAN -->
+    <text x="240" y="-5" font-family="'Rajdhani', 'Arial', sans-serif" font-size="20" font-weight="700" fill="#3a86ff" filter="url(#neonGlow)">WITH</text>
+    <text x="240" y="15" font-family="'Rajdhani', 'Arial', sans-serif" font-size="24" font-weight="900" fill="#ff006e" filter="url(#neonGlow)" letter-spacing="2">DEJAN</text>
+  </g>
+  
+  <!-- Cyberpunk grid decoration -->
+  <g transform="translate(420, 35)" opacity="0.5">
+    <line x1="0" y1="0" x2="40" y2="0" stroke="#3a86ff" stroke-width="2"/>
+    <line x1="0" y1="15" x2="40" y2="15" stroke="#8338ec" stroke-width="2"/>
+    <line x1="0" y1="30" x2="40" y2="30" stroke="#ff006e" stroke-width="2"/>
+    <line x1="0" y1="45" x2="40" y2="45" stroke="#3a86ff" stroke-width="2"/>
+    <line x1="0" y1="60" x2="40" y2="60" stroke="#8338ec" stroke-width="2"/>
+  </g>
+</svg>

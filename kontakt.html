@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - Dejan Zivanovic</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Tilgjengelighet og språk kontroller -->
+    <div class="accessibility-bar">
+        <div class="container">
+            <div class="accessibility-controls">
+                <button id="fontSizeMedium" class="font-btn active" aria-label="Normal skriftstørrelse">A</button>
+                <button id="fontSizeLarge" class="font-btn" aria-label="Stor skriftstørrelse">A</button>
+                <button id="fontSizeXLarge" class="font-btn" aria-label="Ekstra stor skriftstørrelse">A</button>
+                <button id="readingMode" class="mode-btn" aria-label="Lesemodus"><i class="fas fa-book-open"></i></button>
+                <button id="darkMode" class="mode-btn" aria-label="Nattmodus"><i class="fas fa-moon"></i></button>
+            </div>
+            <div class="language-selector">
+                <button class="lang-btn active" data-lang="no">NO</button>
+                <button class="lang-btn" data-lang="en">EN</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header/Navigasjon -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo-link" style="text-decoration: none; display: flex; align-items: center; gap: 10px;">
+                    <svg viewBox="0 0 100 80" xmlns="http://www.w3.org/2000/svg" style="width: 45px; height: 36px;">
+                        <path d="M15 35 Q20 25 35 25 Q50 25 60 30 Q70 35 73 40 Q75 45 70 48" fill="none" stroke="currentColor" stroke-width="3"/>
+                        <path d="M70 48 Q77 45 83 48 Q85 52 80 55 Q75 57 70 53" fill="none" stroke="currentColor" stroke-width="3"/>
+                        <circle cx="77" cy="48" r="2" fill="currentColor"/>
+                        <line x1="23" y1="35" x2="20" y2="60" stroke="currentColor" stroke-width="2.5"/>
+                        <line x1="27" y1="35" x2="25" y2="58" stroke="currentColor" stroke-width="2.5"/>
+                        <line x1="37" y1="32" x2="35" y2="60" stroke="currentColor" stroke-width="2.5"/>
+                        <line x1="43" y1="32" x2="42" y2="58" stroke="currentColor" stroke-width="2.5"/>
+                        <line x1="50" y1="34" x2="50" y2="60" stroke="currentColor" stroke-width="2.5"/>
+                        <line x1="55" y1="36" x2="57" y2="58" stroke="currentColor" stroke-width="2.5"/>
+                        <line x1="61" y1="40" x2="65" y2="60" stroke="currentColor" stroke-width="2.5"/>
+                        <line x1="65" y1="42" x2="70" y2="58" stroke="currentColor" stroke-width="2.5"/>
+                        <path d="M15 35 Q7 40 10 50 Q13 45 15 48" fill="none" stroke="currentColor" stroke-width="2.5"/>
+                    </svg>
+                    <span style="font-size: 1.3em; font-weight: 700; letter-spacing: 2px; color: #2c3e50;">MINNEBORG</span>
+                </a>
+                <ul class="nav-menu">
+                    <li><a href="om.html" data-translate="nav-about">Om</a></li>
+                    <li><a href="artikler.html" data-translate="nav-articles">Artikler</a></li>
+                    <li><a href="arbeid.html" data-translate="nav-work">Arbeid</a></li>
+                    <li><a href="verktoy.html" data-translate="nav-tools">Verktøy og nettsider</a></li>
+                    <li><a href="kontakt.html" data-translate="nav-contact">Kontakt</a></li>
+                </ul>
+                <button class="menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Kontakt Seksjon -->
+    <section class="contact-page">
+        <div class="container">
+            <h1 data-translate="contact-page-title">Ta kontakt</h1>
+            <p class="page-intro" data-translate="contact-page-intro">Har du spørsmål, ønsker å samarbeide, eller er du interessert i å diskutere karrieremuligheter? Send meg en melding, så vil jeg svare deg så snart som mulig.</p>
+            
+            <div class="contact-content">
+                <div class="contact-form-section">
+                    <h2 data-translate="contact-form-title">Send meg en melding</h2>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name" data-translate="form-name">Navn *</label>
+                            <input type="text" id="name" name="name" required aria-required="true">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" data-translate="form-email">E-post *</label>
+                            <input type="email" id="email" name="email" required aria-required="true">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject" data-translate="form-subject">Emne *</label>
+                            <input type="text" id="subject" name="subject" required aria-required="true">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" data-translate="form-message">Melding *</label>
+                            <textarea id="message" name="message" rows="6" required aria-required="true"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary" data-translate="form-submit">Send melding</button>
+                    </form>
+                    <div id="formMessage" class="form-message"></div>
+                </div>
+                
+                <div class="contact-info-section">
+                    <h2 data-translate="contact-info-title">Kontaktinformasjon</h2>
+                    
+                    <div class="contact-card">
+                        <div class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <div>
+                                <h3>LinkedIn</h3>
+                                <a href="https://linkedin.com/in/dejanzivanovic1" target="_blank" rel="noopener noreferrer">linkedin.com/in/dejanzivanovic1</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <h3 data-translate="institution">Institusjon</h3>
+                                <p>Gokstad Akademiet</p>
+                                <p class="text-muted" data-translate="program">Cybersikkerhet (Online)</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-briefcase"></i>
+                            <div>
+                                <h3 data-translate="availability">Tilgjengelighet</h3>
+                                <p data-translate="availability-text">Åpen for karrieremuligheter innen cybersikkerhet</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="linkedin-cta">
+                        <h3 data-translate="connect-title">La oss koble sammen!</h3>
+                        <p data-translate="connect-text">Følg meg på LinkedIn for oppdateringer om nye artikler og innsikt innen cybersikkerhet.</p>
+                        <a href="https://linkedin.com/in/dejanzivanovic1" target="_blank" class="btn btn-outline" rel="noopener noreferrer">
+                            <i class="fab fa-linkedin"></i> <span data-translate="visit-linkedin">Besøk min LinkedIn-profil</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="https://linkedin.com/in/dejanzivanovic1" target="_blank" class="social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="kontakt.html" class="social-link">
+                        <i class="fas fa-envelope"></i> <span data-translate="contact">Kontakt</span>
+                    </a>
+                </div>
+                <p class="copyright">&copy; <span data-translate="footer-made">Laget av</span> Dejan Zivanovic, 2026</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Initialiser EmailJS med din Public Key
+        (function() {
+            emailjs.init({
+                publicKey: "V78SaFZYJYRnB1NWc", // Erstatt med din faktiske nøkkel fra EmailJS
+            });
+        })();
+
+        // Kontaktskjema håndtering
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formMessage = document.getElementById('formMessage');
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const lang = localStorage.getItem('language') || 'no';
+            
+            const loadingMessage = lang === 'no' ? 'Sender melding...' : 'Sending message...';
+            const successMessage = lang === 'no' 
+                ? 'Takk for din melding! Jeg vil svare deg så snart som mulig.' 
+                : 'Thank you for your message! I will respond as soon as possible.';
+            const errorMessage = lang === 'no'
+                ? 'Det oppstod en feil. Vennligst prøv igjen eller kontakt meg via LinkedIn.'
+                : 'An error occurred. Please try again or contact me via LinkedIn.';
+            
+            // Vis lasting
+            submitBtn.disabled = true;
+            submitBtn.textContent = loadingMessage;
+            formMessage.className = 'form-message';
+            formMessage.textContent = '';
+            
+            // Send e-post via EmailJS
+            emailjs.sendForm('service_p3u90dm', 'template_p108pmd', this)
+                .then(function(response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                    
+                    // Send auto-reply til avsender
+                    emailjs.sendForm('service_p3u90dm', 'template_asjvvwo', document.getElementById('contactForm'));
+                    
+                    formMessage.className = 'form-message success';
+                    formMessage.textContent = successMessage;
+                    
+                    // Reset skjema
+                    document.getElementById('contactForm').reset();
+                    
+                    // Skjul melding etter 5 sekunder
+                    setTimeout(() => {
+                        formMessage.className = 'form-message';
+                        formMessage.textContent = '';
+                    }, 5000);
+                }, function(error) {
+                    console.error('FAILED...', error);
+                    formMessage.className = 'form-message error';
+                    formMessage.textContent = errorMessage;
+                }).
+                finally(() => {
+                    // Reaktiver knapp
+                    submitBtn.disabled = false;
+                    const btnText = lang === 'no' ? 'Send Melding' : 'Send Message';
+                    submitBtn.textContent = btnText;
+                });
+        });
+    </script>
+</body>
+</html>

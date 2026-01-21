@@ -1,0 +1,81 @@
+<svg width="500" height="140" viewBox="0 0 500 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- KONSEPT 5: Playful minimalist med animert robotansikt -->
+  <defs>
+    <linearGradient id="robot1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#06ffa5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00d4ff;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="robot2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff9a56;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff6a88;stop-opacity:1" />
+    </linearGradient>
+    <filter id="robotShadow">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  
+  <!-- Søt robot maskot -->
+  <g transform="translate(30, 25)">
+    <!-- Robot hode (avrundet rektangel) -->
+    <rect x="10" y="20" width="70" height="60" rx="15" fill="url(#robot1)" filter="url(#robotShadow)"/>
+    
+    <!-- Antenne -->
+    <line x1="45" y1="20" x2="45" y2="5" stroke="url(#robot1)" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="45" cy="5" r="5" fill="url(#robot2)">
+      <animate attributeName="fill" values="#ff9a56;#ff6a88;#ff9a56" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    
+    <!-- Øyne (store og søte) -->
+    <circle cx="30" cy="45" r="10" fill="#ffffff"/>
+    <circle cx="60" cy="45" r="10" fill="#ffffff"/>
+    <circle cx="30" cy="45" r="6" fill="#2d3748">
+      <animate attributeName="cx" values="30;32;30" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="60" cy="45" r="6" fill="#2d3748">
+      <animate attributeName="cx" values="60;62;60" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    
+    <!-- Refleksjoner i øynene -->
+    <circle cx="28" cy="43" r="2" fill="#ffffff" opacity="0.8"/>
+    <circle cx="58" cy="43" r="2" fill="#ffffff" opacity="0.8"/>
+    
+    <!-- Smil -->
+    <path d="M 30 60 Q 45 68 60 60" stroke="#2d3748" stroke-width="3" fill="none" stroke-linecap="round"/>
+    
+    <!-- Ører/håndtak -->
+    <rect x="5" y="40" width="8" height="20" rx="4" fill="url(#robot2)"/>
+    <rect x="77" y="40" width="8" height="20" rx="4" fill="url(#robot2)"/>
+    
+    <!-- Detaljer -->
+    <rect x="40" y="25" width="10" height="3" rx="1.5" fill="#ffffff" opacity="0.5"/>
+  </g>
+  
+  <!-- Leken, moderne typografi -->
+  <g transform="translate(130, 75)">
+    <!-- CYBER i rounded, friendly font -->
+    <text x="0" y="0" font-family="'Fredoka One', 'Varela Round', 'Arial Rounded MT Bold', sans-serif" font-size="56" font-weight="700" fill="url(#robot1)">CYBER</text>
+    
+    <!-- WITH DEJAN -->
+    <text x="5" y="35" font-family="'Quicksand', 'Nunito', sans-serif" font-size="22" font-weight="600" fill="url(#robot2)" letter-spacing="1">WITH DEJAN</text>
+    
+    <!-- Playful hearts -->
+    <g transform="translate(230, -15)">
+      <path d="M 10 5 Q 10 0 15 0 Q 20 0 20 5 Q 20 0 25 0 Q 30 0 30 5 Q 30 15 20 20 Q 10 15 10 5" fill="url(#robot2)" opacity="0.7">
+        <animateTransform attributeName="transform" type="translate" values="0,0; 0,-5; 0,0" dur="2s" repeatCount="indefinite"/>
+      </path>
+    </g>
+  </g>
+  
+  <!-- Code symbols som dekorasjon -->
+  <g transform="translate(420, 60)" font-family="'Courier New', monospace" font-size="36" font-weight="700">
+    <text x="0" y="0" fill="url(#robot1)" opacity="0.6">&lt;/&gt;</text>
+  </g>
+  
+  <!-- Decorative dots -->
+  <circle cx="400" cy="30" r="4" fill="url(#robot2)" opacity="0.6">
+    <animate attributeName="r" values="4;6;4" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="420" cy="110" r="3" fill="url(#robot1)" opacity="0.6">
+    <animate attributeName="r" values="3;5;3" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+</svg>

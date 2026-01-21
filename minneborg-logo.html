@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minneborg Logo Forslag</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f5f5f5;
+            padding: 40px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+            color: #1a1a2e;
+        }
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 40px;
+            font-style: italic;
+        }
+        .logo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .logo-card {
+            background: white;
+            border-radius: 16px;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+        .logo-card.dark {
+            background: #1a1a2e;
+        }
+        .logo-card svg {
+            max-width: 180px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .logo-name {
+            font-size: 1.4em;
+            font-weight: 700;
+            color: #1a1a2e;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+        .logo-card.dark .logo-name {
+            color: #fff;
+        }
+        .description {
+            font-size: 0.85em;
+            color: #666;
+            margin-top: 10px;
+        }
+        .logo-card.dark .description {
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+    <h1>Minneborg – Logoforslag</h1>
+    <p class="subtitle">"En festning for dine digitale minner"</p>
+    
+    <div class="logo-grid">
+        
+        <!-- Logo 1: Minimalistisk borg med M -->
+        <div class="logo-card">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <!-- Borg silhuett -->
+                <path d="M20 70 L20 40 L25 40 L25 35 L30 35 L30 40 L40 40 L40 30 L45 30 L45 25 L50 20 L55 25 L55 30 L60 30 L60 40 L70 40 L70 35 L75 35 L75 40 L80 40 L80 70" 
+                      fill="none" stroke="#1a1a2e" stroke-width="2.5" stroke-linejoin="round"/>
+                <!-- Port (dør) -->
+                <path d="M42 70 L42 55 Q50 50 58 55 L58 70" 
+                      fill="none" stroke="#1a1a2e" stroke-width="2" stroke-linejoin="round"/>
+                <!-- Grunnlinje -->
+                <line x1="15" y1="70" x2="85" y2="70" stroke="#1a1a2e" stroke-width="2.5"/>
+            </svg>
+            <div class="logo-name">Minneborg</div>
+            <p class="description">Klassisk borg-silhuett</p>
+        </div>
+
+        <!-- Logo 2: Abstrakt M som borg -->
+        <div class="logo-card dark">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <!-- M formet som borgtårn -->
+                <path d="M25 75 L25 35 L35 35 L35 25 L50 15 L65 25 L65 35 L75 35 L75 75" 
+                      fill="none" stroke="#fff" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+                <!-- Midtre tårn-spiss -->
+                <line x1="50" y1="15" x2="50" y2="45" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+                <!-- Skjold-element i midten -->
+                <path d="M40 50 L40 62 Q40 70 50 75 Q60 70 60 62 L60 50 Z" 
+                      fill="none" stroke="#4a9eff" stroke-width="2"/>
+            </svg>
+            <div class="logo-name">Minneborg</div>
+            <p class="description">M som borgtårn med skjold</p>
+        </div>
+
+        <!-- Logo 3: Ravn (Muninn) + borg -->
+        <div class="logo-card">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <!-- Stilisert ravn/Muninn -->
+                <path d="M35 30 Q40 25 50 28 Q58 30 60 38 Q61 45 55 48 Q50 50 42 47 Q38 45 35 30" 
+                      fill="#1a1a2e"/>
+                <!-- Ravn nebb -->
+                <path d="M60 38 Q68 42 72 48" 
+                      fill="none" stroke="#1a1a2e" stroke-width="2.5" stroke-linecap="round"/>
+                <!-- Øye -->
+                <circle cx="48" cy="35" r="2" fill="#fff"/>
+                <!-- Liten borg under -->
+                <path d="M30 65 L30 55 L35 55 L35 52 L40 52 L40 55 L60 55 L60 52 L65 52 L65 55 L70 55 L70 65" 
+                      fill="none" stroke="#1a1a2e" stroke-width="2" stroke-linejoin="round"/>
+                <line x1="25" y1="65" x2="75" y2="65" stroke="#1a1a2e" stroke-width="2"/>
+            </svg>
+            <div class="logo-name">Minneborg</div>
+            <p class="description">Muninn (minneravnen) + borg</p>
+        </div>
+
+        <!-- Logo 4: Geometrisk skjold med chip -->
+        <div class="logo-card dark">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <!-- Skjold -->
+                <path d="M20 20 L20 55 Q20 80 50 95 Q80 80 80 55 L80 20 Z" 
+                      fill="none" stroke="#fff" stroke-width="2.5"/>
+                <!-- Borg-krenelering på toppen -->
+                <path d="M25 20 L25 15 L35 15 L35 20 M45 20 L45 12 L55 12 L55 20 M65 20 L65 15 L75 15 L75 20" 
+                      fill="none" stroke="#fff" stroke-width="2" stroke-linejoin="round"/>
+                <!-- Digital/chip element inni -->
+                <rect x="38" y="40" width="24" height="24" fill="none" stroke="#4a9eff" stroke-width="1.5"/>
+                <line x1="38" y1="48" x2="32" y2="48" stroke="#4a9eff" stroke-width="1.5"/>
+                <line x1="38" y1="56" x2="32" y2="56" stroke="#4a9eff" stroke-width="1.5"/>
+                <line x1="62" y1="48" x2="68" y2="48" stroke="#4a9eff" stroke-width="1.5"/>
+                <line x1="62" y1="56" x2="68" y2="56" stroke="#4a9eff" stroke-width="1.5"/>
+                <line x1="46" y1="40" x2="46" y2="34" stroke="#4a9eff" stroke-width="1.5"/>
+                <line x1="54" y1="40" x2="54" y2="34" stroke="#4a9eff" stroke-width="1.5"/>
+            </svg>
+            <div class="logo-name">Minneborg</div>
+            <p class="description">Skjold med digital chip</p>
+        </div>
+
+        <!-- Logo 5: Ultra-minimalistisk -->
+        <div class="logo-card">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <!-- Enkel M med tårn-topper -->
+                <path d="M25 70 L25 30 L50 15 L75 30 L75 70" 
+                      fill="none" stroke="#1a1a2e" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+                <line x1="50" y1="15" x2="50" y2="70" stroke="#1a1a2e" stroke-width="3" stroke-linecap="round"/>
+                <!-- Tre små tårn-topper -->
+                <circle cx="25" cy="27" r="3" fill="#1a1a2e"/>
+                <circle cx="50" cy="12" r="3" fill="#1a1a2e"/>
+                <circle cx="75" cy="27" r="3" fill="#1a1a2e"/>
+            </svg>
+            <div class="logo-name">Minneborg</div>
+            <p class="description">Ultra-minimalistisk M-borg</p>
+        </div>
+
+        <!-- Logo 6: Nøkkel + borg -->
+        <div class="logo-card dark">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <!-- Borg-kontur -->
+                <path d="M25 75 L25 45 L30 45 L30 40 L35 40 L35 45 L65 45 L65 40 L70 40 L70 45 L75 45 L75 75" 
+                      fill="none" stroke="#fff" stroke-width="2" stroke-linejoin="round"/>
+                <!-- Hovedtårn -->
+                <path d="M42 45 L42 30 L50 22 L58 30 L58 45" 
+                      fill="none" stroke="#fff" stroke-width="2" stroke-linejoin="round"/>
+                <!-- Nøkkelhull som port -->
+                <circle cx="50" cy="55" r="6" fill="none" stroke="#4a9eff" stroke-width="2"/>
+                <rect x="47" y="60" width="6" height="12" fill="#4a9eff"/>
+            </svg>
+            <div class="logo-name">Minneborg</div>
+            <p class="description">Borg med nøkkelhull</p>
+        </div>
+
+        <!-- Logo 7: Horisontal versjon -->
+        <div class="logo-card">
+            <svg viewBox="0 0 220 70" xmlns="http://www.w3.org/2000/svg">
+                <!-- Liten borg-ikon -->
+                <path d="M15 55 L15 30 L20 30 L20 25 L25 25 L25 30 L35 30 L35 20 L40 15 L45 20 L45 30 L55 30 L55 25 L60 25 L60 30 L65 30 L65 55" 
+                      fill="none" stroke="#1a1a2e" stroke-width="2" stroke-linejoin="round"/>
+                <line x1="10" y1="55" x2="70" y2="55" stroke="#1a1a2e" stroke-width="2"/>
+                <!-- Tekst -->
+                <text x="85" y="43" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#1a1a2e" letter-spacing="2">MINNEBORG</text>
+            </svg>
+            <p class="description">Horisontal variant</p>
+        </div>
+
+        <!-- Logo 8: Nordisk runer-inspirert -->
+        <div class="logo-card dark">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <!-- Rune-stil M (ligner på Mannaz-runen) -->
+                <path d="M25 80 L25 20 L50 40 L75 20 L75 80" 
+                      fill="none" stroke="#fff" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+                <!-- Kryss i midten (beskyttelse) -->
+                <line x1="50" y1="40" x2="50" y2="65" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+                <!-- Sirkel rundt -->
+                <circle cx="50" cy="50" r="42" fill="none" stroke="#4a9eff" stroke-width="1.5" stroke-dasharray="4,4"/>
+            </svg>
+            <div class="logo-name">Minneborg</div>
+            <p class="description">Rune-inspirert med beskyttelsessirkel</p>
+        </div>
+
+        <!-- Logo 9: Stilisert hjerne + borg -->
+        <div class="logo-card">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <!-- Kombinasjon av hjerne og borg -->
+                <path d="M30 55 Q25 50 25 42 Q25 32 35 30 Q38 25 45 25 Q50 22 55 25 Q62 25 65 30 Q75 32 75 42 Q75 50 70 55" 
+                      fill="none" stroke="#1a1a2e" stroke-width="2.5" stroke-linecap="round"/>
+                <!-- Borg-tårn på toppen (som krenelering) -->
+                <rect x="33" y="22" width="6" height="8" fill="none" stroke="#1a1a2e" stroke-width="1.5"/>
+                <rect x="47" y="18" width="6" height="8" fill="none" stroke="#1a1a2e" stroke-width="1.5"/>
+                <rect x="61" y="22" width="6" height="8" fill="none" stroke="#1a1a2e" stroke-width="1.5"/>
+                <!-- Hjerne-kurver inni -->
+                <path d="M35 42 Q45 38 50 45 Q55 38 65 42" fill="none" stroke="#1a1a2e" stroke-width="1.5"/>
+                <!-- Fundament -->
+                <path d="M30 55 L30 70 L70 70 L70 55" fill="none" stroke="#1a1a2e" stroke-width="2.5"/>
+            </svg>
+            <div class="logo-name">Minneborg</div>
+            <p class="description">Hjerne/minne + festning</p>
+        </div>
+
+        <!-- Logo 10: Moderne badge -->
+        <div class="logo-card dark">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <!-- Heksagonal badge -->
+                <polygon points="50,8 85,28 85,68 50,88 15,68 15,28" 
+                         fill="none" stroke="#fff" stroke-width="2"/>
+                <!-- Borg inni -->
+                <path d="M30 60 L30 42 L40 42 L40 35 L50 28 L60 35 L60 42 L70 42 L70 60" 
+                      fill="none" stroke="#4a9eff" stroke-width="2" stroke-linejoin="round"/>
+                <!-- Port -->
+                <rect x="45" y="50" width="10" height="10" fill="none" stroke="#4a9eff" stroke-width="1.5"/>
+            </svg>
+            <div class="logo-name">Minneborg</div>
+            <p class="description">Moderne badge-stil</p>
+        </div>
+
+    </div>
+
+</body>
+</html>

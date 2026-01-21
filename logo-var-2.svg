@@ -1,0 +1,32 @@
+<svg width="700" height="180" viewBox="0 0 700 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- VARIASJON 2: Arial Stacked Elegant -->
+  <defs>
+    <linearGradient id="var2grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#a855f7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6b21a8;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow2">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+  
+  <!-- CYBER WITH - Arial Bold -->
+  <text x="50" y="75" 
+        font-family="Arial, sans-serif" 
+        font-size="58" 
+        font-weight="700" 
+        fill="#0a0a0a"
+        letter-spacing="10"
+        filter="url(#shadow2)">CYBER WITH</text>
+  
+  <!-- DEJAN - Arial Light, Større, Lilla -->
+  <text x="50" y="140" 
+        font-family="Arial, sans-serif" 
+        font-size="68" 
+        font-weight="300" 
+        fill="url(#var2grad)"
+        letter-spacing="15">DEJAN</text>
+  
+  <!-- Dekorative linjer -->
+  <rect x="50" y="150" width="80" height="2" fill="url(#var2grad)" opacity="0.4"/>
+</svg>

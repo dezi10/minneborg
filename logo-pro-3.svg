@@ -1,0 +1,60 @@
+<svg width="600" height="160" viewBox="0 0 600 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- PROFESJONELL KONSEPT 3: Abstract fingerprint/identity -->
+  <defs>
+    <linearGradient id="identityPurple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#9333ea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6b21a8;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="scanPurple" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#a78bfa;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:0.8" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Fingerprint/scan pattern -->
+  <g transform="translate(60, 30)">
+    <!-- Outer circle frame -->
+    <circle cx="50" cy="50" r="48" fill="#0a0a0a" stroke="url(#identityPurple)" stroke-width="2"/>
+    
+    <!-- Fingerprint-like concentric paths -->
+    <g stroke="url(#identityPurple)" fill="none" stroke-width="2" stroke-linecap="round">
+      <path d="M 50 20 Q 65 25 65 40 Q 65 55 50 60 Q 35 55 35 40 Q 35 30 42 25"/>
+      <path d="M 50 28 Q 58 30 58 40 Q 58 50 50 53 Q 42 50 42 40 Q 42 35 46 32" opacity="0.8"/>
+      <path d="M 50 35 Q 53 36 53 40 Q 53 44 50 46" opacity="0.6"/>
+    </g>
+    
+    <!-- Scan line effect -->
+    <rect x="10" y="45" width="80" height="1" fill="url(#scanPurple)" opacity="0.4">
+      <animate attributeName="y" values="20;80;20" dur="3s" repeatCount="indefinite"/>
+    </rect>
+    
+    <!-- Corner brackets (scanner UI) -->
+    <g stroke="url(#identityPurple)" stroke-width="2" fill="none">
+      <path d="M 15 25 L 15 15 L 25 15"/>
+      <path d="M 75 15 L 85 15 L 85 25"/>
+      <path d="M 85 75 L 85 85 L 75 85"/>
+      <path d="M 25 85 L 15 85 L 15 75"/>
+    </g>
+  </g>
+  
+  <!-- Premium typography -->
+  <g transform="translate(180, 75)">
+    <text x="0" y="0" 
+          font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" 
+          font-size="56" 
+          font-weight="700" 
+          fill="#0a0a0a"
+          letter-spacing="-0.5">CYBER</text>
+    
+    <text x="2" y="38" 
+          font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" 
+          font-size="22" 
+          font-weight="400" 
+          fill="#6b21a8"
+          letter-spacing="5">WITH DEJAN</text>
+  </g>
+  
+  <!-- Minimal decorative element -->
+  <circle cx="520" cy="80" r="3" fill="url(#identityPurple)" opacity="0.6"/>
+  <circle cx="540" cy="80" r="2" fill="url(#identityPurple)" opacity="0.4"/>
+</svg>

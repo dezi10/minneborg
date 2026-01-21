@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Om meg - Dejan Zivanovic</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Tilgjengelighet og språk kontroller -->
+    <div class="accessibility-bar">
+        <div class="container">
+            <div class="accessibility-controls">
+                <button id="fontSizeMedium" class="font-btn active" aria-label="Normal skriftstørrelse">A</button>
+                <button id="fontSizeLarge" class="font-btn" aria-label="Stor skriftstørrelse">A</button>
+                <button id="fontSizeXLarge" class="font-btn" aria-label="Ekstra stor skriftstørrelse">A</button>
+                <button id="readingMode" class="mode-btn" aria-label="Lesemodus"><i class="fas fa-book-open"></i></button>
+                <button id="darkMode" class="mode-btn" aria-label="Nattmodus"><i class="fas fa-moon"></i></button>
+            </div>
+            <div class="language-selector">
+                <button class="lang-btn active" data-lang="no">NO</button>
+                <button class="lang-btn" data-lang="en">EN</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header/Navigasjon -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo-link" style="text-decoration: none; display: flex; align-items: center; gap: 10px;">
+                    <svg viewBox="0 0 100 80" xmlns="http://www.w3.org/2000/svg" style="width: 45px; height: 36px;">
+                        <path d="M15 35 Q20 25 35 25 Q50 25 60 30 Q70 35 73 40 Q75 45 70 48" fill="none" stroke="currentColor" stroke-width="3"/>
+                        <path d="M70 48 Q77 45 83 48 Q85 52 80 55 Q75 57 70 53" fill="none" stroke="currentColor" stroke-width="3"/>
+                        <circle cx="77" cy="48" r="2" fill="currentColor"/>
+                        <line x1="23" y1="35" x2="20" y2="60" stroke="currentColor" stroke-width="2.5"/>
+                        <line x1="27" y1="35" x2="25" y2="58" stroke="currentColor" stroke-width="2.5"/>
+                        <line x1="37" y1="32" x2="35" y2="60" stroke="currentColor" stroke-width="2.5"/>
+                        <line x1="43" y1="32" x2="42" y2="58" stroke="currentColor" stroke-width="2.5"/>
+                        <line x1="50" y1="34" x2="50" y2="60" stroke="currentColor" stroke-width="2.5"/>
+                        <line x1="55" y1="36" x2="57" y2="58" stroke="currentColor" stroke-width="2.5"/>
+                        <line x1="61" y1="40" x2="65" y2="60" stroke="currentColor" stroke-width="2.5"/>
+                        <line x1="65" y1="42" x2="70" y2="58" stroke="currentColor" stroke-width="2.5"/>
+                        <path d="M15 35 Q7 40 10 50 Q13 45 15 48" fill="none" stroke="currentColor" stroke-width="2.5"/>
+                    </svg>
+                    <span style="font-size: 1.3em; font-weight: 700; letter-spacing: 2px; color: #2c3e50;">MINNEBORG</span>
+                </a>
+                <ul class="nav-menu">
+                    <li><a href="om.html" data-translate="nav-about">Om</a></li>
+                    <li><a href="artikler.html" data-translate="nav-articles">Artikler</a></li>
+                    <li><a href="arbeid.html" data-translate="nav-work">Arbeid</a></li>
+                    <li><a href="verktoy.html" data-translate="nav-tools">Verktøy og nettsider</a></li>
+                    <li><a href="kontakt.html" data-translate="nav-contact">Kontakt</a></li>
+                </ul>
+                <button class="menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Om meg Innhold -->
+    <section class="about-page">
+        <div class="container">
+            <h1 data-translate="about-page-title">Om meg</h1>
+            
+            <div class="about-content-grid">
+                <div class="about-text">
+                    <h2 data-translate="about-intro-title">Hvem er jeg?</h2>
+                    <p data-translate="about-intro-text">Jeg er student i cybersikkerhet ved Gokstad Akademiet, hvor jeg studerer online. Mitt fokus ligger på digital sikkerhet, risikoanalyse, og hvordan vi kan bygge sikrere digitale systemer i en stadig mer sammenkoblet verden.</p>
+                    
+                    <h2 data-translate="about-study-title">Mine studier</h2>
+                    <p data-translate="about-study-text">Gjennom studiet ved Gokstad Akademiet har jeg tilegnet meg omfattende kunnskap innen:</p>
+                    <ul>
+                        <li data-translate="study-1">Nettverkssikkerhet og kryptografi</li>
+                        <li data-translate="study-2">Risikoanalyse og sårbarhetsidentifikasjon</li>
+                        <li data-translate="study-3">IT-infrastruktur og systemadministrasjon</li>
+                        <li data-translate="study-4">Digital forensikk og hendelseshåndtering</li>
+                        <li data-translate="study-5">Plattformsikkerhet og digital samhandling</li>
+                    </ul>
+                    
+                    <h2 data-translate="about-goal-title">Mine mål</h2>
+                    <p data-translate="about-goal-text">Jeg søker muligheter innen cybersikkerhet hvor jeg kan bidra til å bygge og vedlikeholde sikre digitale løsninger. Jeg er spesielt interessert i roller som involverer risikoanalyse, sikkerhetstesting, og utviklingen av sikkerhetsstandarder.</p>
+                    
+                    <h2 data-translate="about-why-title">Hvorfor denne nettsiden?</h2>
+                    <p data-translate="about-why-text">Denne portfolioen er laget for å dele min kunnskap og mine akademiske arbeider med potensielle arbeidsgivere, medstudenter, og lærere. Gjennom bloggartiklene mine kan du få innsikt i hvordan jeg tenker om cybersikkerhet og teknologiske utfordringer.</p>
+                </div>
+                
+                <div class="about-skills">
+                    <div class="skills-card">
+                        <h3 data-translate="skills-title">Kompetanseområder</h3>
+                        <div class="skill-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span data-translate="skill-1">Cybersikkerhet</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-network-wired"></i>
+                            <span data-translate="skill-2">Nettverkssikkerhet</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <span data-translate="skill-3">Risikoanalyse</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-server"></i>
+                            <span data-translate="skill-4">IT-infrastruktur</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-lock"></i>
+                            <span data-translate="skill-5">Kryptografi</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-search"></i>
+                            <span data-translate="skill-6">Digital forensikk</span>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-cta">
+                        <h3 data-translate="interested-title">Interessert i å samarbeide?</h3>
+                        <p data-translate="interested-text">Ta kontakt for spørsmål, samarbeidsmuligheter eller karrieremuligheter.</p>
+                        <a href="kontakt.html" class="btn btn-primary" data-translate="contact-btn">Ta kontakt</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="https://linkedin.com/in/dejanzivanovic1" target="_blank" class="social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="kontakt.html" class="social-link">
+                        <i class="fas fa-envelope"></i> <span data-translate="contact">Kontakt</span>
+                    </a>
+                </div>
+                <p class="copyright">&copy; <span data-translate="footer-made">Laget av</span> Dejan Zivanovic, 2026</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

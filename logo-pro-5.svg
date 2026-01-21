@@ -1,0 +1,76 @@
+<svg width="600" height="160" viewBox="0 0 600 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- PROFESJONELL KONSEPT 5: Abstract data flow / neural network -->
+  <defs>
+    <linearGradient id="neuroPurple1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#a78bfa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="neuroPurple2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6d28d9;stop-opacity:1" />
+    </linearGradient>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Neural network / data flow visualization -->
+  <g transform="translate(50, 40)">
+    <!-- Left nodes -->
+    <circle cx="10" cy="20" r="5" fill="url(#neuroPurple1)" filter="url(#softGlow)"/>
+    <circle cx="10" cy="40" r="6" fill="url(#neuroPurple2)" filter="url(#softGlow)"/>
+    <circle cx="10" cy="60" r="5" fill="url(#neuroPurple1)" filter="url(#softGlow)"/>
+    
+    <!-- Middle nodes -->
+    <circle cx="45" cy="15" r="4" fill="url(#neuroPurple1)" opacity="0.8"/>
+    <circle cx="45" cy="35" r="7" fill="#0a0a0a" stroke="url(#neuroPurple2)" stroke-width="2.5" filter="url(#softGlow)"/>
+    <circle cx="45" cy="55" r="4" fill="url(#neuroPurple1)" opacity="0.8"/>
+    <circle cx="45" cy="65" r="4" fill="url(#neuroPurple2)" opacity="0.8"/>
+    
+    <!-- Right nodes -->
+    <circle cx="80" cy="25" r="5" fill="url(#neuroPurple2)" filter="url(#softGlow)"/>
+    <circle cx="80" cy="45" r="6" fill="url(#neuroPurple1)" filter="url(#softGlow)"/>
+    
+    <!-- Connection lines -->
+    <g stroke="url(#neuroPurple1)" stroke-width="1.5" opacity="0.4" fill="none">
+      <path d="M 15 20 Q 30 18 40 15"/>
+      <path d="M 15 40 L 38 35"/>
+      <path d="M 15 40 Q 30 50 40 55"/>
+      <path d="M 15 60 Q 30 63 40 65"/>
+      
+      <path d="M 52 35 Q 65 30 75 25"/>
+      <path d="M 52 35 Q 65 40 75 45"/>
+    </g>
+    
+    <!-- Data packets (subtle animation suggestion) -->
+    <circle cx="25" cy="35" r="2" fill="url(#neuroPurple2)" opacity="0.6"/>
+    <circle cx="60" cy="32" r="2" fill="url(#neuroPurple1)" opacity="0.6"/>
+  </g>
+  
+  <!-- Clean, corporate typography -->
+  <g transform="translate(170, 75)">
+    <text x="0" y="0" 
+          font-family="'Inter', 'SF Pro Display', Arial, sans-serif" 
+          font-size="58" 
+          font-weight="700" 
+          fill="#0a0a0a"
+          letter-spacing="-0.5">CYBER</text>
+    
+    <text x="2" y="38" 
+          font-family="'Inter', 'SF Pro Display', Arial, sans-serif" 
+          font-size="22" 
+          font-weight="400" 
+          fill="#6d28d9"
+          letter-spacing="4.5">WITH DEJAN</text>
+    
+    <!-- Subtle dot separator -->
+    <circle cx="-15" cy="30" r="2.5" fill="url(#neuroPurple2)" opacity="0.5"/>
+  </g>
+  
+  <!-- Minimal accent -->
+  <line x1="170" y1="95" x2="200" y2="95" stroke="url(#neuroPurple1)" stroke-width="2" opacity="0.3"/>
+</svg>

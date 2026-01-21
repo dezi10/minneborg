@@ -1,0 +1,71 @@
+<svg width="700" height="180" viewBox="0 0 700 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- FORBEDRET TYPOGRAFI KONSEPT: Weight Contrast med bedre estetikk -->
+  <defs>
+    <linearGradient id="minimal1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#a78bfa;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="shimmer" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:0.3" />
+      <stop offset="50%" style="stop-color:#a78bfa;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:0.3" />
+    </linearGradient>
+    <filter id="softShadow">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2"/>
+      <feOffset dx="0" dy="2" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.15"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Subtil bakgrunnsform for dybde -->
+  <ellipse cx="350" cy="90" rx="280" ry="50" fill="url(#shimmer)" opacity="0.12"/>
+  
+  <!-- CYBER - Bold med shadow -->
+  <text x="50" y="100" 
+        font-family="'Inter', 'SF Pro Display', -apple-system, sans-serif" 
+        font-size="58" 
+        font-weight="800" 
+        fill="#0a0a0a"
+        letter-spacing="-1.5"
+        filter="url(#softShadow)">CYBER</text>
+  
+  <!-- WITH - Ultra light med bedre spacing -->
+  <text x="275" y="100" 
+        font-family="'Inter', 'SF Pro Display', -apple-system, sans-serif" 
+        font-size="58" 
+        font-weight="200" 
+        fill="#94a3b8"
+        letter-spacing="3">WITH</text>
+  
+  <!-- DEJAN - Semi-bold med gradient -->
+  <text x="425" y="100" 
+        font-family="'Inter', 'SF Pro Display', -apple-system, sans-serif" 
+        font-size="58" 
+        font-weight="700" 
+        fill="url(#minimal1)"
+        letter-spacing="-0.5"
+        filter="url(#softShadow)">DEJAN</text>
+  
+  <!-- Dekorative accent-elementer -->
+  <g opacity="0.4">
+    <!-- Før CYBER -->
+    <circle cx="30" cy="95" r="3" fill="url(#minimal1)">
+      <animate attributeName="opacity" values="0.4;0.8;0.4" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    
+    <!-- Etter DEJAN -->
+    <circle cx="640" cy="95" r="2.5" fill="url(#minimal1)">
+      <animate attributeName="opacity" values="0.4;0.8;0.4" dur="3s" begin="1.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Subtil underline under DEJAN -->
+  <line x1="425" y1="110" x2="600" y2="110" stroke="url(#minimal1)" stroke-width="2" opacity="0.25"/>
+</svg>

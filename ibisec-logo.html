@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ibisec Logo Forslag</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f5f5f5;
+            padding: 40px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #1a1a2e;
+        }
+        h2 {
+            color: #333;
+            margin: 30px 0 15px;
+            font-size: 1.1em;
+        }
+        .logo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .logo-card {
+            background: white;
+            border-radius: 16px;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+        .logo-card.dark {
+            background: #1a1a2e;
+        }
+        .logo-card svg {
+            max-width: 200px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .logo-name {
+            font-size: 1.5em;
+            font-weight: 600;
+            color: #1a1a2e;
+            letter-spacing: 2px;
+        }
+        .logo-card.dark .logo-name {
+            color: #fff;
+        }
+        .description {
+            font-size: 0.85em;
+            color: #666;
+            margin-top: 10px;
+        }
+        .logo-card.dark .description {
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ibisec – Logoforslag</h1>
+    
+    <div class="logo-grid">
+        <!-- Logo 1: Minimalistisk Ibis-hode -->
+        <div class="logo-card">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <!-- Ibis hode med karakteristisk langt buet nebb -->
+                <path d="M30 35 Q35 30 45 32 Q55 34 58 40 Q60 45 55 48 Q50 50 40 48 Q35 47 30 35" 
+                      fill="none" stroke="#1a1a2e" stroke-width="2.5" stroke-linecap="round"/>
+                <!-- Det lange buede nebbet -->
+                <path d="M55 48 Q70 55 75 70 Q76 75 72 78" 
+                      fill="none" stroke="#1a1a2e" stroke-width="2.5" stroke-linecap="round"/>
+                <!-- Øye -->
+                <circle cx="42" cy="40" r="2.5" fill="#1a1a2e"/>
+                <!-- Skjold-element integrert -->
+                <path d="M25 60 L25 75 Q25 85 50 95 Q75 85 75 75 L75 60" 
+                      fill="none" stroke="#1a1a2e" stroke-width="2" stroke-linecap="round" opacity="0.3"/>
+            </svg>
+            <div class="logo-name">IBISEC</div>
+            <p class="description">Minimalistisk ibis-profil med skjold</p>
+        </div>
+
+        <!-- Logo 2: Abstrakt Ibis + Lås -->
+        <div class="logo-card dark">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <!-- Abstrakt ibis-nebb som blir til en nøkkel/lås -->
+                <path d="M25 30 Q30 25 40 28 L45 32" 
+                      fill="none" stroke="#c9a227" stroke-width="3" stroke-linecap="round"/>
+                <path d="M45 32 Q65 45 70 65 Q71 72 65 75" 
+                      fill="none" stroke="#c9a227" stroke-width="3" stroke-linecap="round"/>
+                <!-- Sirkel rundt (beskyttelse) -->
+                <circle cx="50" cy="50" r="38" fill="none" stroke="#fff" stroke-width="1.5" opacity="0.8"/>
+                <!-- Øye som lås-hull -->
+                <circle cx="38" cy="35" r="4" fill="none" stroke="#c9a227" stroke-width="2"/>
+                <circle cx="38" cy="35" r="1.5" fill="#c9a227"/>
+            </svg>
+            <div class="logo-name">IBISEC</div>
+            <p class="description">Gull ibis med beskyttelsessirkel</p>
+        </div>
+
+        <!-- Logo 3: Ultra-minimalistisk -->
+        <div class="logo-card">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <!-- Kun det ikoniske buede nebbet -->
+                <path d="M30 25 Q50 30 55 45 Q60 60 65 80" 
+                      fill="none" stroke="#1a1a2e" stroke-width="4" stroke-linecap="round"/>
+                <!-- Prikk for øye -->
+                <circle cx="35" cy="30" r="3" fill="#1a1a2e"/>
+            </svg>
+            <div class="logo-name">IBISEC</div>
+            <p class="description">Ultra-minimalistisk – kun nebb og øye</p>
+        </div>
+
+        <!-- Logo 4: Geometrisk -->
+        <div class="logo-card dark">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <!-- Geometrisk ibis av linjer -->
+                <path d="M30 30 L45 30 L50 40 L45 45 L30 40 Z" 
+                      fill="none" stroke="#fff" stroke-width="2" stroke-linejoin="round"/>
+                <!-- Geometrisk nebb -->
+                <path d="M50 40 L75 70" 
+                      fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+                <!-- Øye -->
+                <circle cx="38" cy="36" r="2" fill="#c9a227"/>
+                <!-- Tekst under -->
+            </svg>
+            <div class="logo-name">IBISEC</div>
+            <p class="description">Geometrisk stil</p>
+        </div>
+
+        <!-- Logo 5: Ibis i skjold -->
+        <div class="logo-card">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <!-- Skjold -->
+                <path d="M20 20 L20 55 Q20 80 50 95 Q80 80 80 55 L80 20 Z" 
+                      fill="none" stroke="#1a1a2e" stroke-width="2"/>
+                <!-- Ibis inni -->
+                <path d="M35 35 Q42 32 48 35 Q52 38 50 42 Q48 45 42 44" 
+                      fill="none" stroke="#1a1a2e" stroke-width="2" stroke-linecap="round"/>
+                <path d="M50 42 Q58 50 62 65 Q63 70 60 72" 
+                      fill="none" stroke="#1a1a2e" stroke-width="2" stroke-linecap="round"/>
+                <circle cx="42" cy="37" r="2" fill="#1a1a2e"/>
+            </svg>
+            <div class="logo-name">IBISEC</div>
+            <p class="description">Ibis i skjold</p>
+        </div>
+
+        <!-- Logo 6: Stilisert bokstav I -->
+        <div class="logo-card dark">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <!-- Bokstaven I formet som ibis-nebb -->
+                <path d="M50 15 Q55 15 55 20 L55 25 Q70 40 75 60 Q76 68 70 72" 
+                      fill="none" stroke="#c9a227" stroke-width="3" stroke-linecap="round"/>
+                <path d="M45 20 L45 85" 
+                      fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+                <circle cx="55" cy="20" r="3" fill="#c9a227"/>
+            </svg>
+            <div class="logo-name">IBISEC</div>
+            <p class="description">Bokstaven I som ibis</p>
+        </div>
+
+        <!-- Logo 7: Enkel med tekst -->
+        <div class="logo-card">
+            <svg viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
+                <!-- Liten ibis-ikon -->
+                <path d="M15 20 Q22 18 28 22 Q32 26 30 30 Q28 33 22 32" 
+                      fill="none" stroke="#1a1a2e" stroke-width="2" stroke-linecap="round"/>
+                <path d="M30 30 Q40 40 45 55 Q46 60 42 62" 
+                      fill="none" stroke="#1a1a2e" stroke-width="2" stroke-linecap="round"/>
+                <circle cx="22" cy="24" r="2" fill="#1a1a2e"/>
+                <!-- Tekst -->
+                <text x="60" y="48" font-family="Arial, sans-serif" font-size="28" font-weight="600" fill="#1a1a2e" letter-spacing="3">IBISEC</text>
+            </svg>
+            <p class="description">Horisontal variant med ikon</p>
+        </div>
+
+        <!-- Logo 8: Egyptisk-inspirert med hieroglyf-stil -->
+        <div class="logo-card dark">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <!-- Hieroglyf-stil ibis -->
+                <path d="M30 25 L50 25 L50 35 L40 40" 
+                      fill="none" stroke="#c9a227" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+                <path d="M40 40 L55 55 L60 75 L55 80" 
+                      fill="none" stroke="#c9a227" stroke-width="2.5" stroke-linecap="round"/>
+                <!-- Øye (Horus-inspirert) -->
+                <ellipse cx="40" cy="30" rx="5" ry="3" fill="none" stroke="#c9a227" stroke-width="1.5"/>
+                <circle cx="40" cy="30" r="1.5" fill="#c9a227"/>
+                <!-- Dekorativ linje under -->
+                <line x1="25" y1="90" x2="75" y2="90" stroke="#fff" stroke-width="1" opacity="0.5"/>
+            </svg>
+            <div class="logo-name">IBISEC</div>
+            <p class="description">Hieroglyf-inspirert</p>
+        </div>
+    </div>
+
+</body>
+</html>
