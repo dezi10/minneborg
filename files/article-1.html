@@ -1,0 +1,140 @@
+<!--
+Denne filen inneholder en fagartikkel skrevet av eier, med akademisk struktur og referanser.
+-->
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fra Chat til Checkout - Dejan Zivanovic</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .article { max-width: 800px; margin: 0 auto; padding: 40px 20px; line-height: 1.8; }
+        .article-header { text-align: center; margin-bottom: 40px; padding-bottom: 30px; border-bottom: 1px solid var(--border-color); }
+        .article-header h1 { font-size: 1.8em; margin-bottom: 20px; line-height: 1.3; }
+        .article-meta { color: var(--text-light); font-size: 0.95em; margin-bottom: 10px; }
+        .article-meta .author { font-weight: 600; color: var(--text-color); }
+        .article-meta .institution { font-style: italic; }
+        .abstract { background: var(--bg-secondary); padding: 20px 25px; border-radius: 8px; margin-bottom: 35px; border-left: 4px solid var(--primary-color); }
+        .abstract h2 { font-size: 1.1em; margin: 0 0 10px 0; color: var(--text-color); }
+        .abstract p { margin: 0; font-size: 0.95em; color: var(--text-light); }
+        .article-body h2 { font-size: 1.3em; margin: 35px 0 15px 0; color: var(--text-color); border-bottom: 1px solid var(--border-color); padding-bottom: 8px; }
+        .article-body h3 { font-size: 1.1em; margin: 25px 0 12px 0; color: var(--text-color); }
+        .article-body p { margin-bottom: 15px; text-align: justify; }
+        .article-body ul, .article-body ol { margin: 15px 0; padding-left: 25px; }
+        .article-body li { margin-bottom: 8px; }
+        .references { margin-top: 40px; padding-top: 25px; border-top: 1px solid var(--border-color); }
+        .references h2 { font-size: 1.2em; margin-bottom: 15px; }
+        .references ul { list-style: none; padding: 0; }
+        .references li { margin-bottom: 12px; padding-left: 20px; text-indent: -20px; font-size: 0.9em; color: var(--text-light); }
+        .back-link { margin-top: 40px; text-align: center; padding-top: 25px; border-top: 1px solid var(--border-color); }
+    </style>
+</head>
+<body>
+    <!-- Tilgjengelighet og språk kontroller -->
+    <div class="accessibility-bar">
+        <div class="container">
+            <div class="accessibility-controls">
+                <button id="fontSizeMedium" class="font-btn active" aria-label="Normal skriftstørrelse">A</button>
+                <button id="fontSizeLarge" class="font-btn" aria-label="Stor skriftstørrelse">A</button>
+                <button id="fontSizeXLarge" class="font-btn" aria-label="Ekstra stor skriftstørrelse">A</button>
+                <button id="readingMode" class="mode-btn" aria-label="Lesemodus"><i class="fas fa-book-open"></i></button>
+                <button id="darkMode" class="mode-btn" aria-label="Nattmodus"><i class="fas fa-moon"></i></button>
+            </div>
+            <div class="language-selector">
+                <button class="lang-btn active" data-lang="no">NO</button>
+                <button class="lang-btn" data-lang="en">EN</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header/Navigasjon -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo-link" style="text-decoration: none; display: flex; align-items: center; gap: 10px;">
+                    <svg viewBox="0 0 100 80" xmlns="http://www.w3.org/2000/svg" style="width: 45px; height: 36px;">
+                        <path d="M15 35 Q20 25 35 25 Q50 25 60 30 Q70 35 73 40 Q75 45 70 48" fill="none" stroke="currentColor" stroke-width="3"/>
+                        <path d="M70 48 Q77 45 83 48 Q85 52 80 55 Q75 57 70 53" fill="none" stroke="currentColor" stroke-width="3"/>
+                        <circle cx="77" cy="48" r="2" fill="currentColor"/>
+                        <line x1="23" y1="35" x2="20" y2="60" stroke="currentColor" stroke-width="2.5"/>
+                        <line x1="27" y1="35" x2="25" y2="58" stroke="currentColor" stroke-width="2.5"/>
+                        <line x1="37" y1="32" x2="35" y2="60" stroke="currentColor" stroke-width="2.5"/>
+                        <line x1="43" y1="32" x2="42" y2="58" stroke="currentColor" stroke-width="2.5"/>
+                        <line x1="50" y1="34" x2="50" y2="60" stroke="currentColor" stroke-width="2.5"/>
+                        <line x1="55" y1="36" x2="57" y2="58" stroke="currentColor" stroke-width="2.5"/>
+                        <line x1="61" y1="40" x2="65" y2="60" stroke="currentColor" stroke-width="2.5"/>
+                        <line x1="65" y1="42" x2="70" y2="58" stroke="currentColor" stroke-width="2.5"/>
+                        <path d="M15 35 Q7 40 10 50 Q13 45 15 48" fill="none" stroke="currentColor" stroke-width="2.5"/>
+                    </svg>
+                    <span style="font-size: 1.3em; font-weight: 700; letter-spacing: 2px; color: #2c3e50;">MINNEBORG</span>
+                </a>
+                <ul class="nav-menu">
+                    <li><a href="om.html" data-translate="nav-about">Om</a></li>
+                    <li><a href="artikler.html" data-translate="nav-articles">Artikler</a></li>
+                    <li><a href="arbeid.html" data-translate="nav-work">Arbeid</a></li>
+                    <li><a href="verktoy.html" data-translate="nav-tools">Verktøy og nettsider</a></li>
+                    <li><a href="kontakt.html" data-translate="nav-contact">Kontakt</a></li>
+                </ul>
+                <button class="menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Artikkel Innhold -->
+    <article class="article">
+        <div class="article-header">
+            <h1>Fra chat til checkout: digital samhandling, plattformer og risiko</h1>
+            <div class="article-meta">
+                <p class="author">Dejan Zivanovic</p>
+                <p>Januar 2026</p>
+            </div>
+        </div>
+        <div class="article-body">
+            <p>De siste tiårene har den digitale utviklingen resultert i at mennesker møtes og jobber mer over skjerm enn fysisk, og det har gjort at vi - istedenfor å kommunisere fysisk med venner, familie, kollegaer og medstudenter - stadig er koblet til nett og gjør kommunikasjonen der, enten det er med smarttelefon, nettbrett, smartklokke eller bærbar PC. IT har blitt en grunnleggende infrastruktur for hvordan vi arbeider og samhandler. På biblioteket der jeg jobber, bruker vi mesteparten av tiden på kontoret på skjermen, og i skranken leter vi etter bøker på skjermen før vi begynner å lete fysisk. Det som en gang var store datamaskiner er nå smarttelefoner, som vi bruker til å sende meldinger, få med oss nyheter, se på video og spille videospill. Teknologien har gjort det enklere å holde kontakt med folk og dele informasjon raskt, men den har også brakt med seg falske nyheter, nettroll, cyberangrep og identitetstyveri, og ikke minst helseproblemer på grunn av mye skjermbruk (Fox, 2025, s. 1).</p>
+
+            <p>Samtidig har innovasjon i mobilverden skapt en omveltning av hvordan vi kommuniserer med hverandre med hjelp av teknologi. Overgangen fra Nokia og Blackberry til Apple iPhone og Android-telefoner har vært en stor pådriver for dette. Enten det er å sende meldinger, bilder og filer til venner i for eksempel Messenger, WhatsApp og Discord, se og sende øyeblikksbilder og meldinger i SnapChat, eller ha en kommunikasjon i Teams-chatten eller på digitalt møte med kollegaer og studenter over Teams. Skole- og læringsplattformer slik som Canvas og Moodle gjør det mulig for lærere å kunngjøre beskjeder som er viktige for deres studenter. Gjennom slike plattformer har studenter tilgang til relevante filer til sitt studie, timeplaner, og portaler der oppgaver kan leveres inn.</p>
+
+            <p>Uansett om man er en student, ansatt eller bedriftseier, vil kontor- og produktivitetsverktøy som Word, Powerpoint, Excel, Teams, Trello og Zoom være typiske plattformer man jobber i. Etter covid ble det mer vanlig med hjemmekontor og Zoom-møter enn tidligere. Det tror jeg har gjort oss mer avhengige av digitale møter og digitale hjelpemidler enn før. Trello er et verktøy som brukes i prosjektarbeid der teamet kan holde oversikt over fremdriften i deres prosjekt, enten det er på jobb, skole eller i en business-sammenheng. Istedenfor å spørre medkollegaer eller medstudenter i Teams-chatten, for å ta et eksempel, hvor godt man står til når det gjelder deadlines, vil statusen i Trello vise hvor langt man har kommet i arbeidet.</p>
+
+            <p>Denne digitale infrastrukturen preger også underholdning, og der har jeg valgt å skrive om prisalgoritmene til Ticketmaster, spesifikt når det gjelder ettertraktede konserter. Ticketmaster gjør det enkelt og praktisk for kunder å søke opp og kjøpe billetter (Walton, 2022-2023, s. 4). Som konsertelsker opplever jeg også at det er lett å videreselge billetter, og finne dem fram under billettsjekken. Bedriften bruker prisalgoritmer til å oppjustere priser på ettertraktede konserter, og på den måten tjener mye på billettsalg. Dette går hardt utover kunder med lavinntekt, som opplever å betale for mye for å se artisten (s. 7). Det tenker jeg bringer fram en uetisk side av digitaliseringen, da den skaper elitisme og større klasseskiller. På den andre siden vil det kunne stupe det internasjonale billettsalget dramatisk om man skulle gått bort fra Ticketmaster, forteller Walton (s. 4-5), på grunn dens monopol internasjonalt. Det tror jeg kan føre til færre billettsalg, færre konserter, og slik lavere lønnsomhet for artistene, men samtidig bort fra de dynamiske prisene som ikke gagner kunder/fans. På den andre siden kan man tenke seg at en bedrift kan gå konkurs eller bli utsatt for et hackerangrep, noe som ikke er positivt når billettene er lagret digitalt hos Ticketmaster. Førstnevnte er mindre sannsynlig enn det første, men om første scenario hender kan hacking føre til midlertidig tap av tilgang til Ticketmaster-kontoen og dermed til de billettene man har kjøpt, i tillegg til at personopplysninger går i feil hender.</p>
+
+            <div class="references">
+                <h2>Referanser</h2>
+                <ul>
+                    <li>Fox, R. (2025). <em>Information Technology: an introduction for today's digital world</em> (3. utg.). CRC Press.</li>
+                    <li>Walton, J. K. (2022-2023). Dynamic pricing and the future of live entertainment: a Ticketmaster case study. <em>Business Law Review, 43</em>, 1-22.</li>
+                </ul>
+            </div>
+
+            <div class="back-link">
+                <a href="artikler.html" class="btn btn-outline">← Tilbake til artikler</a>
+            </div>
+        </div>
+    </article>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="https://linkedin.com/in/dejanzivanovic1" target="_blank" class="social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="kontakt.html" class="social-link">
+                        <i class="fas fa-envelope"></i> Kontakt
+                    </a>
+                </div>
+                <p class="copyright">&copy; Laget av Dejan Zivanovic, 2026</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

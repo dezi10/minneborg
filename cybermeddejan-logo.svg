@@ -1,0 +1,15 @@
+<svg width="400" height="120" viewBox="0 0 400 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="120" rx="20" fill="#0f172a"/>
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="'Orbitron', 'Arial', sans-serif" font-size="48" fill="#00ffe7" letter-spacing="2">
+    cybermeddejan
+  </text>
+  <g>
+    <circle cx="40" cy="40" r="18" fill="#00ffe7" opacity="0.15"/>
+    <rect x="340" y="80" width="30" height="10" rx="5" fill="#00ffe7" opacity="0.15"/>
+    <polyline points="60,100 80,80 100,100" stroke="#00ffe7" stroke-width="3" fill="none" opacity="0.5"/>
+    <rect x="300" y="20" width="10" height="30" rx="5" fill="#00ffe7" opacity="0.15"/>
+  </g>
+  <g>
+    <text x="370" y="110" font-size="10" fill="#00ffe7" opacity="0.5" text-anchor="end">© 2026</text>
+  </g>
+</svg>
