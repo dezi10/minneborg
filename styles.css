@@ -316,6 +316,7 @@ form#contact-form {
 	padding: 2rem;
 	border-radius: var(--border-radius-lg);
 	max-width: 500px;
+	margin: 0 auto;
 	border: 1px solid var(--border-color);
 	box-shadow: var(--card-shadow);
 }
