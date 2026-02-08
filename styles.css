@@ -307,6 +307,30 @@ footer p:first-child {
 	font-style: italic;
 }
 
+/* Kontaktside sentrering */
+.contact-page {
+	text-align: center;
+}
+
+.contact-page h1,
+.contact-page > p {
+	text-align: center;
+}
+
+.contact-info {
+	text-align: center;
+	margin-top: 2rem;
+}
+
+.contact-info ul {
+	list-style: none;
+	padding: 0;
+}
+
+.contact-info li {
+	margin-bottom: 0.5rem;
+}
+
 /* Kontakt-skjema */
 form#contact-form {
 	display: flex;
@@ -319,6 +343,7 @@ form#contact-form {
 	margin: 0 auto;
 	border: 1px solid var(--border-color);
 	box-shadow: var(--card-shadow);
+	text-align: left;
 }
 
 form#contact-form label {
