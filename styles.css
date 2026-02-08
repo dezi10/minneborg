@@ -325,6 +325,11 @@ footer p:first-child {
 	width: 100%;
 }
 
+/* Skjema labels venstrejustert */
+.contact-page form#contact-form label {
+	text-align: left;
+}
+
 .contact-info {
 	text-align: center;
 	margin-top: 2rem;
