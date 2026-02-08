@@ -1,0 +1,65 @@
+<!--
+Denne filen inneholder en fagartikkel om OSI-modellen og feilsøking i nettverk.
+-->
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSI-modellen som verktøy for systematisk feilsøking i nettverk - Dejan Zivanovic</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigasjon -->
+<header>
+  <nav>
+    <ul class="nav-menu">
+      <li><a href="index.html">Hjem</a></li>
+      <li><a href="about.html">Om</a></li>
+      <li><a href="articles.html">Artikler</a></li>
+      <li><a href="tools-and-websites.html">Verktøy</a></li>
+      <li><a href="contact.html">Kontakt</a></li>
+    </ul>
+  </nav>
+</header>
+
+    <main>
+    <!-- Artikkel Innhold -->
+    <article class="article">
+        <div class="article-header">
+            <h1>OSI-modellen som verktøy for systematisk feilsøking i nettverk</h1>
+            <div class="article-meta">
+                <span class="author">Dejan Zivanovic</span>
+                <span class="date">Januar 2026</span>
+            </div>
+        </div>
+        <div class="article-body">
+            <p>OSI-modellen ble utviklet på 1980-tallet og brukes som en modell for å beskrive og strukturere nettverksprotokoller, noe som gir teknikere et felles språk. En protokoll kan forstås som et sett med regler som er laget for å styre hvordan mennesker samhandler med hverandre (Fox, 2025, s. 206). Jeg tenker at dette felles språket gjør det enklere for IT-teknikere å arbeide systematisk med feilsøking, fordi man kan avgrense problemet til et lag om gangen. Når alle bruker de samme begrepene, blir kommunikasjonen tydeligere og mer presis. Slik jeg forstår rekkefølgen fra 1 til 7, kan den beskrives som en bevegelse fra kabler og binære signaler i bunnen til det mer «visuelle» og brukerrettede i toppen.</p>
+
+            <p>I praksis kan man da spørre: Ligger feilen på lag 1 (for eksempel en kabel), eller ligger den høyere oppe, som på lag 4 (for eksempel knyttet til ruting eller håndtering av transport)? På den måten kan man jobbe stegvis, enten fra lag 1 til 7 eller fra 7 til 1, og løse problemer mer strukturert. Selve modellen består av sju lag, nummerert fra 1 til 7. De fire øverste lagene (lag 4–7) kalles ofte host-/vert-lagene. Det er her meldinger blir «pakket inn» før sending og deretter «pakket ut» hos mottaker, slik at informasjonen blir forståelig for program og bruker. Lag 1–3 omtales som medielagene, og det er på disse lagene at meldinger blir adressert, rutet og fysisk overført (s. 208). Personlig synes jeg at det er mest interessant hvordan meldinger sendes og mottas i nettverket, og skriver derfor kort om disse.</p>
+
+            <p>Datalinklaget – eller lag 2 – består av to underlag. Det øvre underlaget kalles Logical Link Control (LLC) og legger til rette for at overlappende meldinger kan fraktes samtidig, altså at flere meldinger fra ulike nettverksprotokoller kan sendes parallelt. Denne evnen kalles multipleksing. Informasjonen fra datalinklaget brukes av nettverkssvitsjer (switches). Når en svitsj mottar en melding, går den til lag 2 for å lese informasjon som forteller hvor meldingen skal sendes. På dette laget deles data inn i rammer (frames) (Fox, 2025, s. 208).</p>
+
+            <p>Når data skal videre gjennom nettverket, kommer nettverkslaget – også kalt lag 3 – inn i bildet. Dette er laget der adressen til avsender og mottaker blir lagt til og brukt, og der rutere opererer. Når en ruter mottar en melding, undersøker den nettverket til mottakeren og bruker rutingtabellen sin og en «rutingspolitikk» for å avgjøre hvor meldingen skal sendes videre. Når en melding er klar til overføring, deles den opp i datagrammer, altså mindre enheter. Rutere tar hensyn til maksimal tillatt størrelse på meldinger langs den valgte ruten. Dersom et datagram er større enn det som er tillatt, må det deles opp ytterligere i mindre pakker. Til slutt vil jeg nevne at dette tredje laget ser på data som sekvenser med variabel lengde (Fox, 2025, s. 208).</p>
+
+            <div class="references">
+                <h2>Referanser</h2>
+                <ul>
+                    <li>Fox, R. (2025). <em>Information Technology: an introduction for today's digital world</em> (3. utg.). CRC Press.</li>
+                </ul>
+            </div>
+
+            <div class="back-link">
+                <a href="articles.html">← Tilbake til artikler</a>
+            </div>
+        </div>
+    </article>
+    </main>
+
+    <footer>
+        <p>Disse ressursene er samlet for informasjonsformål.</p>
+        <p>&copy; Laget av Dejan Zivanovic, 2026</p>
+    </footer>
+</body>
+</html>
