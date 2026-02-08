@@ -310,11 +310,15 @@ footer p:first-child {
 /* Kontaktside sentrering */
 .contact-page {
 	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .contact-page h1,
 .contact-page > p {
 	text-align: center;
+	width: 100%;
 }
 
 .contact-info {
