@@ -13,16 +13,16 @@ Moderne, profesjonell design for cybersikkerhet-portefølje.
 	--primary-light: #3b82f6;
 	--secondary-color: #f8fafc;
 	--accent-color: #06b6d4;
-	--bg-color: #f1f5f9;
+	--bg-color: #f8fafb;
 	--bg-secondary: #ffffff;
-	--text-color: #1e293b;
-	--text-light: #64748b;
+	--text-color: #0f172a;
+	--text-light: #475569;
 	--text-muted: #94a3b8;
 	--border-color: #e2e8f0;
-	--card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
-	--card-shadow-hover: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+	--card-shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.04);
+	--card-shadow-hover: 0 16px 32px rgba(37, 99, 235, 0.12), 0 4px 8px rgba(0, 0, 0, 0.08);
 	--gradient-primary: linear-gradient(135deg, #2563eb 0%, #06b6d4 100%);
-	--gradient-bg: linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%);
+	--gradient-bg: linear-gradient(180deg, #f8fafb 0%, #f1f5f9 100%);
 	--transition-fast: 0.15s ease;
 	--transition-normal: 0.3s ease;
 	--border-radius: 12px;
@@ -53,52 +53,105 @@ body {
 
 /* Header og navigasjon */
 header {
-	background: var(--gradient-primary);
-	color: #fff;
-	padding: 1rem 0;
-	box-shadow: 0 4px 20px rgba(37, 99, 235, 0.3);
-	position: sticky;
+	background: white;
+	color: #000;
+	padding: 0;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+	position: fixed;
 	top: 0;
+	left: 0;
+	right: 0;
 	z-index: 1000;
-	backdrop-filter: blur(10px);
+	backdrop-filter: none;
+	min-height: 120px;
+	width: 100%;
 }
 
 nav {
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0 1.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 2rem;
+	height: 100%;
+	min-height: 120px;
+}
+
+.logo-container {
+	flex-shrink: 0;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	height: 100%;
+	min-height: 120px;
+	border: none;
+	margin-right: auto;
+	padding-left: 0;
+}
+
+.logo-link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+	transition: transform var(--transition-normal);
+	border: none;
+	outline: none;
+	background: none;
+}
+
+.logo-link:hover {
+	transform: scale(1.05);
+}
+
+.nav-logo {
+	width: 120px;
+	height: 120px;
+	display: block;
+	filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.15));
 }
 
 nav ul {
 	list-style: none;
 	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 0.5rem;
+	justify-content: flex-end;
+	align-items: stretch;
+	gap: 0;
 	margin: 0;
 	padding: 0;
+	flex-shrink: 0;
+	height: 120px;
 }
 
 nav li {
 	position: relative;
+	display: flex;
+	align-items: stretch;
 }
 
 nav a {
-	color: rgba(255, 255, 255, 0.9);
+	color: #000;
 	text-decoration: none;
-	font-weight: 500;
-	font-size: 0.95rem;
-	padding: 0.6rem 1.2rem;
-	border-radius: 8px;
-	transition: all var(--transition-normal);
-	display: block;
-	letter-spacing: 0.01em;
+	font-weight: 600;
+	font-size: 1.1rem;
+	padding: 0 1.5rem;
+	border-radius: 0;
+	transition: all 0.2s ease;
+	display: flex;
+	align-items: center;
+	letter-spacing: 0.02em;
+	background: transparent;
+	border: none;
 }
 
 nav a:hover {
-	color: #fff;
-	background: rgba(255, 255, 255, 0.15);
-	transform: translateY(-1px);
+	color: #000;
+	background: transparent;
+	box-shadow: inset 0 0 0 2px #000;
 }
 
 nav a:active {
@@ -108,27 +161,37 @@ nav a:active {
 /* Main innhold */
 main {
 	max-width: 1200px;
-	margin: 0 auto;
+	margin: 140px auto 0;
 	padding: 3rem 1.5rem 4rem;
 	min-height: calc(100vh - 200px);
 }
 
 /* Typografi */
 h1 {
-	font-size: 2.5rem;
-	font-weight: 700;
+	font-size: 2.8rem;
+	font-weight: 800;
 	color: var(--text-color);
-	margin: 0 0 0.5rem 0;
-	letter-spacing: -0.02em;
-	line-height: 1.2;
+	margin: 0 0 0.75rem 0;
+	letter-spacing: -0.03em;
+	line-height: 1.1;
+	text-align: left;
+	background: var(--gradient-primary);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
 }
 
 h2 {
-	font-size: 1.75rem;
-	font-weight: 600;
+	font-size: 1.9rem;
+	font-weight: 700;
 	color: var(--text-color);
-	margin: 2.5rem 0 1rem 0;
+	margin: 2.5rem 0 1.5rem 0;
 	letter-spacing: -0.01em;
+	line-height: 1.2;
+	padding-bottom: 0.75rem;
+	border-bottom: 3px solid var(--primary-color);
+	display: inline-block;
+	text-align: left;
 }
 
 h3 {
@@ -136,18 +199,104 @@ h3 {
 	font-weight: 600;
 	color: var(--text-color);
 	margin: 0 0 0.5rem 0;
+	text-align: left;
 }
 
 p {
 	color: var(--text-light);
-	margin: 0 0 1rem 0;
-	font-size: 1.05rem;
+	margin: 0 0 1.2rem 0;
+	font-size: 1.08rem;
+	line-height: 1.7;
+	letter-spacing: 0.3px;
+	text-align: left;
 }
 
 main > p:first-of-type {
 	font-size: 1.15rem;
 	color: var(--text-light);
 	max-width: 700px;
+}
+
+.about-intro {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 2.5rem;
+	background: linear-gradient(135deg, var(--bg-secondary) 0%, rgba(6, 182, 212, 0.02) 100%);
+	border: 2px solid var(--border-color);
+	border-radius: var(--border-radius-lg);
+	padding: 3rem;
+	box-shadow: 0 10px 40px rgba(37, 99, 235, 0.08);
+}
+
+.about-content {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.about-content:first-of-type {
+	grid-column: 1;
+	grid-row: 1;
+}
+
+.about-photo {
+	grid-column: 1;
+	grid-row: 2;
+	margin: 0;
+}
+
+.about-content:last-of-type {
+	grid-column: 1;
+	grid-row: 3;
+}
+
+.badge-container {
+	grid-column: 1;
+	grid-row: 4;
+	text-align: center;
+	padding-top: 1rem;
+	border-top: 1px solid var(--border-color);
+	margin-top: 1rem;
+}
+
+.about-content p {
+	margin-bottom: 0;
+}
+
+.badge-row {
+	margin: 1.25rem 0;
+}
+
+.badge-img {
+	max-width: 200px;
+	height: auto;
+	display: inline-block;
+	border-radius: 8px;
+}
+
+.badge {
+	display: inline-block;
+	padding: 0.5rem 0.9rem;
+	border-radius: 999px;
+	background: linear-gradient(135deg, rgba(37, 99, 235, 0.12), rgba(6, 182, 212, 0.2));
+	color: var(--primary-dark);
+	font-weight: 600;
+	border: 1px solid rgba(37, 99, 235, 0.2);
+}
+
+.about-photo img {
+	width: 100%;
+	display: block;
+	border-radius: var(--border-radius-lg);
+	object-fit: cover;
+	max-height: 420px;
+	box-shadow: 0 12px 40px rgba(37, 99, 235, 0.15);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-photo img:hover {
+	transform: scale(1.02);
+	box-shadow: 0 16px 50px rgba(37, 99, 235, 0.2);
 }
 
 /* Hero-seksjon */
@@ -204,11 +353,11 @@ section h2::after {
 }
 
 .card {
-	background: var(--bg-secondary);
-	border-radius: var(--border-radius-lg);
-	box-shadow: var(--card-shadow);
-	border: 1px solid var(--border-color);
-	padding: 1.75rem;
+	background: transparent;
+	border-radius: 18px;
+	box-shadow: none;
+	border: 2px solid #000;
+	padding: 2rem;
 	display: flex;
 	flex-direction: column;
 	transition: all var(--transition-normal);
@@ -230,8 +379,9 @@ section h2::after {
 
 .card:hover {
 	transform: translateY(-4px);
-	box-shadow: var(--card-shadow-hover);
-	border-color: var(--primary-light);
+	box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+	border-color: #000;
+	background: transparent;
 }
 
 .card:hover::before {
@@ -239,10 +389,11 @@ section h2::after {
 }
 
 .card h3 {
-	margin: 0 0 0.75rem 0;
-	font-size: 1.15rem;
-	font-weight: 600;
+	margin: 0 0 1rem 0;
+	font-size: 1.25rem;
+	font-weight: 700;
 	color: var(--text-color);
+	letter-spacing: -0.01em;
 }
 
 .card h3 a {
@@ -257,9 +408,11 @@ section h2::after {
 
 .card p {
 	color: var(--text-light);
-	margin-bottom: 1.25rem;
+	margin-bottom: 1.5rem;
 	font-size: 0.95rem;
-	line-height: 1.6;
+	line-height: 1.7;
+	letter-spacing: 0.3px;
+	padding: 0 !important;
 	flex-grow: 1;
 }
 
@@ -272,10 +425,13 @@ section h2::after {
 	text-decoration: none;
 	font-weight: 600;
 	font-size: 0.9rem;
-	padding: 0.5rem 1rem;
-	background: rgba(37, 99, 235, 0.08);
+	padding: 0.65rem 1.2rem;
+	background: linear-gradient(135deg, rgba(37, 99, 235, 0.1) 0%, rgba(6, 182, 212, 0.05) 100%);
 	border-radius: 8px;
+	border: 1px solid rgba(37, 99, 235, 0.2);
 	transition: all var(--transition-fast);
+	align-self: flex-start;
+}
 	align-self: flex-start;
 }
 
@@ -304,122 +460,226 @@ footer p {
 footer p:first-child {
 	color: var(--text-light);
 	font-size: 0.85rem;
-	font-style: italic;
 }
 
-/* Kontaktside sentrering */
+/* Kontaktside */
 .contact-page {
-	text-align: center;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+	padding: 3rem 1.5rem 4rem;
 }
 
-.contact-page * {
-	text-align: center;
+.contact-hero {
+	margin-bottom: 4rem;
+	margin-top: 2rem;
+	padding-top: 1.5rem;
+	animation: fadeInDown 0.6s ease-out;
 }
 
-.contact-page h1,
-.contact-page > p {
-	text-align: center;
-	width: 100%;
-}
-
-/* Skjema labels venstrejustert */
-.contact-page form#contact-form label {
+.contact-hero h1 {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+	background: var(--gradient-primary);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
 	text-align: left;
 }
 
-.contact-info {
-	text-align: center;
-	margin-top: 2rem;
+.contact-hero p {
+	font-size: 1.2rem;
+	color: var(--text-light);
+	max-width: 600px;
+	text-align: left;
 }
 
-.contact-info ul {
-	list-style: none;
+/* Kontakt metoder kort */
+.contact-methods {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 2rem;
+	margin-bottom: 4rem;
+}
+
+.contact-card {
+	background: linear-gradient(135deg, var(--bg-secondary) 0%, rgba(6, 182, 212, 0.02) 100%);
+	padding: 2rem;
+	border-radius: var(--border-radius-lg);
+	border: 2px solid var(--border-color);
+	text-align: center;
+	transition: all 0.3s ease;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+	animation: fadeInUp 0.6s ease-out;
+}
+
+.contact-card:hover {
+	transform: translateY(-8px);
+	border-color: var(--primary-color);
+	box-shadow: 0 12px 35px rgba(37, 99, 235, 0.15);
+}
+
+.contact-icon {
+	width: 60px;
+	height: 60px;
+	background: var(--gradient-primary);
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto 1rem;
+	font-size: 1.5rem;
+	color: white;
+	transition: transform 0.3s ease;
+}
+
+.contact-card:hover .contact-icon {
+	transform: scale(1.1) rotate(5deg);
+}
+
+.contact-card h3 {
+	color: var(--text-color);
+	margin-bottom: 0.5rem;
+	font-size: 1.3rem;
+}
+
+.contact-card p {
+	margin: 0;
 	padding: 0;
 }
 
-.contact-info li {
-	margin-bottom: 0.5rem;
+.contact-card a {
+	color: var(--primary-color);
+	text-decoration: none;
+	font-weight: 600;
+	transition: color 0.3s ease;
 }
 
-/* Kontakt-skjema */
-form#contact-form {
+.contact-card a:hover {
+	color: var(--accent-color);
+	text-decoration: underline;
+}
+
+/* Skjema seksjon */
+.contact-form-section {
+	background: linear-gradient(135deg, var(--bg-secondary) 0%, rgba(6, 182, 212, 0.02) 100%);
+	padding: 3rem;
+	border-radius: var(--border-radius-lg);
+	border: 2px solid var(--border-color);
+	box-shadow: 0 10px 40px rgba(37, 99, 235, 0.08);
+	animation: fadeInUp 0.8s ease-out;
+}
+
+.contact-form-section h2 {
+	text-align: center;
+	margin-top: 0;
+}
+
+.contact-form {
 	display: flex;
 	flex-direction: column;
-	gap: 1.25rem;
-	background: var(--bg-secondary);
-	padding: 2rem;
-	border-radius: var(--border-radius-lg);
-	max-width: 500px;
-	margin: 0 auto;
-	border: 1px solid var(--border-color);
-	box-shadow: var(--card-shadow);
+	gap: 1.75rem;
 }
 
-form#contact-form label {
-	font-weight: 500;
-	font-size: 0.9rem;
+.form-group {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.contact-form label {
+	font-weight: 600;
+	font-size: 1rem;
 	color: var(--text-color);
-	margin-bottom: 0.25rem;
+	text-align: left;
+	letter-spacing: 0.5px;
 }
 
-form#contact-form input,
-form#contact-form textarea {
-	padding: 0.875rem 1rem;
+.contact-form input,
+.contact-form textarea {
+	padding: 1.1rem 1.2rem;
 	border: 2px solid var(--border-color);
-	border-radius: 10px;
+	border-radius: 12px;
 	font-size: 1rem;
 	font-family: inherit;
-	transition: all var(--transition-fast);
-	background: var(--bg-color);
+	background: linear-gradient(135deg, #f8fafb 0%, #ffffff 100%);
+	color: var(--text-color);
+	transition: all 0.3s ease;
+	resize: vertical;
+	box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.02);
 }
 
-form#contact-form input:focus,
-form#contact-form textarea:focus {
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+	color: var(--text-muted);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
 	outline: none;
 	border-color: var(--primary-color);
 	background: var(--bg-secondary);
-	box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
+	box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.15);
+	transform: translateY(-2px);
 }
 
-form#contact-form textarea {
+.contact-form textarea {
 	min-height: 150px;
 	resize: vertical;
 }
 
-form#contact-form button {
+.btn-submit {
 	background: var(--gradient-primary);
 	color: #fff;
 	border: none;
-	border-radius: 10px;
-	padding: 1rem 2rem;
+	border-radius: 12px;
+	padding: 0.9rem 2rem;
 	font-size: 1rem;
-	font-weight: 600;
+	font-weight: 700;
 	cursor: pointer;
-	transition: all var(--transition-normal);
-	box-shadow: 0 4px 14px rgba(37, 99, 235, 0.3);
+	letter-spacing: 0.5px;
+	transition: all 0.3s ease;
+	box-shadow: 0 6px 20px rgba(37, 99, 235, 0.3);
+	width: fit-content;
+	align-self: flex-start;
+	margin-top: 0.5rem;
 }
 
-form#contact-form button:hover {
-	transform: translateY(-2px);
-	box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4);
+.btn-submit:hover {
+	transform: translateY(-3px);
+	box-shadow: 0 10px 30px rgba(37, 99, 235, 0.4);
 }
 
-form#contact-form button:active {
-	transform: translateY(0);
+.btn-submit:active {
+	transform: translateY(-1px);
+}
+
+/* Animasjoner */
+@keyframes fadeInDown {
+	from {
+		opacity: 0;
+		transform: translateY(-20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes fadeInUp {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
 
 /* Artikkel-spesifikke stiler */
 .article {
-	max-width: 800px;
-	margin: 0 auto;
 	padding: 2rem 0;
 }
 
 .article-header {
-	text-align: center;
 	margin-bottom: 2.5rem;
 	padding-bottom: 2rem;
 	border-bottom: 1px solid var(--border-color);
@@ -457,8 +717,8 @@ form#contact-form button:active {
 }
 
 .article-body p {
-	text-align: justify;
 	margin-bottom: 1.25rem;
+	padding-left: 0;
 }
 
 .abstract {
