@@ -2,13 +2,15 @@
 // Denne filen inneholder all JavaScript for nettsiden, inkludert tilgjengelighetsfunksjoner, tema, og interaktivitet.
 //
 
-// Initialiser EmailJS med public key
-emailjs.init('V78SaFZYJYRnB1NWc');
+// Initialiser EmailJS med public key – bare på kontaktsiden
+if (typeof emailjs !== 'undefined') {
+	emailjs.init('V78SaFZYJYRnB1NWc');
+}
 
 // Kontakt skjema EmailJS-integrasjon
 document.addEventListener('DOMContentLoaded', function () {
 	var form = document.getElementById('contact-form');
-	if (form) {
+	if (form && typeof emailjs !== 'undefined') {
 		form.addEventListener('submit', function (e) {
 			e.preventDefault();
 			// Send skjema via EmailJS
