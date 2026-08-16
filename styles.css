@@ -109,8 +109,9 @@ nav {
 }
 
 .nav-logo {
-	width: 120px;
-	height: 120px;
+	width: auto;
+	height: auto;
+	max-width: 100%;
 	display: block;
 	filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.15));
 }
