@@ -230,8 +230,8 @@ main > p:first-of-type {
 .signature {
 	height: auto;
 	width: auto;
-	max-height: 85px;
-	max-width: 600px;
+	max-height: 150px;
+	max-width: 700px;
 	display: block;
 	object-fit: contain;
 }
