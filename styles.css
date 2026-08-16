@@ -328,6 +328,10 @@ section h2::after {
 	border-radius: 2px;
 }
 
+.badge-container h2::after {
+	display: none;
+}
+
 /* Kort (cards) */
 .cards {
 	display: grid;
