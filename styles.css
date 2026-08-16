@@ -228,6 +228,7 @@ main > p:first-of-type {
 	background-color: #f0f0f0;
 	padding: 1rem;
 	border-radius: 8px;
+	border: 1px solid #ddd;
 }
 
 .signature {
