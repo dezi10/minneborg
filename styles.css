@@ -225,10 +225,6 @@ main > p:first-of-type {
 	margin-top: 2rem;
 	margin-bottom: 1rem;
 	text-align: left;
-	background-color: #f0f0f0;
-	padding: 1rem;
-	border-radius: 8px;
-	border: 1px solid #ddd;
 }
 
 .signature {
