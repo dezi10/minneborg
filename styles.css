@@ -228,10 +228,12 @@ main > p:first-of-type {
 }
 
 .signature {
-	height: 120px;
+	height: auto;
 	width: auto;
-	max-width: 500px;
+	max-height: 120px;
+	max-width: 600px;
 	display: block;
+	object-fit: contain;
 }
 
 .badge-container {
