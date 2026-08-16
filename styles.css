@@ -194,7 +194,7 @@ main > p:first-of-type {
 
 .about-intro {
 	display: block;
-	background: linear-gradient(135deg, var(--bg-secondary) 0%, rgba(6, 182, 212, 0.02) 100%);
+	background: #ffffff;
 	border: 2px solid var(--border-color);
 	border-radius: var(--border-radius-lg);
 	padding: 3rem;
