@@ -1,0 +1,25 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-minimal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#1e40af;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Minimalistisk design med negative space -->
+  <!-- Linjer som representerer datapakker -->
+  <g stroke="url(#grad-minimal)" stroke-width="3.5" stroke-linecap="round" fill="none" stroke-linejoin="round">
+    <path d="M 40 100 Q 70 60 100 50 Q 130 45 160 70"/>
+    <path d="M 30 100 L 170 100"/>
+    <path d="M 40 100 Q 70 140 100 150 Q 130 155 160 130"/>
+  </g>
+  
+  <!-- Små aksenter -->
+  <circle cx="50" cy="100" r="4" fill="url(#grad-minimal)"/>
+  <circle cx="100" cy="50" r="4" fill="url(#grad-minimal)"/>
+  <circle cx="160" cy="70" r="4" fill="url(#grad-minimal)"/>
+  <circle cx="100" cy="100" r="5" fill="url(#grad-minimal)"/>
+  <circle cx="100" cy="150" r="4" fill="url(#grad-minimal)"/>
+  <circle cx="50" cy="100" r="1.5" fill="white"/>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <!-- Logo: Kopi av skissen med firkant og trekant-piler i bølgeform -->
+  <rect width="400" height="400" fill="#f5f3e7"/>
+  <!-- Firkant øverst til venstre -->
+  <rect x="60" y="60" width="40" height="40" fill="none" stroke="#6c3fa6" stroke-width="4"/>
+  <!-- Trekant-piler langs bølge -->
+  <polyline points="60,120 100,140 60,160" fill="none" stroke="#6c3fa6" stroke-width="4"/>
+  <polyline points="60,180 100,200 60,220" fill="none" stroke="#6c3fa6" stroke-width="4"/>
+  <polyline points="60,240 100,260 60,280" fill="none" stroke="#6c3fa6" stroke-width="4"/>
+  <polyline points="120,160 160,180 120,200" fill="none" stroke="#6c3fa6" stroke-width="4"/>
+  <polyline points="160,220 200,240 160,260" fill="none" stroke="#6c3fa6" stroke-width="4"/>
+  <polyline points="200,280 240,300 200,320" fill="none" stroke="#6c3fa6" stroke-width="4"/>
+  <polyline points="240,340 280,360 240,380" fill="none" stroke="#6c3fa6" stroke-width="4"/>
+  <polyline points="120,220 160,240 120,260" fill="none" stroke="#6c3fa6" stroke-width="4"/>
+  <polyline points="160,280 200,300 160,320" fill="none" stroke="#6c3fa6" stroke-width="4"/>
+  <polyline points="200,340 240,360 200,380" fill="none" stroke="#6c3fa6" stroke-width="4"/>
+  <!-- Bølgeform som bakgrunn -->
+  <path d="M60,120 Q120,200 320,320" stroke="#a18cd1" stroke-width="3" fill="none" opacity="0.4"/>
+</svg>

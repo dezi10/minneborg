@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200">
+  <!-- Logo basert på skissen: lang vertikal linje og bred, flat waveform -->
+  <rect width="600" height="200" fill="#f5f3e7"/>
+  <!-- Lang vertikal L -->
+  <line x1="40" y1="20" x2="40" y2="180" stroke="#6c3fa6" stroke-width="10"/>
+  <!-- Waveform, flat og bred -->
+  <path d="M40,180 Q120,100 200,180 Q280,260 360,180 Q440,100 520,180" stroke="#a18cd1" stroke-width="8" fill="none"/>
+</svg>

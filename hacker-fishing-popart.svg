@@ -1,0 +1,124 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="popart-sky" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff00ff;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#00ffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffff00;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="popart-water" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00ff00;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#ff6600;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff0066;stop-opacity:1" />
+    </linearGradient>
+    <filter id="popart-bold">
+      <feGaussianBlur stdDeviation="1" result="blur"/>
+      <feFlood flood-color="#000" flood-opacity="1" result="color"/>
+      <feComposite in="color" in2="blur" operator="in" result="shadow"/>
+      <feComposite in="shadow" in2="SourceAlpha" operator="in" result="shadow"/>
+      <feOffset in="shadow" dx="2" dy="2" result="shadowoffset"/>
+      <feFlood flood-color="#fff" flood-opacity="0" result="offsetcolor"/>
+      <feComposite in="offsetcolor" in2="shadowoffset" operator="in" result="offsetshadow"/>
+      <feComposite in="SourceGraphic" in2="offsetshadow" operator="out" result="inverse"/>
+      <feFlood flood-color="#000" flood-opacity="1" result="color"/>
+      <feComposite in="color" in2="inverse" operator="in" result="shadow"/>
+      <feComposite in="shadow" in2="SourceAlpha" operator="in" result="shadow"/>
+      <feOffset in="shadow" dx="-1" dy="-1" result="shadowoffset"/>
+      <feFlood flood-color="#fff" flood-opacity="0" result="offsetcolor"/>
+      <feComposite in="offsetcolor" in2="shadowoffset" operator="in" result="offsetshadow"/>
+      <feComposite in="SourceGraphic" in2="offsetshadow" operator="out"/>
+    </filter>
+  </defs>
+  
+  <!-- Pop-art himmel -->
+  <rect width="800" height="350" fill="url(#popart-sky)"/>
+  
+  <!-- Pop-art fjell (sterke farger) -->
+  <polygon points="0,350 120,180 240,350" fill="#ff0066" opacity="1"/>
+  <polygon points="200,350 450,80 700,350" fill="#00ffff" opacity="1"/>
+  <polygon points="650,350 750,120 800,350" fill="#ffff00" opacity="0.95"/>
+  
+  <!-- Hvit kontur -->
+  <g stroke="white" stroke-width="4" fill="none">
+    <polygon points="0,350 120,180 240,350"/>
+    <polygon points="200,350 450,80 700,350"/>
+    <polygon points="650,350 750,120 800,350"/>
+  </g>
+  
+  <!-- Pop-art vatn -->
+  <rect y="350" width="800" height="250" fill="url(#popart-water)"/>
+  
+  <!-- Sterke, dristige bølgelinjer -->
+  <g stroke="black" stroke-width="4" fill="none">
+    <path d="M 0 380 L 80 380 L 100 360 L 180 380 L 260 380 L 280 360 L 360 380 L 440 380 L 460 360 L 540 380 L 620 380 L 640 360 L 720 380 L 800 380"/>
+    <path d="M 0 440 L 100 440 L 130 420 L 210 440 L 310 440 L 340 420 L 420 440 L 520 440 L 550 420 L 630 440 L 730 440 L 800 440"/>
+  </g>
+  
+  <!-- Pop-art skog -->
+  <polygon points="60,340 40,280 80,280" fill="#00ff00" opacity="1"/>
+  <polygon points="100,345 80,290 120,290" fill="#ff6600" opacity="1"/>
+  <polygon points="750,340 730,280 770,280" fill="#00ff00" opacity="0.95"/>
+  
+  <!-- Hvite konturer rundt skog -->
+  <g stroke="white" stroke-width="3" fill="none">
+    <polygon points="60,340 40,280 80,280"/>
+    <polygon points="100,345 80,290 120,290"/>
+    <polygon points="750,340 730,280 770,280"/>
+  </g>
+  
+  <!-- Pop-art mann -->
+  <!-- Hode -->
+  <circle cx="420" cy="360" r="16" fill="#00ffff" stroke="black" stroke-width="3" opacity="1"/>
+  
+  <!-- Ansikt (comic stil) -->
+  <circle cx="414" cy="358" r="3" fill="black"/>
+  <circle cx="426" cy="358" r="3" fill="black"/>
+  <circle cx="414" cy="358" r="1.5" fill="#ff0066"/>
+  <circle cx="426" cy="358" r="1.5" fill="#ff0066"/>
+  
+  <!-- Munn (comic) -->
+  <path d="M 416 366 Q 420 369 424 366" fill="none" stroke="black" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Hår -->
+  <path d="M 408 345 Q 405 330 415 325 Q 425 320 432 330 Q 435 345 430 346" 
+        fill="#ff0066" stroke="black" stroke-width="2.5"/>
+  
+  <!-- Kropp -->
+  <rect x="405" y="378" width="30" height="38" fill="#ffff00" stroke="black" stroke-width="3"/>
+  
+  <!-- Arm (fiskestang) - dristig -->
+  <line x1="405" y1="388" x2="280" y2="310" stroke="#ff0066" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="280" cy="310" r="7" fill="#00ff00" stroke="black" stroke-width="2.5"/>
+  
+  <!-- Arm (høyre) -->
+  <line x1="435" y1="388" x2="510" y2="425" stroke="#00ffff" stroke-width="7" stroke-linecap="round"/>
+  
+  <!-- Ben -->
+  <rect x="408" y="416" width="5" height="60" fill="#ff0066" stroke="black" stroke-width="2"/>
+  <rect x="427" y="416" width="5" height="60" fill="#ff0066" stroke="black" stroke-width="2"/>
+  
+  <!-- Sko (pop-art) -->
+  <rect x="405" y="476" width="10" height="8" fill="#00ff00" stroke="black" stroke-width="2"/>
+  <rect x="425" y="476" width="10" height="8" fill="#00ff00" stroke="black" stroke-width="2"/>
+  
+  <!-- Fiskestang (bold) -->
+  <line x1="280" y1="310" x2="140" y2="480" stroke="#00ffff" stroke-width="5" stroke-linecap="round"/>
+  
+  <!-- Snor (dristig) -->
+  <line x1="140" y1="480" x2="110" y2="545" stroke="black" stroke-width="2.5" stroke-dasharray="6,4"/>
+  
+  <!-- Fisk (pop-art) -->
+  <ellipse cx="105" cy="555" rx="8" ry="6" fill="#ffff00" stroke="black" stroke-width="2.5"/>
+  <polygon points="105,555 115,553 117,557" fill="#ff0066" stroke="black" stroke-width="2"/>
+  <circle cx="108" cy="554" r="2" fill="black"/>
+  
+  <!-- Pop-art tekst -->
+  <text x="420" y="575" font-family="Arial Black, sans-serif" font-size="18" text-anchor="middle" fill="#ff0066" stroke="black" stroke-width="1" font-weight="900" letter-spacing="3">
+    POW!
+  </text>
+  <text x="200" y="80" font-family="Arial Black, sans-serif" font-size="14" fill="#000" stroke="white" stroke-width="2" font-weight="bold" opacity="0.6">
+    HACK
+  </text>
+  <text x="600" y="90" font-family="Arial Black, sans-serif" font-size="14" fill="#000" stroke="white" stroke-width="2" font-weight="bold" opacity="0.6">
+    FISH
+  </text>
+</svg>

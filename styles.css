@@ -218,9 +218,7 @@ main > p:first-of-type {
 }
 
 .about-intro {
-	display: grid;
-	grid-template-columns: 1fr;
-	gap: 2.5rem;
+	display: block;
 	background: linear-gradient(135deg, var(--bg-secondary) 0%, rgba(6, 182, 212, 0.02) 100%);
 	border: 2px solid var(--border-color);
 	border-radius: var(--border-radius-lg);
@@ -232,27 +230,22 @@ main > p:first-of-type {
 	display: flex;
 	flex-direction: column;
 	gap: 1rem;
+	margin-bottom: 2.5rem;
 }
 
 .about-content:first-of-type {
-	grid-column: 1;
-	grid-row: 1;
+	margin-bottom: 2.5rem;
 }
 
 .about-photo {
-	grid-column: 1;
-	grid-row: 2;
-	margin: 0;
+	margin: 0 0 2.5rem 0;
 }
 
 .about-content:last-of-type {
-	grid-column: 1;
-	grid-row: 3;
+	margin-bottom: 0;
 }
 
 .badge-container {
-	grid-column: 1;
-	grid-row: 4;
 	text-align: center;
 	padding-top: 1rem;
 	border-top: 1px solid var(--border-color);

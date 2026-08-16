@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <!-- Logo inspirert av Schous bryggeri jernornament: stilisert, monogram, lilla -->
+  <rect width="400" height="400" fill="#bfe6e6"/>
+  <g>
+    <!-- Ytre ramme, buet topp -->
+    <path d="M80,320 Q80,80 200,80 Q320,80 320,320" stroke="#6c3fa6" stroke-width="10" fill="none"/>
+    <path d="M80,320 Q200,380 320,320" stroke="#6c3fa6" stroke-width="10" fill="none"/>
+    <!-- Ornament-form, stilisert -->
+    <path d="M120,180 Q140,120 200,120 Q260,120 280,180 Q290,220 200,320 Q110,220 120,180Z" stroke="#a18cd1" stroke-width="12" fill="none"/>
+    <!-- Monogram SB, håndtegnet stil -->
+    <path d="M170,210 Q180,190 200,210 Q220,230 210,250 Q200,270 190,250 Q180,230 200,210" stroke="#8f5fd2" stroke-width="8" fill="none"/>
+    <text x="175" y="235" font-family="serif" font-size="36" fill="#6c3fa6" font-weight="bold">S</text>
+    <text x="205" y="235" font-family="serif" font-size="36" fill="#6c3fa6" font-weight="bold">B</text>
+  </g>
+</svg>

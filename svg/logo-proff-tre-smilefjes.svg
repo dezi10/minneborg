@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <!-- Profesjonell logo med tre på venstre side og smilefjes nederst midtstilt -->
+  <rect width="400" height="400" fill="#bfe6e6"/>
+  <!-- Ytre ramme: avrundet rektangel -->
+  <rect x="60" y="60" width="280" height="280" rx="48" fill="none" stroke="#222" stroke-width="6"/>
+  <!-- Sol: enkel, sentrert -->
+  <circle cx="200" cy="120" r="44" fill="#ffd600"/>
+  <!-- Bølge: én ren, dynamisk kurve -->
+  <path d="M100,260 Q200,180 300,260" stroke="#222" stroke-width="8" fill="none"/>
+  <!-- Strand: minimalistisk, harmonisk kurve -->
+  <path d="M120,300 Q200,320 280,300" stroke="#222" stroke-width="6" fill="none"/>
+  <!-- Tre på venstre side -->
+  <rect x="90" y="180" width="8" height="60" rx="4" fill="#222"/>
+  <path d="M94,180 Q80,160 110,170" stroke="#222" stroke-width="4" fill="none"/>
+  <path d="M94,180 Q70,175 120,180" stroke="#222" stroke-width="4" fill="none"/>
+  <path d="M94,180 Q80,200 110,200" stroke="#222" stroke-width="4" fill="none"/>
+  <!-- Smilefjes nederst midtstilt -->
+  <circle cx="200" cy="340" r="16" fill="#ffd600" stroke="#222" stroke-width="3"/>
+  <path d="M192,344 Q200,352 208,344" stroke="#222" stroke-width="3" fill="none"/>
+  <circle cx="194" cy="336" r="2.5" fill="#222"/>
+  <circle cx="206" cy="336" r="2.5" fill="#222"/>
+</svg>

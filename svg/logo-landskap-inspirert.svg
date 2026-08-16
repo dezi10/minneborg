@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <!-- Logo inspirert av vedlagt motiv: minimalistisk landskap med palme, sol, bølger og strand -->
+  <rect width="400" height="400" fill="#bfe6e6"/>
+  <g>
+    <!-- Ytre ramme med buet topp -->
+    <path d="M40,360 V60 Q40,40 60,40 H340 Q360,40 360,60 V360" stroke="#222" stroke-width="4" fill="none"/>
+    <path d="M40,360 H360" stroke="#222" stroke-width="4" fill="none"/>
+    <path d="M40,60 Q40,20 200,20 Q360,20 360,60" stroke="#222" stroke-width="4" fill="none"/>
+    <!-- Sol -->
+    <circle cx="220" cy="110" r="48" fill="#ffd600" stroke="none"/>
+    <!-- Palme -->
+    <g>
+      <rect x="90" y="110" width="8" height="70" rx="4" fill="#222"/>
+      <path d="M94,110 Q80,90 110,100" stroke="#222" stroke-width="4" fill="none"/>
+      <path d="M94,110 Q70,100 120,110" stroke="#222" stroke-width="4" fill="none"/>
+      <path d="M94,110 Q80,120 110,120" stroke="#222" stroke-width="4" fill="none"/>
+      <path d="M94,110 Q70,120 120,130" stroke="#222" stroke-width="4" fill="none"/>
+    </g>
+    <!-- Bølger og strand -->
+    <path d="M60,220 Q120,180 200,200 Q280,220 340,180" stroke="#222" stroke-width="4" fill="none"/>
+    <path d="M60,320 Q120,260 200,280 Q280,300 340,260" stroke="#222" stroke-width="4" fill="none"/>
+    <!-- Strand med vannkant -->
+    <path d="M120,280 Q180,320 280,300" stroke="#222" stroke-width="4" fill="none"/>
+    <path d="M140,300 Q200,340 320,320" stroke="#222" stroke-width="4" fill="none"/>
+    <!-- Vannlinjer -->
+    <path d="M180,260 Q190,270 210,265" stroke="#222" stroke-width="3" fill="none"/>
+    <path d="M230,270 Q240,280 260,275" stroke="#222" stroke-width="3" fill="none"/>
+    <path d="M200,290 Q210,300 230,295" stroke="#222" stroke-width="3" fill="none"/>
+  </g>
+</svg>

@@ -1,0 +1,120 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="campfire-sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a0a2e;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#16213e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f3460;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="campfire-water" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f0f1e;stop-opacity:1" />
+    </linearGradient>
+    <filter id="fire-glow">
+      <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Natt himmel -->
+  <rect width="800" height="350" fill="url(#campfire-sky)"/>
+  
+  <!-- Fjell silhuetter -->
+  <polygon points="0,350 120,160 240,350" fill="#0a0e27" opacity="0.9"/>
+  <polygon points="200,350 450,80 700,350" fill="#16213e" opacity="0.85"/>
+  <polygon points="650,350 750,140 800,350" fill="#0a0e27" opacity="0.9"/>
+  
+  <!-- Stjerner -->
+  <circle cx="50" cy="40" r="1" fill="white" opacity="0.8"/>
+  <circle cx="150" cy="60" r="1.5" fill="white" opacity="0.7"/>
+  <circle cx="300" cy="30" r="1" fill="white" opacity="0.6"/>
+  <circle cx="500" cy="50" r="1.5" fill="white" opacity="0.7"/>
+  <circle cx="680" cy="20" r="1" fill="white" opacity="0.8"/>
+  <circle cx="750" cy="70" r="1" fill="white" opacity="0.6"/>
+  
+  <!-- Måne -->
+  <circle cx="700" cy="100" r="30" fill="#ffffcc" opacity="0.6"/>
+  <circle cx="705" cy="95" r="30" fill="#0f3460" opacity="0.3"/>
+  
+  <!-- Vatn (mørk) -->
+  <rect y="350" width="800" height="250" fill="url(#campfire-water)"/>
+  
+  <!-- Subtil bølger -->
+  <path d="M 0 380 Q 100 370 200 380 T 400 380 T 600 380 T 800 380" 
+        fill="none" stroke="#2a2a4e" stroke-width="1.5" opacity="0.5"/>
+  
+  <!-- Nattskog silhuett -->
+  <g opacity="0.6">
+    <ellipse cx="80" cy="310" rx="40" ry="50" fill="#0a0e27"/>
+    <ellipse cx="750" cy="315" rx="45" ry="55" fill="#0a0e27"/>
+  </g>
+  
+  <!-- ILDEBÅL -->
+  <!-- Tre -->
+  <line x1="300" y1="450" x2="300" y2="380" stroke="#4a2511" stroke-width="8"/>
+  <line x1="290" y1="420" x2="260" y2="420" stroke="#4a2511" stroke-width="6"/>
+  <line x1="310" y1="410" x2="340" y2="410" stroke="#4a2511" stroke-width="6"/>
+  
+  <!-- Ild (rødt og oransje) -->
+  <path d="M 300 380 Q 280 350 290 300 Q 300 280 310 300 Q 320 350 300 380" 
+        fill="#ff4500" opacity="0.9" filter="url(#fire-glow)"/>
+  <path d="M 300 390 Q 290 360 295 320 Q 305 300 315 320 Q 310 360 300 390" 
+        fill="#ff6347" opacity="0.8" filter="url(#fire-glow)"/>
+  <path d="M 300 400 Q 295 370 300 340 Q 308 320 310 340 Q 305 370 300 400" 
+        fill="#ffa500" opacity="0.7" filter="url(#fire-glow)"/>
+  
+  <!-- Gnister -->
+  <circle cx="280" cy="280" r="2" fill="#ffff00" opacity="0.8" filter="url(#fire-glow)"/>
+  <circle cx="320" cy="270" r="2" fill="#ffff99" opacity="0.7" filter="url(#fire-glow)"/>
+  <circle cx="290" cy="250" r="1.5" fill="#ffff00" opacity="0.6" filter="url(#fire-glow)"/>
+  <circle cx="310" cy="260" r="1.5" fill="#ffff99" opacity="0.5" filter="url(#fire-glow)"/>
+  
+  <!-- Mann ved ildebål -->
+  <!-- Hode -->
+  <circle cx="420" cy="365" r="16" fill="#ff9966" opacity="0.85"/>
+  
+  <!-- Ansikt (lysnet av ild) -->
+  <circle cx="414" cy="363" r="2" fill="#1a1a1a"/>
+  <circle cx="426" cy="363" r="2" fill="#1a1a1a"/>
+  
+  <!-- Kropp -->
+  <ellipse cx="420" cy="405" rx="24" ry="32" fill="#2a2a4e"/>
+  
+  <!-- Hår -->
+  <ellipse cx="420" cy="353" rx="18" ry="14" fill="#1a1a1a" opacity="0.9"/>
+  
+  <!-- Arm (fiskestang) -->
+  <line x1="400" y1="402" x2="280" y2="315" stroke="#ff9966" stroke-width="6" stroke-linecap="round" opacity="0.8"/>
+  <circle cx="280" cy="315" r="5" fill="#ff9966"/>
+  
+  <!-- Arm (høyre) ved ild -->
+  <line x1="444" y1="402" x2="320" y2="380" stroke="#ff9966" stroke-width="6" stroke-linecap="round" opacity="0.7"/>
+  
+  <!-- Ben -->
+  <line x1="410" y1="437" x2="408" y2="500" stroke="#2a2a4e" stroke-width="7" stroke-linecap="round"/>
+  <line x1="430" y1="437" x2="432" y2="500" stroke="#2a2a4e" stroke-width="7" stroke-linecap="round"/>
+  
+  <!-- Sko -->
+  <ellipse cx="408" cy="505" rx="6" ry="5" fill="#1a1a1a"/>
+  <ellipse cx="432" cy="505" rx="6" ry="5" fill="#1a1a1a"/>
+  
+  <!-- Fiskestang -->
+  <line x1="280" y1="315" x2="150" y2="480" stroke="#8b6f47" stroke-width="4" stroke-linecap="round" opacity="0.85"/>
+  
+  <!-- Snor -->
+  <path d="M 150 480 Q 120 515 100 545" 
+        fill="none" stroke="#888888" stroke-width="1.5" opacity="0.6" stroke-dasharray="3,2"/>
+  
+  <!-- Fisk i natt (lysner fra ild) -->
+  <ellipse cx="95" cy="555" rx="7" ry="5" fill="#ff6347" opacity="0.8" filter="url(#fire-glow)"/>
+  <polygon points="95,555 102,553 104,557" fill="#ff8c42" opacity="0.8"/>
+  <circle cx="98" cy="554" r="1.5" fill="#ffff99" opacity="0.7"/>
+  
+  <!-- Glød rundt manneskapet -->
+  <circle cx="420" cy="380" r="60" fill="#ff4500" opacity="0.08" filter="url(#fire-glow)"/>
+  
+  <!-- Refleksjon av ild i vatnet -->
+  <ellipse cx="300" cy="480" rx="80" ry="40" fill="#ff4500" opacity="0.1" filter="url(#fire-glow)"/>
+</svg>

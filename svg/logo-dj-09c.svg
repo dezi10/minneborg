@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <!-- Konsept: Bold versjon. Færre elementer, tykkere linjer.
+       Tre lydbølger nederst → tre fugler øverst. Ren overgang.
+       Lesbart selv som 16x16 favicon. -->
+  <rect width="400" height="400" fill="#1c1917"/>
+  
+  <g transform="translate(200,200)">
+    
+    <!-- === TRE lydbølger nederst — tykke, klare === -->
+    <!-- Venstre bølge -->
+    <path d="M-30,120 Q-50,95 -30,70" fill="none" stroke="#e8dcc8" stroke-width="6" stroke-linecap="round"/>
+    <!-- Midt bølge -->
+    <path d="M0,130 Q-20,100 0,70" fill="none" stroke="#e8dcc8" stroke-width="6" stroke-linecap="round"/>
+    <!-- Høyre bølge -->
+    <path d="M30,120 Q10,95 30,70" fill="none" stroke="#e8dcc8" stroke-width="6" stroke-linecap="round"/>
+    
+    <!-- === Mellomfase: bølgene bøyer seg utover === -->
+    <path d="M-30,70 Q-45,45 -55,20" fill="none" stroke="#e8dcc8" stroke-width="5" stroke-linecap="round"/>
+    <path d="M0,70 Q0,40 0,15" fill="none" stroke="#e8dcc8" stroke-width="5" stroke-linecap="round"/>
+    <path d="M30,70 Q45,45 55,20" fill="none" stroke="#e8dcc8" stroke-width="5" stroke-linecap="round"/>
+    
+    <!-- === TRE fugler øverst — tykke, enkle V-former === -->
+    <!-- Venstre fugl — stor -->
+    <path d="M-80,-40 Q-55,-65 -40,-40" fill="none" stroke="#e8dcc8" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Midt fugl — størst, høyest -->
+    <path d="M-25,-75 Q0,-105 25,-75" fill="none" stroke="#e8dcc8" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Høyre fugl — liten -->
+    <path d="M50,-50 Q65,-70 80,-50" fill="none" stroke="#e8dcc8" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Kilde-punkt -->
+    <circle cx="0" cy="140" r="5" fill="#e8dcc8"/>
+    
+  </g>
+</svg>

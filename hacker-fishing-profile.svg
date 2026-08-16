@@ -1,0 +1,92 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="profile-sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#87ceeb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e0f6ff;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="profile-water" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2d5016;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a3d0a;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Himmel -->
+  <rect width="800" height="350" fill="url(#profile-sky)"/>
+  
+  <!-- Fjell fra siden -->
+  <polygon points="600,350 750,100 800,350" fill="#8b7355" opacity="0.8"/>
+  <polygon points="0,350 100,200 150,350" fill="#9b8b7e" opacity="0.7"/>
+  
+  <!-- Fjord i bakgrunnen (utydelig) -->
+  <polygon points="200,350 350,150 500,350" fill="#7b6b5e" opacity="0.5"/>
+  
+  <!-- Vatn -->
+  <rect y="350" width="800" height="250" fill="url(#profile-water)"/>
+  
+  <!-- Bølger -->
+  <path d="M 0 380 Q 100 360 200 380 T 400 380 T 600 380 T 800 380" 
+        fill="none" stroke="#1a5c3a" stroke-width="2" opacity="0.4"/>
+  
+  <!-- Skog på siden -->
+  <g opacity="0.8">
+    <ellipse cx="100" cy="310" rx="40" ry="50" fill="#2d5016"/>
+    <ellipse cx="60" cy="320" rx="35" ry="45" fill="#3d6b1f"/>
+    <ellipse cx="140" cy="330" rx="30" ry="40" fill="#2d5016"/>
+  </g>
+  
+  <!-- Mann fra siden (profil) -->
+  <!-- Hode -->
+  <circle cx="350" cy="360" r="18" fill="#d4a574"/>
+  
+  <!-- Ansikt profil -->
+  <circle cx="365" cy="358" r="2.5" fill="#1a1a1a"/> <!-- Øye -->
+  <path d="M 365 365 Q 365 367 365 370" fill="none" stroke="#1a1a1a" stroke-width="1"/> <!-- Nese -->
+  <path d="M 362 372 Q 365 374 368 372" fill="none" stroke="#1a1a1a" stroke-width="1.5" stroke-linecap="round"/> <!-- Munn -->
+  
+  <!-- Hår (fra siden) -->
+  <path d="M 340 345 Q 335 335 340 320 Q 350 318 360 325" fill="#3d2817" opacity="0.9"/>
+  
+  <!-- Skjegg -->
+  <path d="M 368 370 Q 370 372 368 375" fill="#8b5a3c" opacity="0.7"/>
+  
+  <!-- Kropp (fra siden) -->
+  <ellipse cx="350" cy="405" rx="25" ry="35" fill="#8b7355"/>
+  
+  <!-- Arm (fiskestang) - fra siden -->
+  <path d="M 325 398 Q 200 340 140 290" 
+        fill="none" stroke="#d4a574" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="140" cy="290" r="6" fill="#d4a574"/>
+  
+  <!-- Arm (høyre) bak kroppen -->
+  <line x1="375" y1="398" x2="420" y2="430" stroke="#d4a574" stroke-width="6" stroke-linecap="round" opacity="0.7"/>
+  
+  <!-- Ben -->
+  <line x1="340" y1="440" x2="335" y2="510" stroke="#4a5568" stroke-width="8" stroke-linecap="round"/>
+  <line x1="360" y1="440" x2="365" y2="510" stroke="#4a5568" stroke-width="8" stroke-linecap="round"/>
+  
+  <!-- Sko -->
+  <ellipse cx="335" cy="515" rx="6" ry="5" fill="#2c3e50"/>
+  <ellipse cx="365" cy="515" rx="6" ry="5" fill="#2c3e50"/>
+  
+  <!-- Fiskestang -->
+  <line x1="140" y1="290" x2="80" y2="480" stroke="#8b6f47" stroke-width="5" stroke-linecap="round" opacity="0.9"/>
+  
+  <!-- Snor -->
+  <path d="M 80 480 Q 50 510 40 545" 
+        fill="none" stroke="#a0a0a0" stroke-width="1.5" opacity="0.7" stroke-dasharray="3,2"/>
+  
+  <!-- Fisk -->
+  <ellipse cx="35" cy="555" rx="7" ry="5" fill="#ff6b35"/>
+  <polygon points="35,555 42,553 44,557" fill="#ff8c42"/>
+  <circle cx="38" cy="554" r="1.5" fill="white" opacity="0.8"/>
+  
+  <!-- Fokusering på ansiktet - han ser på fisken -->
+  <circle cx="350" cy="360" r="35" fill="none" stroke="#06b6d4" stroke-width="1" opacity="0.2"/>
+  
+  <!-- Linjer som viser oppmerksomhet -->
+  <line x1="365" y1="360" x2="40" y2="555" stroke="#06b6d4" stroke-width="0.5" opacity="0.15" stroke-dasharray="5,5"/>
+  
+  <!-- Kjærlighetsdetalj - en dråpe vann faller -->
+  <circle cx="60" cy="540" r="2" fill="#90e0ef" opacity="0.7"/>
+  <circle cx="65" cy="548" r="1.5" fill="#90e0ef" opacity="0.6"/>
+</svg>

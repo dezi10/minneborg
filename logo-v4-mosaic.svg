@@ -1,0 +1,30 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Tre rene bokser - øverst -->
+  <rect x="35" y="35" width="35" height="35" fill="url(#grad)" opacity="0.9" transform="rotate(20 52 52)"/>
+  <rect x="82" y="25" width="40" height="40" fill="url(#grad)" opacity="1" transform="rotate(-15 102 45)"/>
+  <rect x="130" y="35" width="35" height="35" fill="url(#grad)" opacity="0.85" transform="rotate(15 147 52)"/>
+  
+  <!-- Tre bokser i midten - større -->
+  <rect x="30" y="90" width="40" height="40" fill="url(#grad)" opacity="0.9" transform="rotate(-20 50 110)"/>
+  <rect x="80" y="82" width="48" height="48" fill="url(#grad)" opacity="1" transform="rotate(25 104 106)"/>
+  <rect x="130" y="90" width="40" height="40" fill="url(#grad)" opacity="0.9" transform="rotate(-18 150 110)"/>
+  
+  <!-- Tre bokser - nedten -->
+  <rect x="35" y="138" width="35" height="35" fill="url(#grad)" opacity="0.85" transform="rotate(18 52 155)"/>
+  <rect x="82" y="130" width="40" height="40" fill="url(#grad)" opacity="0.95" transform="rotate(-12 102 150)"/>
+  <rect x="130" y="138" width="35" height="35" fill="url(#grad)" opacity="0.85" transform="rotate(12 147 155)"/>
+  
+  <!-- Enkle forbindelseslinjer -->
+  <line x1="75" y1="70" x2="95" y2="90" stroke="url(#grad)" stroke-width="2.5" opacity="0.3" stroke-linecap="round"/>
+  <line x1="130" y1="75" x2="110" y2="95" stroke="url(#grad)" stroke-width="2.5" opacity="0.3" stroke-linecap="round"/>
+  
+  <!-- Sentral puls -->
+  <circle cx="100" cy="106" r="5" fill="url(#grad)"/>
+</svg>

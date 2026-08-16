@@ -1,0 +1,95 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sunset-sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff7e5f;stop-opacity:1" />
+      <stop offset="35%" style="stop-color:#feb47b;stop-opacity:1" />
+      <stop offset="65%" style="stop-color:#ffd89b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffb347;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="sunset-water" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff6b6b;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#ee5a3f;stop-opacity:0.8" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Solnedgangshimmel -->
+  <rect width="800" height="350" fill="url(#sunset-sky)"/>
+  
+  <!-- Fjell silhuett -->
+  <polygon points="0,350 130,140 260,350" fill="#d9520a" opacity="0.8"/>
+  <polygon points="200,350 450,60 700,350" fill="#ff7f50" opacity="0.7"/>
+  <polygon points="650,350 750,120 800,350" fill="#d9520a" opacity="0.75"/>
+  
+  <!-- Sol -->
+  <circle cx="680" cy="80" r="60" fill="#ffcc00" opacity="0.9"/>
+  <circle cx="680" cy="80" r="55" fill="#ff9900" opacity="0.7"/>
+  
+  <!-- Solens refleksjon i vatnet -->
+  <ellipse cx="400" cy="500" rx="100" ry="80" fill="#ffff99" opacity="0.3"/>
+  
+  <!-- Vatn (solnedgangs-toner) -->
+  <rect y="350" width="800" height="250" fill="url(#sunset-water)"/>
+  
+  <!-- Solnedgangs bølger -->
+  <path d="M 0 390 Q 100 370 200 390 T 400 390 T 600 390 T 800 390" 
+        fill="none" stroke="#ff8c42" stroke-width="2" opacity="0.5"/>
+  <path d="M 0 440 Q 120 420 240 440 T 480 440 T 720 440 T 800 440" 
+        fill="none" stroke="#ff7a3d" stroke-width="2" opacity="0.4"/>
+  <path d="M 0 500 Q 150 480 300 500 T 600 500 T 800 500" 
+        fill="none" stroke="#ff6b35" stroke-width="1.5" opacity="0.3"/>
+  
+  <!-- Skog silhuett -->
+  <g opacity="0.7">
+    <path d="M 60 330 L 50 280 L 70 280 Z" fill="#8b4513"/>
+    <path d="M 100 340 L 90 290 L 110 290 Z" fill="#8b4513"/>
+    <path d="M 750 335 L 740 280 L 760 280 Z" fill="#8b4513"/>
+    <path d="M 790 340 L 775 280 L 805 280 Z" fill="#8b4513"/>
+  </g>
+  
+  <!-- Mann (silhuett) i solnedgangen -->
+  <!-- Hode -->
+  <circle cx="420" cy="360" r="16" fill="#333" opacity="0.9"/>
+  
+  <!-- Kropp -->
+  <ellipse cx="420" cy="400" rx="24" ry="33" fill="#333" opacity="0.85"/>
+  
+  <!-- Hår -->
+  <ellipse cx="420" cy="348" rx="18" ry="14" fill="#1a1a1a" opacity="0.9"/>
+  
+  <!-- Arm (fiskestang) - gylden effekt -->
+  <line x1="400" y1="398" x2="280" y2="310" stroke="#ffb347" stroke-width="6" stroke-linecap="round" opacity="0.7"/>
+  <circle cx="280" cy="310" r="5" fill="#ffb347" opacity="0.8"/>
+  
+  <!-- Arm (høyre) - silhuett -->
+  <line x1="444" y1="398" x2="500" y2="425" stroke="#333" stroke-width="6" stroke-linecap="round" opacity="0.85"/>
+  
+  <!-- Ben -->
+  <line x1="412" y1="433" x2="408" y2="495" stroke="#333" stroke-width="7" stroke-linecap="round" opacity="0.85"/>
+  <line x1="428" y1="433" x2="432" y2="495" stroke="#333" stroke-width="7" stroke-linecap="round" opacity="0.85"/>
+  
+  <!-- Sko -->
+  <ellipse cx="408" cy="500" rx="6" ry="5" fill="#1a1a1a"/>
+  <ellipse cx="432" cy="500" rx="6" ry="5" fill="#1a1a1a"/>
+  
+  <!-- Fiskestang -->
+  <line x1="280" y1="310" x2="150" y2="480" stroke="#ffb347" stroke-width="4" stroke-linecap="round" opacity="0.9"/>
+  
+  <!-- Snor -->
+  <path d="M 150 480 Q 125 515 110 545" 
+        fill="none" stroke="#ffd699" stroke-width="1.5" opacity="0.6" stroke-dasharray="3,2"/>
+  
+  <!-- Fisk i solnedgangen -->
+  <ellipse cx="105" cy="555" rx="7" ry="5" fill="#ffb347" opacity="0.8"/>
+  <polygon points="105,555 112,553 114,557" fill="#ffcc99" opacity="0.7"/>
+  <circle cx="108" cy="554" r="1.5" fill="white" opacity="0.6"/>
+  
+  <!-- Gyllent lys omkring fiskeren -->
+  <circle cx="420" cy="380" r="80" fill="#ffff99" opacity="0.1"/>
+  <circle cx="420" cy="380" r="50" fill="#ffff99" opacity="0.08"/>
+  
+  <!-- Stjerner dukker opp (dalende dag) -->
+  <circle cx="100" cy="50" r="1" fill="white" opacity="0.6"/>
+  <circle cx="250" cy="30" r="1.5" fill="white" opacity="0.5"/>
+  <circle cx="600" cy="40" r="1" fill="white" opacity="0.4"/>
+  <circle cx="750" cy="20" r="1.5" fill="white" opacity="0.5"/>
+</svg>

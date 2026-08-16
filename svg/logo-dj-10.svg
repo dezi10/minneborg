@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <!-- Konsept 10: "One Continuous Line" — Elegant, moderne.
+       Hele logoen er tegnet med én sammenhengende linje som 
+       former hodetelefoner → jordklode → vinylplate → hjerte.
+       Transformasjon som én ubrutt reise. -->
+  <rect width="400" height="400" fill="#ffffff"/>
+  
+  <g transform="translate(200,200)" fill="none" stroke="#1a1a1a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    
+    <!-- Start: Left ear cup of headphones -->
+    <!-- flows into headband → right ear cup → down into globe equator → 
+         curves into vinyl groove → spirals to center → exits as heartbeat line -->
+    
+    <path d="
+      M-62,5 
+      C-62,-5 -62,-10 -60,-15
+      C-55,-25 -50,-30 -48,-40
+      C-45,-55 -40,-70 -30,-80
+      C-20,-90 -5,-95 0,-95
+      C5,-95 20,-90 30,-80
+      C40,-70 45,-55 48,-40
+      C50,-30 55,-25 60,-15
+      C62,-10 62,-5 62,5
+      C62,15 60,25 58,28
+      
+      C55,35 45,40 40,45
+      C35,50 30,55 20,58
+      C10,62 0,62 0,62
+      
+      C-15,60 -30,55 -42,45
+      C-50,38 -55,30 -55,20
+      C-55,10 -50,2 -42,-4
+      C-34,-10 -25,-12 -18,-10
+      C-10,-8 -5,-2 -3,5
+      C-1,12 -2,18 -5,22
+      C-8,26 -12,27 -15,26
+      C-18,24 -19,20 -18,17
+      C-17,14 -15,12 -12,12
+      
+      M62,5
+      C62,15 58,30 50,40
+      C42,52 30,58 20,60
+    " />
+    
+    <!-- Small vinyl center dot -->
+    <circle cx="-15" cy="14" r="2" fill="#1a1a1a"/>
+    
+    <!-- Continuation: heartbeat/sound wave emerging from the spiral -->
+    <path d="M-12,12 C-5,12 0,12 8,12 L15,12 L18,-5 L22,25 L26,0 L30,15 L35,12 L55,12" stroke-width="2"/>
+    
+  </g>
+</svg>

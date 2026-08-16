@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <!-- Iskremscooper-logo inspirert av Strawberry Hotels: Tydelig, flat, ikonisk iskrem-scoop med vaffel -->
+  <rect width="400" height="400" fill="#1c1917"/>
+  <g transform="translate(200,220)">
+    <!-- Flat, ikonisk scoop -->
+    <ellipse cx="0" cy="0" rx="40" ry="36" fill="#e8dcc8"/>
+    <!-- Vaffel, flat stil -->
+    <polygon points="-32,36 0,90 32,36" fill="#e8dcc8"/>
+    <!-- Scoop-refleks, inspirert av Strawberry's "shine"-effekt -->
+    <ellipse cx="-12" cy="-12" rx="10" ry="6" fill="#1c1917" opacity="0.18"/>
+    <ellipse cx="16" cy="-18" rx="7" ry="4" fill="#1c1917" opacity="0.13"/>
+    <!-- Flat outline, Strawberry-inspirert -->
+    <ellipse cx="0" cy="0" rx="40" ry="36" fill="none" stroke="#1c1917" stroke-width="6"/>
+    <polygon points="-32,36 0,90 32,36" fill="none" stroke="#1c1917" stroke-width="6"/>
+  </g>
+</svg>

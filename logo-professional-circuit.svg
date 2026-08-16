@@ -1,0 +1,31 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-tech" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a;stop-opacity:1" />
+      <stop offset="30%" style="stop-color:#1e40af;stop-opacity:1" />
+      <stop offset="70%" style="stop-color:#2563eb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Tech/data-driven design - som kretsboard eller chip -->
+  <!-- Horisontale linjer -->
+  <line x1="30" y1="50" x2="170" y2="50" stroke="url(#grad-tech)" stroke-width="1.5" opacity="0.3"/>
+  <line x1="30" y1="80" x2="170" y2="80" stroke="url(#grad-tech)" stroke-width="2" opacity="0.5"/>
+  <line x1="30" y1="110" x2="170" y2="110" stroke="url(#grad-tech)" stroke-width="2" opacity="0.5"/>
+  <line x1="30" y1="140" x2="170" y2="140" stroke="url(#grad-tech)" stroke-width="1.5" opacity="0.3"/>
+  
+  <!-- Vertikale linjer -->
+  <line x1="50" y1="30" x2="50" y2="160" stroke="url(#grad-tech)" stroke-width="1.5" opacity="0.3"/>
+  <line x1="100" y1="30" x2="100" y2="160" stroke="url(#grad-tech)" stroke-width="2.5" opacity="0.6"/>
+  <line x1="150" y1="30" x2="150" y2="160" stroke="url(#grad-tech)" stroke-width="1.5" opacity="0.3"/>
+  
+  <!-- Noder på kryss -->
+  <circle cx="50" cy="50" r="2.5" fill="url(#grad-tech)" opacity="0.6"/>
+  <circle cx="50" cy="80" r="3" fill="url(#grad-tech)" opacity="0.7"/>
+  <circle cx="100" cy="50" r="3.5" fill="url(#grad-tech)"/>
+  <circle cx="100" cy="80" r="3.5" fill="url(#grad-tech)"/>
+  <circle cx="100" cy="110" r="3.5" fill="url(#grad-tech)"/>
+  <circle cx="150" cy="80" r="3" fill="url(#grad-tech)" opacity="0.7"/>
+  <circle cx="150" cy="110" r="2.5" fill="url(#grad-tech)" opacity="0.6"/>
+</svg>

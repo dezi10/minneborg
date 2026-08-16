@@ -1,0 +1,30 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="grad-radial" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" style="stop-color:#06b6d4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2563eb;stop-opacity:1" />
+    </radialGradient>
+    <linearGradient id="grad-edge" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:0.8" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Sirkelbølger design - som bølger fra sentrum -->
+  <!-- Sirkel 1 - innerst, sterkest -->
+  <circle cx="100" cy="100" r="12" fill="none" stroke="url(#grad-edge)" stroke-width="3" opacity="0.9"/>
+  
+  <!-- Sirkel 2 -->
+  <circle cx="100" cy="100" r="28" fill="none" stroke="url(#grad-edge)" stroke-width="2.5" opacity="0.6"/>
+  
+  <!-- Sirkel 3 -->
+  <circle cx="100" cy="100" r="48" fill="none" stroke="url(#grad-edge)" stroke-width="2" opacity="0.4"/>
+  
+  <!-- Prikker på sirkelene (pulse points) -->
+  <circle cx="100" cy="70" r="2.5" fill="url(#grad-radial)" opacity="0.8"/>
+  <circle cx="100" cy="52" r="2" fill="url(#grad-radial)" opacity="0.6"/>
+  
+  <!-- Sentral kjernel -->
+  <circle cx="100" cy="100" r="4.5" fill="url(#grad-radial)"/>
+  <circle cx="100" cy="100" r="2" fill="white" opacity="0.5"/>
+</svg>

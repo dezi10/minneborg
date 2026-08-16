@@ -1,0 +1,91 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="geo-sky" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="geo-water" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f093fb;stop-opacity:0.5" />
+      <stop offset="100%" style="stop-color:#f5576c;stop-opacity:0.8" />
+    </linearGradient>
+    <filter id="geo-shadow">
+      <feDropShadow dx="3" dy="3" stdDeviation="2" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Geometrisk himmel -->
+  <rect width="800" height="350" fill="url(#geo-sky)"/>
+  
+  <!-- Geometriske fjell (triangler) -->
+  <polygon points="0,350 150,150 300,350" fill="#667eea" opacity="0.9" filter="url(#geo-shadow)"/>
+  <polygon points="200,350 450,80 700,350" fill="#764ba2" opacity="0.8" filter="url(#geo-shadow)"/>
+  <polygon points="650,350 750,140 800,350" fill="#667eea" opacity="0.85" filter="url(#geo-shadow)"/>
+  
+  <!-- Geometriske linjer på fjellene -->
+  <g opacity="0.4" stroke="white" stroke-width="2">
+    <line x1="150" y1="150" x2="0" y2="350"/>
+    <line x1="150" y1="150" x2="300" y2="350"/>
+    <line x1="450" y1="80" x2="200" y2="350"/>
+    <line x1="450" y1="80" x2="700" y2="350"/>
+  </g>
+  
+  <!-- Snø-trekanter -->
+  <polygon points="150,150 160,180 140,180" fill="white" opacity="0.8"/>
+  <polygon points="450,80 465,120 435,120" fill="white" opacity="0.7"/>
+  
+  <!-- Vatn -->
+  <rect y="350" width="800" height="250" fill="url(#geo-water)"/>
+  
+  <!-- Geometriske bølger -->
+  <g opacity="0.5" stroke="white" stroke-width="2" fill="none">
+    <path d="M 0 380 L 100 380 L 150 365 L 200 380 L 300 380 L 350 365 L 400 380 L 500 380 L 550 365 L 600 380 L 700 380 L 750 365 L 800 380"/>
+    <path d="M 0 420 L 120 420 L 180 400 L 240 420 L 360 420 L 420 400 L 480 420 L 600 420 L 660 400 L 720 420 L 800 420"/>
+  </g>
+  
+  <!-- Geometrisk skog (konusa) -->
+  <polygon points="80,340 60,280 100,280" fill="#667eea" opacity="0.8" filter="url(#geo-shadow)"/>
+  <polygon points="750,340 730,290 770,290" fill="#667eea" opacity="0.75" filter="url(#geo-shadow)"/>
+  
+  <!-- Mann (geometrisk stil) -->
+  <!-- Hode (sirkel) -->
+  <circle cx="420" cy="355" r="16" fill="#f5576c" opacity="0.9" filter="url(#geo-shadow)"/>
+  
+  <!-- Kropp (rektangel) -->
+  <rect x="405" y="375" width="30" height="35" fill="#f093fb" opacity="0.85" filter="url(#geo-shadow)"/>
+  
+  <!-- Hår (trekanter) -->
+  <polygon points="410,342 405,328 415,328" fill="#333" opacity="0.7"/>
+  <polygon points="430,342 435,328 425,328" fill="#333" opacity="0.7"/>
+  
+  <!-- Øyne (små sirkler) -->
+  <circle cx="414" cy="353" r="2" fill="#333" opacity="0.9"/>
+  <circle cx="426" cy="353" r="2" fill="#333" opacity="0.9"/>
+  
+  <!-- Arm (linje med geometri) -->
+  <line x1="405" y1="385" x2="290" y2="310" stroke="#f5576c" stroke-width="6" stroke-linecap="round" opacity="0.9" filter="url(#geo-shadow)"/>
+  <circle cx="290" cy="310" r="6" fill="#f5576c" opacity="0.8"/>
+  
+  <!-- Arm (høyre) -->
+  <line x1="435" y1="385" x2="500" y2="420" stroke="#f093fb" stroke-width="6" stroke-linecap="round" opacity="0.8"/>
+  
+  <!-- Ben (rektangler) -->
+  <rect x="408" y="410" width="6" height="85" fill="#667eea" opacity="0.8"/>
+  <rect x="426" y="410" width="6" height="85" fill="#667eea" opacity="0.8"/>
+  
+  <!-- Sko (små rektangler) -->
+  <rect x="405" y="495" width="10" height="8" fill="#333"/>
+  <rect x="425" y="495" width="10" height="8" fill="#333"/>
+  
+  <!-- Fiskestang (geometrisk linje) -->
+  <line x1="290" y1="310" x2="140" y2="485" stroke="#f5576c" stroke-width="4" stroke-linecap="round" opacity="0.9"/>
+  
+  <!-- Snor (stiplet) -->
+  <line x1="140" y1="485" x2="120" y2="550" stroke="#f093fb" stroke-width="2" opacity="0.7" stroke-dasharray="5,5"/>
+  
+  <!-- Fisk (geometrisk) -->
+  <polygon points="120,555 135,550 138,560 125,560" fill="#667eea" opacity="0.85" filter="url(#geo-shadow)"/>
+  
+  <!-- Dekorative geometriske elementer -->
+  <circle cx="100" cy="100" r="30" fill="none" stroke="white" stroke-width="1" opacity="0.2"/>
+  <circle cx="700" cy="150" r="25" fill="none" stroke="white" stroke-width="1" opacity="0.15"/>
+</svg>

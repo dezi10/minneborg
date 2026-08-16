@@ -1,0 +1,34 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-net" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="70%" style="stop-color:#2563eb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Nettverks-design - som internett/datapakker -->
+  <!-- Node 1 -->
+  <circle cx="50" cy="50" r="6" fill="url(#grad-net)"/>
+  <!-- Node 2 -->
+  <circle cx="150" cy="50" r="6" fill="url(#grad-net)"/>
+  <!-- Node 3 -->
+  <circle cx="100" cy="140" r="6" fill="url(#grad-net)"/>
+  <!-- Sentral node -->
+  <circle cx="100" cy="80" r="8" fill="url(#grad-net)"/>
+  
+  <!-- Sidelinje nodes -->
+  <circle cx="35" cy="110" r="5" fill="url(#grad-net)" opacity="0.6"/>
+  <circle cx="165" cy="110" r="5" fill="url(#grad-net)" opacity="0.6"/>
+  
+  <!-- Forbindelseslinjer - nettverkstilkoblinger -->
+  <line x1="50" y1="50" x2="100" y2="80" stroke="url(#grad-net)" stroke-width="2.5" opacity="0.5"/>
+  <line x1="150" y1="50" x2="100" y2="80" stroke="url(#grad-net)" stroke-width="2.5" opacity="0.5"/>
+  <line x1="100" y1="80" x2="100" y2="140" stroke="url(#grad-net)" stroke-width="2.5" opacity="0.5"/>
+  <line x1="100" y1="80" x2="35" y2="110" stroke="url(#grad-net)" stroke-width="2" opacity="0.4"/>
+  <line x1="100" y1="80" x2="165" y2="110" stroke="url(#grad-net)" stroke-width="2" opacity="0.4"/>
+  
+  <!-- Outer connections -->
+  <line x1="50" y1="50" x2="35" y2="110" stroke="url(#grad-net)" stroke-width="1.5" opacity="0.25"/>
+  <line x1="150" y1="50" x2="165" y2="110" stroke="url(#grad-net)" stroke-width="1.5" opacity="0.25"/>
+</svg>

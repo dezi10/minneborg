@@ -1,0 +1,113 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="tech-nature-sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#b3e5fc;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e1f5fe;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="tech-nature-water" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#26a69a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#004d40;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Hybrid natur-tech himmel -->
+  <rect width="800" height="350" fill="url(#tech-nature-sky)"/>
+  
+  <!-- Fjell med tech-linjer -->
+  <polygon points="0,350 120,180 240,350" fill="#a1887f" opacity="0.8"/>
+  <polygon points="200,350 420,90 640,350" fill="#9b8b7e" opacity="0.7"/>
+  <polygon points="600,350 720,160 800,350" fill="#a1887f" opacity="0.8"/>
+  
+  <!-- Tech-grid på fjellene -->
+  <g opacity="0.3" stroke="#2196f3" stroke-width="1">
+    <line x1="0" y1="250" x2="240" y2="250"/>
+    <line x1="60" y1="180" x2="180" y2="350"/>
+    <line x1="120" y1="180" x2="120" y2="350"/>
+  </g>
+  
+  <g opacity="0.25" stroke="#2196f3" stroke-width="1">
+    <line x1="200" y1="220" x2="640" y2="220"/>
+    <line x1="420" y1="90" x2="420" y2="350"/>
+    <line x1="310" y1="90" x2="530" y2="350"/>
+  </g>
+  
+  <!-- Snø (hvit) -->
+  <polygon points="240,350 200,200 280,350" fill="white" opacity="0.6"/>
+  <polygon points="640,350 600,100 680,350" fill="white" opacity="0.5"/>
+  
+  <!-- Vatn (naturlig) -->
+  <rect y="350" width="800" height="250" fill="url(#tech-nature-water)"/>
+  
+  <!-- Teknologiske bølger (subtil) -->
+  <path d="M 0 380 Q 100 370 200 380 T 400 380 T 600 380 T 800 380" 
+        fill="none" stroke="#2196f3" stroke-width="1.5" opacity="0.4" stroke-dasharray="2,4"/>
+  <path d="M 0 420 Q 120 410 240 420 T 480 420 T 720 420 T 800 420" 
+        fill="none" stroke="#2196f3" stroke-width="1" opacity="0.3" stroke-dasharray="3,5"/>
+  
+  <!-- Naturlig skog -->
+  <g opacity="0.7">
+    <ellipse cx="70" cy="320" rx="35" ry="50" fill="#2d5016"/>
+    <ellipse cx="40" cy="330" rx="28" ry="40" fill="#3d6b1f"/>
+    <ellipse cx="100" cy="325" rx="30" ry="45" fill="#2d5016"/>
+  </g>
+  
+  <g opacity="0.6">
+    <ellipse cx="750" cy="330" rx="40" ry="55" fill="#2d5016"/>
+    <ellipse cx="720" cy="340" rx="32" ry="45" fill="#3d6b1f"/>
+    <ellipse cx="780" cy="335" rx="35" ry="50" fill="#2d5016"/>
+  </g>
+  
+  <!-- Mann (balanse mellom natur og tech) -->
+  <!-- Kropp -->
+  <ellipse cx="420" cy="395" rx="23" ry="32" fill="#8b7355"/>
+  
+  <!-- Hode -->
+  <circle cx="420" cy="358" r="16" fill="#d4a574"/>
+  
+  <!-- Hår -->
+  <ellipse cx="420" cy="348" rx="18" ry="13" fill="#3d2817"/>
+  
+  <!-- Øyne (med tech-refleksjon) -->
+  <circle cx="414" cy="356" r="2.5" fill="#1a1a1a"/>
+  <circle cx="426" cy="356" r="2.5" fill="#1a1a1a"/>
+  <circle cx="414" cy="356" r="0.8" fill="#2196f3"/>
+  <circle cx="426" cy="356" r="0.8" fill="#2196f3"/>
+  
+  <!-- Arm (fiskestang) -->
+  <line x1="400" y1="398" x2="280" y2="310" stroke="#d4a574" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="280" cy="310" r="5" fill="#d4a574"/>
+  
+  <!-- Arm (høyre) -->
+  <line x1="443" y1="398" x2="500" y2="420" stroke="#d4a574" stroke-width="7" stroke-linecap="round"/>
+  
+  <!-- Ben -->
+  <line x1="412" y1="427" x2="408" y2="490" stroke="#4a5568" stroke-width="8" stroke-linecap="round"/>
+  <line x1="428" y1="427" x2="432" y2="490" stroke="#4a5568" stroke-width="8" stroke-linecap="round"/>
+  
+  <!-- Sko -->
+  <ellipse cx="408" cy="495" rx="6" ry="5" fill="#2c3e50"/>
+  <ellipse cx="432" cy="495" rx="6" ry="5" fill="#2c3e50"/>
+  
+  <!-- Fiskestang (med tech-detaljer) -->
+  <line x1="280" y1="310" x2="150" y2="480" stroke="#8b6f47" stroke-width="5" stroke-linecap="round" opacity="0.9"/>
+  <circle cx="200" cy="390" r="2" fill="#2196f3" opacity="0.6"/> <!-- Tech node -->
+  <circle cx="160" cy="460" r="1.5" fill="#2196f3" opacity="0.5"/> <!-- Tech node -->
+  
+  <!-- Fiskesnor -->
+  <path d="M 150 480 Q 120 510 105 545" 
+        fill="none" stroke="#a0a0a0" stroke-width="1.5" opacity="0.7" stroke-dasharray="3,2"/>
+  
+  <!-- Fisk (naturlig) -->
+  <ellipse cx="100" cy="555" rx="7" ry="5" fill="#ff6b35"/>
+  <polygon points="100,555 107,553 109,557" fill="#ff8c42"/>
+  <circle cx="103" cy="554" r="1.5" fill="white" opacity="0.8"/>
+  
+  <!-- Digitale node-punkter rundt scenen (subtil) -->
+  <circle cx="300" cy="200" r="2" fill="#2196f3" opacity="0.2"/>
+  <circle cx="600" cy="280" r="1.5" fill="#2196f3" opacity="0.15"/>
+  <circle cx="100" cy="150" r="1.5" fill="#2196f3" opacity="0.1"/>
+  
+  <!-- Tech-linjer som forbinder -->
+  <line x1="300" y1="200" x2="420" y2="358" stroke="#2196f3" stroke-width="0.5" opacity="0.15" stroke-dasharray="4,4"/>
+  <line x1="600" y1="280" x2="420" y2="358" stroke="#2196f3" stroke-width="0.5" opacity="0.1" stroke-dasharray="4,4"/>
+</svg>

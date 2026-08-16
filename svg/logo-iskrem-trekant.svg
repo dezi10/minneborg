@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <!-- Trekant-logo: Iskremvaffel i trekantform, inspirert av Adidas/Delta -->
+  <rect width="400" height="400" fill="#1c1917"/>
+  <polygon points="200,80 320,320 80,320" fill="#e8dcc8"/>
+  <!-- Iskremkule på toppen -->
+  <ellipse cx="200" cy="120" rx="48" ry="36" fill="#1c1917"/>
+  <!-- Shine-effekt -->
+  <ellipse cx="220" cy="110" rx="16" ry="6" fill="#1c1917" opacity="0.18"/>
+</svg>

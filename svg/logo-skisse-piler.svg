@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <!-- Logo basert på skisse: firkant og mange trekant-piler -->
+  <rect width="400" height="400" fill="#f5f3e7"/>
+  <!-- Firkant øverst til venstre -->
+  <rect x="60" y="60" width="40" height="40" fill="#6c3fa6" stroke="#6c3fa6" stroke-width="4"/>
+  <!-- Trekant-piler, venstre rad -->
+  <polygon points="60,120 100,120 80,140" fill="none" stroke="#6c3fa6" stroke-width="4"/>
+  <polygon points="60,180 100,180 80,200" fill="none" stroke="#6c3fa6" stroke-width="4"/>
+  <polygon points="60,240 100,240 80,260" fill="none" stroke="#6c3fa6" stroke-width="4"/>
+  <!-- Trekant-piler, buet linje mot høyre -->
+  <polygon points="120,160 160,160 140,180" fill="none" stroke="#6c3fa6" stroke-width="4"/>
+  <polygon points="160,200 200,200 180,220" fill="none" stroke="#6c3fa6" stroke-width="4"/>
+  <polygon points="200,240 240,240 220,260" fill="none" stroke="#6c3fa6" stroke-width="4"/>
+  <polygon points="240,280 280,280 260,300" fill="none" stroke="#6c3fa6" stroke-width="4"/>
+  <polygon points="280,320 320,320 300,340" fill="none" stroke="#6c3fa6" stroke-width="4"/>
+  <!-- Trekant-piler, midt/høyre rad -->
+  <polygon points="120,220 160,220 140,240" fill="none" stroke="#6c3fa6" stroke-width="4"/>
+  <polygon points="160,260 200,260 180,280" fill="none" stroke="#6c3fa6" stroke-width="4"/>
+  <polygon points="200,300 240,300 220,320" fill="none" stroke="#6c3fa6" stroke-width="4"/>
+</svg>

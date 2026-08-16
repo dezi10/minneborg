@@ -1,0 +1,28 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-icon" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e40af;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Ikonografisk design - en pakke/boks som sendes -->
+  <!-- Pakken fra siden -->
+  <rect x="50" y="60" width="50" height="45" fill="none" stroke="url(#grad-icon)" stroke-width="3" rx="3"/>
+  
+  <!-- Pakken fra topp (isometrisk effekt) -->
+  <path d="M 50 60 L 58 50 L 108 50 L 100 60" fill="url(#grad-icon)" opacity="0.3" stroke="url(#grad-icon)" stroke-width="2.5"/>
+  
+  <!-- Pakken fra siden (isometrisk) -->
+  <path d="M 100 60 L 108 50 L 108 95 L 100 105" fill="url(#grad-icon)" opacity="0.2" stroke="url(#grad-icon)" stroke-width="2.5"/>
+  
+  <!-- Bånd på pakken -->
+  <line x1="50" y1="82" x2="100" y2="82" stroke="url(#grad-icon)" stroke-width="2" opacity="0.7"/>
+  
+  <!-- Sendes-pil (retning oppover/utenfor) -->
+  <path d="M 75 40 L 75 25 M 70 30 L 75 25 L 80 30" fill="none" stroke="url(#grad-icon)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Små hastighets-streker -->
+  <line x1="65" y1="35" x2="55" y2="32" stroke="url(#grad-icon)" stroke-width="1.5" opacity="0.5"/>
+  <line x1="65" y1="45" x2="50" y2="42" stroke="url(#grad-icon)" stroke-width="1.5" opacity="0.5"/>
+</svg>

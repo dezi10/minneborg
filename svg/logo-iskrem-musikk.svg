@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <!-- Kreativ iskrem-logo: Iskrem som smelter og blir til musikknoter -->
+  <rect width="400" height="400" fill="#1c1917"/>
+  <g transform="translate(200,220)">
+    <!-- Iskremvaffel -->
+    <polygon points="-24,60 0,10 24,60" fill="#e8dcc8" stroke="#1c1917" stroke-width="2"/>
+    <!-- Iskremkule -->
+    <circle cx="0" cy="0" r="22" fill="#e8dcc8"/>
+    <!-- Smeltende dråper -->
+    <ellipse cx="-10" cy="22" rx="5" ry="8" fill="#e8dcc8"/>
+    <ellipse cx="10" cy="26" rx="4" ry="7" fill="#e8dcc8"/>
+    <!-- Musikknoter som vokser ut fra dråpene -->
+    <g>
+      <circle cx="-18" cy="40" r="5" fill="#e8dcc8"/>
+      <rect x="-20" y="40" width="4" height="18" fill="#e8dcc8"/>
+      <path d="M-16,40 Q-10,32 -6,40" stroke="#e8dcc8" stroke-width="2" fill="none"/>
+    </g>
+    <g>
+      <circle cx="18" cy="48" r="5" fill="#e8dcc8"/>
+      <rect x="16" y="48" width="4" height="18" fill="#e8dcc8"/>
+      <path d="M22,48 Q28,40 32,48" stroke="#e8dcc8" stroke-width="2" fill="none"/>
+    </g>
+    <!-- Topp (sjokolade) -->
+    <path d="M-12,-10 Q0,-22 12,-10 Q0,0 -12,-10Z" fill="#1c1917"/>
+  </g>
+</svg>

@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="gradient-sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#87ceeb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e0f6ff;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="gradient-sand" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f4a460;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#daa520;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Realistisk versjon med gradienter -->
+  <defs>
+    <filter id="subtle-shadow">
+      <feDropShadow dx="2" dy="2" stdDeviation="2" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  
+  <!-- Himmel gradient -->
+  <rect width="400" height="220" fill="url(#gradient-sky)"/>
+  
+  <!-- Sand gradient -->
+  <rect y="220" width="400" height="180" fill="url(#gradient-sand)"/>
+  
+  <!-- Ytre ramme -->
+  <path d="M60,360 V80 Q60,40 200,40 Q340,40 340,80 V360" stroke="#333" stroke-width="3" fill="none" filter="url(#subtle-shadow)"/>
+  <path d="M60,360 H340" stroke="#333" stroke-width="3" fill="none"/>
+  
+  <!-- Sol med gradient -->
+  <defs>
+    <radialGradient id="sun-gradient">
+      <stop offset="0%" style="stop-color:#ffed4e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffa500;stop-opacity:1" />
+    </radialGradient>
+  </defs>
+  <circle cx="240" cy="120" r="44" fill="url(#sun-gradient)" filter="url(#subtle-shadow)"/>
+  
+  <!-- Palme med shadow -->
+  <rect x="110" y="120" width="8" height="60" rx="4" fill="#2d5016"/>
+  <path d="M114,120 Q100,100 128,110" stroke="#2d5016" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M114,120 Q98,115 130,120" stroke="#2d5016" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M114,120 Q100,130 128,130" stroke="#2d5016" stroke-width="5" fill="none" stroke-linecap="round"/>
+  
+  <!-- Bølger med dybde -->
+  <path d="M80,220 Q160,180 200,200 Q240,220 320,180" stroke="#1a5a7a" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.8"/>
+  <path d="M80,240 Q160,200 200,220 Q240,240 320,200" stroke="#2080a0" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.6"/>
+  <path d="M80,320 Q160,260 200,280 Q240,300 320,260" stroke="#1a5a7a" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.7"/>
+  
+  <!-- Strand kurve -->
+  <path d="M140,280 Q200,320 260,300" stroke="#8b6f47" stroke-width="4" fill="none" stroke-linecap="round"/>
+  
+  <!-- Vannlinjer -->
+  <path d="M200,260 Q210,270 220,265" stroke="#0a5a7a" stroke-width="2.5" fill="none"/>
+  <path d="M230,270 Q240,280 250,275" stroke="#0a5a7a" stroke-width="2.5" fill="none"/>
+</svg>

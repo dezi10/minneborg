@@ -1,0 +1,100 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sky-winter" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#d3d3d3;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f0f0f0;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="snow-water" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8f4f8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#b0d4e3;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Vinterversjon - snøhimmel -->
+  <rect width="800" height="350" fill="url(#sky-winter)"/>
+  
+  <!-- Snøbelagte fjell -->
+  <polygon points="0,350 180,80 360,350" fill="white" opacity="0.95"/>
+  <polygon points="300,350 520,60 740,350" fill="#f5f5f5"/>
+  <polygon points="650,350 750,150 800,350" fill="white" opacity="0.9"/>
+  
+  <!-- Grå fjellskygger -->
+  <polygon points="0,350 180,80 100,350" fill="#a9a9a9" opacity="0.3"/>
+  <polygon points="520,350 520,60 450,350" fill="#a9a9a9" opacity="0.2"/>
+  
+  <!-- Fryst innsjø -->
+  <rect y="350" width="800" height="250" fill="url(#snow-water)"/>
+  
+  <!-- Isflak og speglinger -->
+  <line x1="0" y1="380" x2="800" y2="380" stroke="#d0e8f2" stroke-width="2" opacity="0.4"/>
+  <line x1="0" y1="420" x2="800" y2="420" stroke="#c5dfe8" stroke-width="1.5" opacity="0.3"/>
+  
+  <!-- Snødekt skog -->
+  <g opacity="0.8">
+    <path d="M 60 340 L 45 300 L 75 300 Z" fill="white"/>
+    <path d="M 50 310 L 35 280 L 65 280 Z" fill="#f5f5f5"/>
+    <rect x="55" y="300" width="10" height="40" fill="#8b7355" opacity="0.6"/>
+  </g>
+  
+  <g opacity="0.7">
+    <path d="M 750 350 L 735 300 L 765 300 Z" fill="white"/>
+    <path d="M 740 315 L 725 285 L 755 285 Z" fill="#f5f5f5"/>
+    <rect x="745" y="300" width="10" height="50" fill="#8b7355" opacity="0.6"/>
+  </g>
+  
+  <!-- Mann i vinterklær -->
+  <!-- Kropp (tykk kåpe) -->
+  <ellipse cx="420" cy="395" rx="28" ry="35" fill="#c41e3a"/>
+  
+  <!-- Hode -->
+  <circle cx="420" cy="350" r="18" fill="#d4a574"/>
+  
+  <!-- Vinterhat -->
+  <rect x="405" y="328" width="30" height="18" fill="#1a1a1a" rx="3"/>
+  <ellipse cx="420" cy="328" rx="16" ry="6" fill="#2a2a2a"/>
+  
+  <!-- Skjegg -->
+  <path d="M 410 360 Q 420 365 430 360" fill="#8b5a3c" opacity="0.7"/>
+  
+  <!-- Øyne -->
+  <circle cx="414" cy="352" r="2" fill="#1a1a1a"/>
+  <circle cx="426" cy="352" r="2" fill="#1a1a1a"/>
+  
+  <!-- Arm (venstre) med fiskestang -->
+  <line x1="395" y1="400" x2="280" y2="300" stroke="#d4a574" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="280" cy="300" r="6" fill="#d4a574"/>
+  
+  <!-- Arm (høyre) -->
+  <line x1="445" y1="400" x2="500" y2="420" stroke="#d4a574" stroke-width="8" stroke-linecap="round"/>
+  
+  <!-- Ben i bukse -->
+  <line x1="410" y1="430" x2="405" y2="500" stroke="#2c3e50" stroke-width="10" stroke-linecap="round"/>
+  <line x1="430" y1="430" x2="435" y2="500" stroke="#2c3e50" stroke-width="10" stroke-linecap="round"/>
+  
+  <!-- Snøstøvler -->
+  <ellipse cx="405" cy="505" rx="8" ry="8" fill="#ffffff" stroke="#d0d0d0" stroke-width="1"/>
+  <ellipse cx="435" cy="505" rx="8" ry="8" fill="#ffffff" stroke="#d0d0d0" stroke-width="1"/>
+  
+  <!-- Fiskestang (snøbelagt) -->
+  <line x1="280" y1="300" x2="150" y2="480" stroke="#8b6f47" stroke-width="5" stroke-linecap="round" opacity="0.8"/>
+  <line x1="150" y1="480" x2="160" y2="490" stroke="white" stroke-width="2" opacity="0.6"/>
+  
+  <!-- Fiskesnor -->
+  <path d="M 150 480 Q 120 510 110 540" fill="none" stroke="#d0d0d0" stroke-width="2" opacity="0.8" stroke-dasharray="3,3"/>
+  
+  <!-- Fisk under isen -->
+  <ellipse cx="105" cy="560" rx="7" ry="5" fill="#ff6b35" opacity="0.8"/>
+  <polygon points="105,560 110,558 112,562" fill="#ff8c42" opacity="0.8"/>
+  
+  <!-- Snøfnugg -->
+  <g opacity="0.5" fill="#ffffff">
+    <circle cx="100" cy="200" r="3"/>
+    <circle cx="250" cy="150" r="2.5"/>
+    <circle cx="400" cy="100" r="2"/>
+    <circle cx="600" cy="180" r="2.5"/>
+    <circle cx="700" cy="120" r="3"/>
+  </g>
+  
+  <!-- Nordlys hint i bakgrunnen (subtil) -->
+  <ellipse cx="700" cy="200" rx="150" ry="80" fill="#90ee90" opacity="0.15"/>
+</svg>

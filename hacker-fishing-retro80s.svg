@@ -1,0 +1,101 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="retro-sky" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff006e;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#ffbe0b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fb5607;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="retro-water" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8338ec;stop-opacity:0.8" />
+      <stop offset="50%" style="stop-color:#3a86ff;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#06ffa5;stop-opacity:0.8" />
+    </linearGradient>
+    <filter id="retro-glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Retro 80s himmel -->
+  <rect width="800" height="350" fill="url(#retro-sky)"/>
+  
+  <!-- Retro fjell (geometrisk) -->
+  <polygon points="0,350 120,180 240,350" fill="#fb5607" opacity="0.9"/>
+  <polygon points="200,350 450,80 700,350" fill="#ff006e" opacity="0.85"/>
+  <polygon points="650,350 750,120 800,350" fill="#ffbe0b" opacity="0.8"/>
+  
+  <!-- Retro sol (stor og dristig) -->
+  <circle cx="100" cy="80" r="50" fill="#ffbe0b" opacity="0.95" filter="url(#retro-glow)"/>
+  <circle cx="100" cy="80" r="45" fill="#ff006e" opacity="0.6" filter="url(#retro-glow)"/>
+  
+  <!-- Vatn (retro gradient) -->
+  <rect y="350" width="800" height="250" fill="url(#retro-water)"/>
+  
+  <!-- Retro geometric bølger -->
+  <g stroke="#06ffa5" stroke-width="3" fill="none" opacity="0.7" filter="url(#retro-glow)">
+    <path d="M 0 380 L 100 380 L 150 360 L 200 380 L 300 380 L 350 360 L 400 380 L 500 380 L 550 360 L 600 380 L 700 380 L 750 360 L 800 380"/>
+    <path d="M 0 430 L 120 430 L 180 410 L 240 430 L 360 430 L 420 410 L 480 430 L 600 430 L 660 410 L 720 430 L 800 430"/>
+  </g>
+  
+  <!-- Retro skog (geometrisk) -->
+  <polygon points="60,340 40,280 80,280" fill="#3a86ff" opacity="0.8" filter="url(#retro-glow)"/>
+  <polygon points="100,345 80,290 120,290" fill="#8338ec" opacity="0.7" filter="url(#retro-glow)"/>
+  <polygon points="750,340 730,280 770,280" fill="#3a86ff" opacity="0.75" filter="url(#retro-glow)"/>
+  
+  <!-- Mann (retro 80s stil) -->
+  <!-- Hode -->
+  <circle cx="420" cy="360" r="16" fill="#ffbe0b" opacity="0.95" filter="url(#retro-glow)"/>
+  
+  <!-- Haar (80s stil) -->
+  <path d="M 408 345 Q 405 325 415 320 Q 425 318 435 325 Q 435 340 432 345" 
+        fill="#fb5607" opacity="0.9" filter="url(#retro-glow)"/>
+  
+  <!-- Øyne (stor og retro) -->
+  <circle cx="414" cy="358" r="3" fill="#000" opacity="0.95"/>
+  <circle cx="426" cy="358" r="3" fill="#000" opacity="0.95"/>
+  <circle cx="414" cy="358" r="1" fill="#ff006e"/>
+  <circle cx="426" cy="358" r="1" fill="#ff006e"/>
+  
+  <!-- Kropp (retro neon) -->
+  <rect x="400" y="378" width="40" height="40" fill="none" stroke="#06ffa5" stroke-width="3" opacity="0.9" filter="url(#retro-glow)"/>
+  <rect x="405" y="383" width="30" height="30" fill="#3a86ff" opacity="0.6"/>
+  
+  <!-- Arm (fiskestang) - futuristisk -->
+  <line x1="400" y1="390" x2="280" y2="310" stroke="#06ffa5" stroke-width="6" stroke-linecap="round" opacity="0.95" filter="url(#retro-glow)"/>
+  <circle cx="280" cy="310" r="7" fill="#06ffa5" opacity="0.9" filter="url(#retro-glow)"/>
+  <circle cx="280" cy="310" r="4" fill="#3a86ff" opacity="0.8"/>
+  
+  <!-- Arm (høyre) -->
+  <line x1="440" y1="390" x2="510" y2="425" stroke="#ff006e" stroke-width="6" stroke-linecap="round" opacity="0.85" filter="url(#retro-glow)"/>
+  
+  <!-- Ben (retro boxer shorts) -->
+  <rect x="408" y="418" width="6" height="50" fill="#fb5607" opacity="0.9" filter="url(#retro-glow)"/>
+  <rect x="426" y="418" width="6" height="50" fill="#fb5607" opacity="0.9" filter="url(#retro-glow)"/>
+  
+  <!-- Sko (retro) -->
+  <rect x="403" y="468" width="14" height="10" fill="#ffbe0b" stroke="#06ffa5" stroke-width="1.5" opacity="0.95" filter="url(#retro-glow)"/>
+  <rect x="423" y="468" width="14" height="10" fill="#ffbe0b" stroke="#06ffa5" stroke-width="1.5" opacity="0.95" filter="url(#retro-glow)"/>
+  
+  <!-- Fiskestang (neon) -->
+  <line x1="280" y1="310" x2="140" y2="480" stroke="#fb5607" stroke-width="4" stroke-linecap="round" opacity="0.95" filter="url(#retro-glow)"/>
+  
+  <!-- Snor (retro) -->
+  <path d="M 140 480 Q 110 515 100 545" 
+        fill="none" stroke="#06ffa5" stroke-width="2" opacity="0.85" stroke-dasharray="4,3" filter="url(#retro-glow)"/>
+  
+  <!-- Fisk (neon) -->
+  <ellipse cx="95" cy="555" rx="8" ry="6" fill="#06ffa5" opacity="0.95" filter="url(#retro-glow)"/>
+  <polygon points="95,555 105,553 107,557" fill="#3a86ff" opacity="0.9" filter="url(#retro-glow)"/>
+  
+  <!-- Retro tekst -->
+  <text x="420" y="570" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#ffbe0b" opacity="0.8" font-weight="bold" letter-spacing="2" filter="url(#retro-glow)">
+    CATCH THE FUTURE
+  </text>
+  
+  <!-- Retro dekorative elementer -->
+  <circle cx="150" cy="100" r="20" fill="none" stroke="#06ffa5" stroke-width="2" opacity="0.3" filter="url(#retro-glow)"/>
+  <circle cx="700" cy="200" r="25" fill="none" stroke="#ff006e" stroke-width="2" opacity="0.25" filter="url(#retro-glow)"/>
+</svg>

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <!-- Retro 60s versjon -->
+  <rect width="400" height="400" fill="#fff5e1"/>
+  
+  <!-- Ytre ramme (retro) -->
+  <path d="M60,360 V80 Q60,40 200,40 Q340,40 340,80 V360" stroke="#e74c3c" stroke-width="4" fill="none"/>
+  <path d="M60,360 H340" stroke="#e74c3c" stroke-width="4" fill="none"/>
+  
+  <!-- Sol (retro - to sirkler) -->
+  <circle cx="240" cy="120" r="44" fill="#f39c12"/>
+  <circle cx="240" cy="120" r="36" fill="#e67e22"/>
+  
+  <!-- Palme (retro stil) -->
+  <rect x="110" y="120" width="8" height="60" fill="#27ae60"/>
+  <circle cx="114" cy="115" r="15" fill="#27ae60" opacity="0.8"/>
+  <path d="M114,120 Q98,115 130,120" stroke="#27ae60" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M114,120 Q100,130 128,130" stroke="#27ae60" stroke-width="4" fill="none" stroke-linecap="round"/>
+  
+  <!-- Bølger (retro) -->
+  <g stroke="#2980b9" stroke-width="3.5" fill="none">
+    <path d="M80,220 Q160,180 200,200 Q240,220 320,180"/>
+    <path d="M80,320 Q160,260 200,280 Q240,300 320,260"/>
+  </g>
+  
+  <!-- Strand (retro) -->
+  <path d="M140,280 Q200,320 260,300" stroke="#a0522d" stroke-width="4" fill="none"/>
+  
+  <!-- Vannlinjer (retro) -->
+  <path d="M200,260 Q210,270 220,265" stroke="#2980b9" stroke-width="2.5" fill="none"/>
+  <path d="M230,270 Q240,280 250,275" stroke="#2980b9" stroke-width="2.5" fill="none"/>
+  
+  <!-- Retro dekorasjon -->
+  <circle cx="100" cy="60" r="8" fill="#e74c3c" opacity="0.5"/>
+  <circle cx="300" cy="70" r="6" fill="#f39c12" opacity="0.4"/>
+</svg>

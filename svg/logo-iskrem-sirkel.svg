@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <!-- Sirkel-logo: Iskremkule i sirkelform, inspirert av BMW/Pepsi/Target -->
+  <rect width="400" height="400" fill="#1c1917"/>
+  <circle cx="200" cy="200" r="120" fill="#e8dcc8"/>
+  <!-- Iskremvaffel i sirkelen -->
+  <polygon points="160,260 200,320 240,260" fill="#1c1917"/>
+  <!-- Shine-effekt -->
+  <ellipse cx="220" cy="160" rx="30" ry="12" fill="#1c1917" opacity="0.18"/>
+</svg>

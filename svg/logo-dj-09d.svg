@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <!-- 09d: Fylte fugler + tykke bølger. 
+       Fuglene er solide former (som Twitter-fuglen), ikke linjer.
+       Bølgene er brede strøk. Alt lesbart på 16x16. -->
+  <rect width="400" height="400" fill="#1c1917"/>
+  
+  <g transform="translate(200,200)">
+    
+    <!-- Kilde-punkt -->
+    <circle cx="0" cy="140" r="7" fill="#e8dcc8"/>
+    
+    <!-- === Tre lydbølger — tykke, fyldige === -->
+    <path d="M-25,120 Q-42,95 -25,70" fill="none" stroke="#e8dcc8" stroke-width="7" stroke-linecap="round"/>
+    <path d="M0,128 Q-18,97 0,66" fill="none" stroke="#e8dcc8" stroke-width="7" stroke-linecap="round"/>
+    <path d="M25,120 Q8,95 25,70" fill="none" stroke="#e8dcc8" stroke-width="7" stroke-linecap="round"/>
+    
+    <!-- === Overgangssoner === -->
+    <path d="M-25,70 Q-40,45 -50,18" fill="none" stroke="#e8dcc8" stroke-width="6" stroke-linecap="round"/>
+    <path d="M0,66 Q0,38 0,10" fill="none" stroke="#e8dcc8" stroke-width="6" stroke-linecap="round"/>
+    <path d="M25,70 Q40,45 50,18" fill="none" stroke="#e8dcc8" stroke-width="6" stroke-linecap="round"/>
+    
+    <!-- === Fugler — FYLTE silhuetter === -->
+    
+    <!-- Stor fugl, midt, høyest -->
+    <path d="M0,10 
+             C-8,-2 -18,-18 -35,-30
+             C-28,-22 -18,-12 -8,-8
+             L0,-5
+             L8,-8
+             C18,-12 28,-22 35,-30
+             C18,-18 8,-2 0,10Z" 
+             fill="#e8dcc8"/>
+    <!-- Ekstra stor vingene for å gjøre den mer ikonisk -->
+    <path d="M-35,-30 C-42,-36 -52,-42 -62,-42 C-52,-36 -42,-32 -35,-30Z" fill="#e8dcc8"/>
+    <path d="M35,-30 C42,-36 52,-42 62,-42 C52,-36 42,-32 35,-30Z" fill="#e8dcc8"/>
+    
+    <!-- Venstre fugl — medium -->
+    <path d="M-50,18 
+             C-55,10 -62,0 -72,-8
+             C-67,-2 -60,6 -54,9
+             L-50,12
+             L-46,9
+             C-40,6 -35,0 -30,-6
+             C-38,2 -45,10 -50,18Z" 
+             fill="#e8dcc8"/>
+    <path d="M-72,-8 C-76,-12 -82,-15 -90,-14 C-82,-10 -76,-8 -72,-8Z" fill="#e8dcc8"/>
+    <path d="M-30,-6 C-26,-10 -20,-12 -14,-11 C-20,-8 -26,-6 -30,-6Z" fill="#e8dcc8"/>
+    
+    <!-- Høyre fugl — liten -->
+    <path d="M50,18 
+             C45,12 40,4 33,-2
+             C37,2 42,8 46,10
+             L50,12
+             L54,10
+             C58,8 63,2 67,-2
+             C60,4 55,12 50,18Z" 
+             fill="#e8dcc8"/>
+    <path d="M33,-2 C30,-5 25,-7 20,-6 C25,-4 30,-2 33,-2Z" fill="#e8dcc8"/>
+    <path d="M67,-2 C70,-5 76,-7 82,-6 C76,-4 70,-2 67,-2Z" fill="#e8dcc8"/>
+    
+  </g>
+</svg>

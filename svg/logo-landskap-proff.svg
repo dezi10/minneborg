@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <!-- Profesjonell landskapslogo: raffinert, minimalistisk, balansert -->
+  <rect width="400" height="400" fill="#bfe6e6"/>
+  <g>
+    <!-- Ytre ramme med buet topp, presis og symmetrisk -->
+    <path d="M60,360 V80 Q60,40 200,40 Q340,40 340,80 V360" stroke="#222" stroke-width="4" fill="none"/>
+    <path d="M60,360 H340" stroke="#222" stroke-width="4" fill="none"/>
+    <!-- Sol, sentrert og ren -->
+    <circle cx="240" cy="120" r="44" fill="#ffd600" stroke="none"/>
+    <!-- Palme, stilisert og symmetrisk -->
+    <rect x="110" y="120" width="8" height="60" rx="4" fill="#222"/>
+    <path d="M114,120 Q100,100 128,110" stroke="#222" stroke-width="4" fill="none"/>
+    <path d="M114,120 Q98,115 130,120" stroke="#222" stroke-width="4" fill="none"/>
+    <path d="M114,120 Q100,130 128,130" stroke="#222" stroke-width="4" fill="none"/>
+    <!-- Bølger, presise og jevne -->
+    <path d="M80,220 Q160,180 200,200 Q240,220 320,180" stroke="#222" stroke-width="4" fill="none"/>
+    <path d="M80,320 Q160,260 200,280 Q240,300 320,260" stroke="#222" stroke-width="4" fill="none"/>
+    <!-- Strand, ren kurve -->
+    <path d="M140,280 Q200,320 260,300" stroke="#222" stroke-width="4" fill="none"/>
+    <!-- Vannlinjer, minimalistiske -->
+    <path d="M200,260 Q210,270 220,265" stroke="#222" stroke-width="3" fill="none"/>
+    <path d="M230,270 Q240,280 250,275" stroke="#222" stroke-width="3" fill="none"/>
+  </g>
+</svg>

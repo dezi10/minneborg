@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <!-- Konsept: Lydbølger som stiger opp og gradvis blir til fugler.
+       Ingen hånd — bare ren transformasjon fra lyd til frihet.
+       Bølgene starter tett og mekanisk nederst, og løser seg opp
+       til organiske fugleformer øverst. -->
+  <rect width="400" height="400" fill="#1c1917"/>
+  
+  <g transform="translate(200,200)">
+    
+    <!-- === BOTTOM: Tight sound waves === -->
+    <!-- These are structured, close together, "trapped" -->
+    <path d="M-8,140 Q-20,132 -8,124 Q4,116 -8,108" fill="none" stroke="#e8dcc8" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M8,140 Q20,132 8,124 Q-4,116 8,108" fill="none" stroke="#e8dcc8" stroke-width="2.5" stroke-linecap="round"/>
+    
+    <!-- Getting a bit looser -->
+    <path d="M-12,108 Q-28,96 -10,84 Q8,72 -12,60" fill="none" stroke="#e8dcc8" stroke-width="2.2" stroke-linecap="round"/>
+    <path d="M12,108 Q28,96 10,84 Q-8,72 12,60" fill="none" stroke="#e8dcc8" stroke-width="2.2" stroke-linecap="round"/>
+    
+    <!-- Middle: waves spreading wider, loosening -->
+    <path d="M-18,60 Q-40,42 -15,24 Q10,6 -18,-12" fill="none" stroke="#e8dcc8" stroke-width="2" stroke-linecap="round" opacity="0.9"/>
+    <path d="M18,60 Q40,42 15,24 Q-10,6 18,-12" fill="none" stroke="#e8dcc8" stroke-width="2" stroke-linecap="round" opacity="0.9"/>
+    
+    <!-- Upper: waves breaking apart into curves -->
+    <path d="M-22,-12 Q-50,-30 -25,-52" fill="none" stroke="#e8dcc8" stroke-width="1.8" stroke-linecap="round" opacity="0.8"/>
+    <path d="M22,-12 Q50,-30 25,-52" fill="none" stroke="#e8dcc8" stroke-width="1.8" stroke-linecap="round" opacity="0.8"/>
+    
+    <!-- === TRANSITION: Half-wave, half-bird === -->
+    <!-- Left side morphing -->
+    <path d="M-25,-52 Q-45,-65 -55,-58" fill="none" stroke="#e8dcc8" stroke-width="1.8" stroke-linecap="round" opacity="0.75"/>
+    <path d="M-25,-52 Q-15,-65 -5,-58" fill="none" stroke="#e8dcc8" stroke-width="1.8" stroke-linecap="round" opacity="0.75"/>
+    
+    <!-- Right side morphing -->
+    <path d="M25,-52 Q45,-68 55,-60" fill="none" stroke="#e8dcc8" stroke-width="1.6" stroke-linecap="round" opacity="0.7"/>
+    <path d="M25,-52 Q15,-68 5,-60" fill="none" stroke="#e8dcc8" stroke-width="1.6" stroke-linecap="round" opacity="0.7"/>
+    
+    <!-- === TOP: Clear birds === -->
+    <!-- Bird 1 — largest, clearest -->
+    <path d="M-40,-85 C-52,-96 -65,-94 -72,-87" fill="none" stroke="#e8dcc8" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+    <path d="M-40,-85 C-30,-96 -18,-94 -12,-87" fill="none" stroke="#e8dcc8" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+    
+    <!-- Bird 2 -->
+    <path d="M30,-90 C22,-100 12,-99 6,-93" fill="none" stroke="#e8dcc8" stroke-width="1.8" stroke-linecap="round" opacity="0.65"/>
+    <path d="M30,-90 C37,-100 46,-99 52,-93" fill="none" stroke="#e8dcc8" stroke-width="1.8" stroke-linecap="round" opacity="0.65"/>
+    
+    <!-- Bird 3 — smaller, higher -->
+    <path d="M-10,-115 C-16,-122 -24,-121 -28,-117" fill="none" stroke="#e8dcc8" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+    <path d="M-10,-115 C-5,-122 2,-121 6,-117" fill="none" stroke="#e8dcc8" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+    
+    <!-- Bird 4 — smallest, highest, almost fading -->
+    <path d="M45,-115 C41,-120 36,-119 33,-117" fill="none" stroke="#e8dcc8" stroke-width="1.2" stroke-linecap="round" opacity="0.35"/>
+    <path d="M45,-115 C48,-120 52,-119 55,-117" fill="none" stroke="#e8dcc8" stroke-width="1.2" stroke-linecap="round" opacity="0.35"/>
+    
+    <!-- Bird 5 — tiny, distant -->
+    <path d="M-55,-130 C-58,-134 -62,-133 -64,-131" fill="none" stroke="#e8dcc8" stroke-width="1" stroke-linecap="round" opacity="0.25"/>
+    <path d="M-55,-130 C-53,-134 -50,-133 -48,-131" fill="none" stroke="#e8dcc8" stroke-width="1" stroke-linecap="round" opacity="0.25"/>
+    
+    <!-- === Small stars / dust === -->
+    <circle cx="-70" cy="-110" r="1.2" fill="#e8dcc8" opacity="0.2"/>
+    <circle cx="60" cy="-130" r="1" fill="#e8dcc8" opacity="0.15"/>
+    <circle cx="15" cy="-140" r="1.5" fill="#e8dcc8" opacity="0.2"/>
+    <circle cx="-35" cy="-145" r="0.8" fill="#e8dcc8" opacity="0.15"/>
+    <circle cx="70" cy="-105" r="0.8" fill="#e8dcc8" opacity="0.12"/>
+    
+    <!-- Source dot at the bottom — where the sound originates -->
+    <circle cx="0" cy="148" r="3.5" fill="#e8dcc8" opacity="0.6"/>
+    
+  </g>
+</svg>

@@ -1,0 +1,66 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="minimal-sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8f4f8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f5f5f5;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Minimalistisk versjon - veldig rent design -->
+  <rect width="800" height="350" fill="url(#minimal-sky)"/>
+  
+  <!-- Fjell - bare konturlinjer -->
+  <path d="M 0 350 L 150 150 L 300 350" fill="none" stroke="#999" stroke-width="3"/>
+  <path d="M 200 350 L 400 100 L 600 350" fill="none" stroke="#888" stroke-width="3"/>
+  <path d="M 550 350 L 700 180 L 800 350" fill="none" stroke="#999" stroke-width="3"/>
+  
+  <!-- Fyllinger av fjell med veldig lys farge -->
+  <polygon points="0,350 150,150 300,350" fill="#f0f0f0"/>
+  <polygon points="200,350 400,100 600,350" fill="#e5e5e5"/>
+  <polygon points="550,350 700,180 800,350" fill="#f0f0f0"/>
+  
+  <!-- Snø på toppen (veldig subtil) -->
+  <line x1="150" y1="150" x2="300" y2="350" stroke="#ddd" stroke-width="8" opacity="0.6"/>
+  <line x1="400" y1="100" x2="600" y2="350" stroke="#ddd" stroke-width="12" opacity="0.5"/>
+  
+  <!-- Vatn -->
+  <rect y="350" width="800" height="250" fill="#d9e8f0"/>
+  
+  <!-- Veldig subtile bølger -->
+  <line x1="0" y1="370" x2="800" y2="370" stroke="#ccc" stroke-width="1" opacity="0.3"/>
+  <line x1="0" y1="400" x2="800" y2="400" stroke="#ccc" stroke-width="1" opacity="0.2"/>
+  
+  <!-- Noen få trær (meget enkelt) -->
+  <line x1="80" y1="340" x2="80" y2="280" stroke="#888" stroke-width="3"/>
+  <path d="M 70 280 L 80 250 L 90 280" fill="#aaa"/>
+  
+  <line x1="740" y1="340" x2="740" y2="290" stroke="#888" stroke-width="3"/>
+  <path d="M 730 290 L 740 260 L 750 290" fill="#aaa"/>
+  
+  <!-- Mann - veldig minimalistisk silhuett -->
+  <!-- Hode -->
+  <circle cx="420" cy="360" r="14" fill="white" stroke="#666" stroke-width="2"/>
+  
+  <!-- Kropp -->
+  <rect x="410" y="376" width="20" height="28" fill="white" stroke="#666" stroke-width="2" rx="2"/>
+  
+  <!-- Arm (fiskestang) -->
+  <line x1="410" y1="385" x2="300" y2="310" stroke="#666" stroke-width="3"/>
+  
+  <!-- Arm (høyre) -->
+  <line x1="430" y1="385" x2="480" y2="410" stroke="#666" stroke-width="2"/>
+  
+  <!-- Ben -->
+  <line x1="414" y1="404" x2="410" y2="460" stroke="#666" stroke-width="3"/>
+  <line x1="426" y1="404" x2="430" y2="460" stroke="#666" stroke-width="3"/>
+  
+  <!-- Fiskestang (linje) -->
+  <line x1="300" y1="310" x2="180" y2="480" stroke="#666" stroke-width="3"/>
+  
+  <!-- Snor -->
+  <line x1="180" y1="480" x2="160" y2="540" stroke="#aaa" stroke-width="1" stroke-dasharray="2,2"/>
+  
+  <!-- Fisk -->
+  <circle cx="160" cy="550" r="5" fill="#ff9999" stroke="#666" stroke-width="1"/>
+  <polygon points="160,550 168,548 170,552" fill="#ff9999" stroke="#666" stroke-width="0.5"/>
+</svg>

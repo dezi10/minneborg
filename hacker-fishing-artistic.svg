@@ -1,0 +1,94 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="artistic-sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff6b9d;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#ffa06b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffd93d;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="artistic-water" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#6bcb77;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4d96ff;stop-opacity:1" />
+    </linearGradient>
+    <filter id="artistic-blur">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2.5" />
+    </filter>
+  </defs>
+  
+  <!-- Kunstneisk/impressjonistisk himmel -->
+  <rect width="800" height="350" fill="url(#artistic-sky)"/>
+  
+  <!-- Abstrakte fjell-former -->
+  <ellipse cx="200" cy="280" rx="180" ry="120" fill="#ff6b9d" opacity="0.5" filter="url(#artistic-blur)"/>
+  <ellipse cx="500" cy="250" rx="220" ry="140" fill="#ffa06b" opacity="0.4" filter="url(#artistic-blur)"/>
+  <polygon points="0,350 180,100 360,350" fill="#ff8c42" opacity="0.7"/>
+  <polygon points="250,350 480,50 710,350" fill="#ffaa44" opacity="0.8"/>
+  <polygon points="600,350 750,150 800,350" fill="#ff9955" opacity="0.7"/>
+  
+  <!-- Sol -->
+  <circle cx="100" cy="100" r="50" fill="#ffeb3b" opacity="0.8" filter="url(#artistic-blur)"/>
+  <circle cx="100" cy="100" r="45" fill="#ffd93d" opacity="0.5" filter="url(#artistic-blur)"/>
+  
+  <!-- Vatn (kunstneisk) -->
+  <rect y="350" width="800" height="250" fill="url(#artistic-water)"/>
+  
+  <!-- Abstrakte bølgemønstre -->
+  <path d="M 0 380 Q 100 360 200 380 T 400 380 T 600 380 T 800 380" 
+        fill="none" stroke="#4db8ff" stroke-width="3" opacity="0.4" filter="url(#artistic-blur)"/>
+  <path d="M 0 420 Q 120 400 240 420 T 480 420 T 720 420 T 800 420" 
+        fill="none" stroke="#2d88cc" stroke-width="2" opacity="0.5" filter="url(#artistic-blur)"/>
+  
+  <!-- Skog (impressjonistisk) -->
+  <g opacity="0.6" filter="url(#artistic-blur)">
+    <ellipse cx="80" cy="310" rx="40" ry="60" fill="#2d5016"/>
+    <ellipse cx="60" cy="320" rx="35" ry="50" fill="#3d6b1f"/>
+  </g>
+  
+  <g opacity="0.5" filter="url(#artistic-blur)">
+    <ellipse cx="730" cy="315" rx="45" ry="65" fill="#2d5016"/>
+    <ellipse cx="760" cy="325" rx="40" ry="55" fill="#3d6b1f"/>
+  </g>
+  
+  <!-- Mann (fargerik og abstrakt) -->
+  <!-- Kropp -->
+  <ellipse cx="420" cy="395" rx="24" ry="32" fill="#ff6b9d" opacity="0.8"/>
+  
+  <!-- Hode -->
+  <circle cx="420" cy="355" r="17" fill="#ff8c42" opacity="0.9"/>
+  
+  <!-- Hår (abstrakt) -->
+  <path d="M 405 345 Q 415 335 435 345" fill="#4d4d4d" opacity="0.7"/>
+  
+  <!-- Øyne (expressiv) -->
+  <circle cx="413" cy="353" r="2.5" fill="#1a1a1a"/>
+  <circle cx="427" cy="353" r="2.5" fill="#1a1a1a"/>
+  <circle cx="413" cy="353" r="1" fill="white"/>
+  <circle cx="427" cy="353" r="1" fill="white"/>
+  
+  <!-- Arm (fiskestang) - abstrakt kurve -->
+  <path d="M 400 395 Q 320 340 280 310" 
+        fill="none" stroke="#ff9944" stroke-width="8" opacity="0.7" stroke-linecap="round" filter="url(#artistic-blur)"/>
+  
+  <!-- Arm (høyre) -->
+  <line x1="444" y1="395" x2="500" y2="420" stroke="#ff8c42" stroke-width="6" opacity="0.7" stroke-linecap="round"/>
+  
+  <!-- Ben -->
+  <line x1="410" y1="427" x2="405" y2="490" stroke="#2d88cc" stroke-width="8" stroke-linecap="round"/>
+  <line x1="430" y1="427" x2="435" y2="490" stroke="#2d88cc" stroke-width="8" stroke-linecap="round"/>
+  
+  <!-- Fiskestang -->
+  <path d="M 280 310 Q 200 400 150 480" 
+        fill="none" stroke="#8b6f47" stroke-width="5" opacity="0.8" stroke-linecap="round"/>
+  
+  <!-- Snor (kunstneisk) -->
+  <path d="M 150 480 Q 130 520 120 555" 
+        fill="none" stroke="#ffeb3b" stroke-width="2" opacity="0.6" stroke-linecap="round" filter="url(#artistic-blur)"/>
+  
+  <!-- Fisk (fargerik) -->
+  <ellipse cx="115" cy="565" rx="8" ry="6" fill="#ff6b9d" opacity="0.8"/>
+  <polygon points="115,565 122,563 125,567" fill="#ff8c42" opacity="0.9"/>
+  
+  <!-- Tekst (kunstneisk) -->
+  <text x="420" y="570" font-family="Georgia, serif" font-size="20" text-anchor="middle" fill="#4d4d4d" opacity="0.6" font-style="italic">
+    digitale drømmer
+  </text>
+</svg>

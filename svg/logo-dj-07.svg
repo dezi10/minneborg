@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <!-- Konsept 7: "The Paper Plane Record" — Én bold ikonisk form.
+       En vinylplate brettet til et papirfly. Reise + musikk i 
+       én umiddelbar form. Helsvart silhuett, ren som Twitter-fuglen. -->
+  <rect width="400" height="400" fill="#ffffff"/>
+  
+  <g transform="translate(200,200)">
+    <!-- Paper plane shape with vinyl groove texture -->
+    <!-- Main body of the plane -->
+    <path d="M-90,50 L80,-60 L-20,10 Z" fill="#1a1a1a"/>
+    <!-- Upper wing fold -->
+    <path d="M-90,50 L80,-60 L10,-20 Z" fill="#2a2a2a"/>
+    <!-- The fold line creating the plane's spine -->
+    <line x1="-90" y1="50" x2="80" y2="-60" stroke="#3a3a3a" stroke-width="1"/>
+    
+    <!-- Vinyl grooves visible on the wing surface — concentric arcs clipped to wing -->
+    <clipPath id="wingClip">
+      <path d="M-90,50 L80,-60 L10,-20 Z"/>
+    </clipPath>
+    <g clip-path="url(#wingClip)">
+      <circle cx="-10" cy="5" r="20" fill="none" stroke="#3a3a3a" stroke-width="0.8"/>
+      <circle cx="-10" cy="5" r="30" fill="none" stroke="#3a3a3a" stroke-width="0.6"/>
+      <circle cx="-10" cy="5" r="40" fill="none" stroke="#3a3a3a" stroke-width="0.8"/>
+      <circle cx="-10" cy="5" r="50" fill="none" stroke="#3a3a3a" stroke-width="0.6"/>
+      <circle cx="-10" cy="5" r="60" fill="none" stroke="#3a3a3a" stroke-width="0.8"/>
+      <circle cx="-10" cy="5" r="70" fill="none" stroke="#3a3a3a" stroke-width="0.6"/>
+      <circle cx="-10" cy="5" r="80" fill="none" stroke="#3a3a3a" stroke-width="0.8"/>
+    </g>
+    
+    <!-- Center hole of the "record" visible on the wing -->
+    <circle cx="-10" cy="5" r="5" fill="#ffffff"/>
+    <circle cx="-10" cy="5" r="1.5" fill="#2a2a2a"/>
+    
+    <!-- Motion trail lines behind the plane -->
+    <line x1="-95" y1="55" x2="-120" y2="70" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round" opacity="0.3"/>
+    <line x1="-92" y1="60" x2="-112" y2="78" stroke="#1a1a1a" stroke-width="1.5" stroke-linecap="round" opacity="0.2"/>
+    <line x1="-88" y1="62" x2="-105" y2="82" stroke="#1a1a1a" stroke-width="1" stroke-linecap="round" opacity="0.15"/>
+  </g>
+</svg>

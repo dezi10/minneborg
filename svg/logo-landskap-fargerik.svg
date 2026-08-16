@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <!-- Fargerik versjon -->
+  <rect width="400" height="400" fill="#e8f4f8"/>
+  
+  <!-- Ytre ramme (mørkeblå) -->
+  <path d="M60,360 V80 Q60,40 200,40 Q340,40 340,80 V360" stroke="#004d99" stroke-width="4" fill="none"/>
+  <path d="M60,360 H340" stroke="#004d99" stroke-width="4" fill="none"/>
+  
+  <!-- Sol (lys oransje/gul) -->
+  <circle cx="240" cy="120" r="44" fill="#ffcc00" stroke="none"/>
+  <circle cx="240" cy="120" r="38" fill="#ffdd44" stroke="none" opacity="0.8"/>
+  
+  <!-- Palme (grønn) -->
+  <rect x="110" y="120" width="8" height="60" rx="4" fill="#00aa44"/>
+  <path d="M114,120 Q100,100 128,110" stroke="#00aa44" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M114,120 Q98,115 130,120" stroke="#00aa44" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M114,120 Q100,130 128,130" stroke="#00aa44" stroke-width="5" fill="none" stroke-linecap="round"/>
+  
+  <!-- Bølger (blå og turkis) -->
+  <path d="M80,220 Q160,180 200,200 Q240,220 320,180" stroke="#0099ff" stroke-width="4" fill="none"/>
+  <path d="M80,320 Q160,260 200,280 Q240,300 320,260" stroke="#00dddd" stroke-width="4" fill="none"/>
+  
+  <!-- Strand (oransje/brun) -->
+  <path d="M140,280 Q200,320 260,300" stroke="#cc9966" stroke-width="4" fill="none"/>
+  
+  <!-- Vannlinjer (blå) -->
+  <path d="M200,260 Q210,270 220,265" stroke="#0088cc" stroke-width="3" fill="none"/>
+  <path d="M230,270 Q240,280 250,275" stroke="#00bb99" stroke-width="3" fill="none"/>
+</svg>

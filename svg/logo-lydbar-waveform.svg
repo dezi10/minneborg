@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <!-- Logo for Lydbar: lang l, waveform -->
+  <rect width="400" height="400" fill="#f5f3e7"/>
+  <!-- Lang vertikal L -->
+  <line x1="60" y1="60" x2="60" y2="340" stroke="#6c3fa6" stroke-width="10"/>
+  <!-- Waveform som går fra L og bortover -->
+  <path d="M60,340 Q100,320 140,340 Q180,360 220,340 Q260,320 300,340 Q340,360 380,340" stroke="#a18cd1" stroke-width="8" fill="none"/>
+</svg>

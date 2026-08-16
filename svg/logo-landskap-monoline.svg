@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <!-- Minimalistisk monoline versjon -->
+  <rect width="400" height="400" fill="#fafafa"/>
+  
+  <!-- Ytre ramme (tynnere) -->
+  <path d="M60,360 V80 Q60,40 200,40 Q340,40 340,80 V360" stroke="#1a1a1a" stroke-width="2" fill="none"/>
+  <path d="M60,360 H340" stroke="#1a1a1a" stroke-width="2" fill="none"/>
+  
+  <!-- Sol (enkel sirkel) -->
+  <circle cx="240" cy="120" r="40" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+  <circle cx="240" cy="120" r="32" fill="none" stroke="#1a1a1a" stroke-width="1" opacity="0.5"/>
+  
+  <!-- Palme (minimalistisk linje) -->
+  <line x1="114" y1="120" x2="114" y2="185" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round"/>
+  <path d="M114,120 L100,105" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round"/>
+  <path d="M114,120 L102,115" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round"/>
+  <path d="M114,120 L100,135" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round"/>
+  <path d="M114,120 L128,105" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round"/>
+  <path d="M114,120 L128,135" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Bølger (minimalisme) -->
+  <path d="M80,220 Q160,180 200,200 Q240,220 320,180" stroke="#1a1a1a" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.8"/>
+  <path d="M80,320 Q160,260 200,280 Q240,300 320,260" stroke="#1a1a1a" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+  
+  <!-- Strand -->
+  <path d="M140,280 Q200,320 260,300" stroke="#1a1a1a" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  
+  <!-- Vannlinjer -->
+  <circle cx="210" cy="268" r="3" fill="none" stroke="#1a1a1a" stroke-width="1" opacity="0.5"/>
+  <circle cx="240" cy="278" r="3" fill="none" stroke="#1a1a1a" stroke-width="1" opacity="0.5"/>
+</svg>

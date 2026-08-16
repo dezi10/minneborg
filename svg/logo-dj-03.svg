@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <!-- Konsept 3: "Figure in Sound Landscape" — Inspirert av fjell-logoen.
+       En minimalistisk figur med hodetelefoner smelter sammen med 
+       lydbølger som danner et landskap/horisont. Sort på hvitt. -->
+  <rect width="400" height="400" fill="#ffffff"/>
+  
+  <g transform="translate(200,200)" fill="none" stroke="#1a1a1a">
+    <!-- Landscape of sound waves that the figure rises from -->
+    
+    <!-- Largest wave - horizon -->
+    <path d="M-160,40 C-130,35 -110,20 -80,30 C-50,40 -30,10 0,-5 C30,-20 50,5 80,25 C110,45 130,30 160,35" stroke-width="2.5" stroke-linecap="round"/>
+    
+    <!-- Medium wave -->
+    <path d="M-130,20 C-100,15 -80,0 -50,10 C-20,20 0,-10 25,-25 C50,-40 70,-10 100,10 C120,20 135,15 145,18" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- Figure emerging from the waves — head + shoulders formed by wave peak -->
+    <!-- Head -->
+    <circle cx="0" cy="-55" r="12" stroke-width="2.5" fill="#ffffff"/>
+    
+    <!-- Headphones arc -->
+    <path d="M-13,-60 A15,12 0 0,1 13,-60" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- Headphone pads -->
+    <rect x="-16" y="-62" width="5" height="8" rx="2" fill="#1a1a1a" stroke="none"/>
+    <rect x="11" y="-62" width="5" height="8" rx="2" fill="#1a1a1a" stroke="none"/>
+    
+    <!-- Neck/shoulders merging into the wave -->
+    <path d="M-8,-43 C-8,-35 -15,-25 -25,-25" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M8,-43 C8,-35 15,-25 25,-25" stroke-width="2.5" stroke-linecap="round"/>
+    
+    <!-- The core wave the figure is part of -->
+    <path d="M-50,-10 C-35,-15 -25,-25 -8,-43" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M8,-43 C25,-25 35,-15 50,-10" stroke-width="2.5" stroke-linecap="round"/>
+    
+    <!-- Smallest inner wave -->
+    <path d="M-80,0 C-55,-5 -35,-20 -25,-25" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+    <path d="M25,-25 C35,-20 55,-5 80,0" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+    
+    <!-- Ground line -->
+    <line x1="-160" y1="55" x2="160" y2="55" stroke-width="0.5" opacity="0.2"/>
+    
+    <!-- Subtle reflection -->
+    <path d="M-30,58 C-15,62 15,62 30,58" stroke-width="0.7" opacity="0.15"/>
+  </g>
+</svg>

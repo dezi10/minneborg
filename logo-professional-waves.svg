@@ -1,0 +1,30 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-abstract" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+    <filter id="blur-subtle">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="0.8"/>
+    </filter>
+  </defs>
+  
+  <!-- Abstrakt, kunstnerisk design - som digitale bølger -->
+  <!-- Bølgeprofil, litt asymmetrisk og organisk -->
+  <path d="M 30 100 Q 50 70 70 85 Q 85 95 100 80 Q 115 70 130 90 Q 150 110 170 95" 
+        fill="url(#grad-abstract)" opacity="0.4" filter="url(#blur-subtle)"/>
+  
+  <path d="M 25 120 Q 45 95 65 110 Q 80 120 95 105 Q 110 95 125 115 Q 145 135 175 115" 
+        fill="url(#grad-abstract)" opacity="0.5" filter="url(#blur-subtle)"/>
+  
+  <path d="M 20 140 Q 50 125 75 135 Q 95 142 115 130 Q 140 120 180 140" 
+        fill="url(#grad-abstract)" opacity="0.3" filter="url(#blur-subtle)"/>
+  
+  <!-- Overlay strokes for definisjon -->
+  <path d="M 30 100 Q 50 70 70 85 Q 85 95 100 80 Q 115 70 130 90 Q 150 110 170 95" 
+        fill="none" stroke="url(#grad-abstract)" stroke-width="2.5" opacity="0.7"/>
+  
+  <path d="M 25 120 Q 45 95 65 110 Q 80 120 95 105 Q 110 95 125 115 Q 145 135 175 115" 
+        fill="none" stroke="url(#grad-abstract)" stroke-width="2.5" opacity="0.6"/>
+</svg>

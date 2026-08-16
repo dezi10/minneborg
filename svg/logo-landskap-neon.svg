@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <!-- Bold/dristig versjon -->
+  <rect width="400" height="400" fill="#1a1a2e"/>
+  
+  <!-- Ytre ramme (bold) -->
+  <path d="M60,360 V80 Q60,40 200,40 Q340,40 340,80 V360" stroke="#06b6d4" stroke-width="6" fill="none"/>
+  <path d="M60,360 H340" stroke="#06b6d4" stroke-width="6" fill="none"/>
+  
+  <!-- Sol (stor og dristig) -->
+  <circle cx="240" cy="120" r="50" fill="#ffd93d" stroke="none"/>
+  <circle cx="240" cy="120" r="44" fill="#ff9500"/>
+  
+  <!-- Palme (sterkere) -->
+  <rect x="110" y="120" width="10" height="70" rx="5" fill="#00ff88"/>
+  <path d="M115,120 Q95,90 140,100" stroke="#00ff88" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M115,120 Q95,110 145,125" stroke="#00ff88" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M115,120 Q95,135 140,145" stroke="#00ff88" stroke-width="6" fill="none" stroke-linecap="round"/>
+  
+  <!-- Bølger (neon) -->
+  <path d="M80,220 Q160,180 200,200 Q240,220 320,180" stroke="#00ffff" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M80,320 Q160,260 200,280 Q240,300 320,260" stroke="#ff00ff" stroke-width="5" fill="none" stroke-linecap="round"/>
+  
+  <!-- Strand -->
+  <path d="M140,280 Q200,320 260,300" stroke="#ffaa00" stroke-width="5" fill="none" stroke-linecap="round"/>
+  
+  <!-- Vannlinjer (neon) -->
+  <path d="M200,260 Q210,270 220,265" stroke="#00ffff" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M230,270 Q240,280 250,275" stroke="#ff00ff" stroke-width="3" fill="none" stroke-linecap="round"/>
+</svg>

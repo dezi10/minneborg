@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <!-- Logo basert på skissen: vertikal linje og bølge -->
+  <rect width="400" height="400" fill="#f5f3e7"/>
+  <!-- Vertikal linje -->
+  <line x1="60" y1="80" x2="60" y2="320" stroke="#6c3fa6" stroke-width="6"/>
+  <!-- Bølgeform -->
+  <path d="M60,320 Q120,200 200,240 Q280,280 340,160" stroke="#a18cd1" stroke-width="6" fill="none"/>
+</svg>

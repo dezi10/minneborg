@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="gold-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffd700;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#ffed4e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#daa520;stop-opacity:1" />
+    </linearGradient>
+    <filter id="gold-shadow">
+      <feDropShadow dx="3" dy="3" stdDeviation="3" flood-color="#2d2d2d" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+  
+  <!-- Premium/gylden versjon -->
+  <rect width="400" height="400" fill="#1a1a1a"/>
+  
+  <!-- Ytre ramme (gylden) -->
+  <path d="M60,360 V80 Q60,40 200,40 Q340,40 340,80 V360" stroke="url(#gold-gradient)" stroke-width="5" fill="none" filter="url(#gold-shadow)"/>
+  <path d="M60,360 H340" stroke="url(#gold-gradient)" stroke-width="5" fill="none" filter="url(#gold-shadow)"/>
+  
+  <!-- Innerramme (subtil) -->
+  <path d="M65,355 V82 Q65,43 200,43 Q335,43 335,82 V355" stroke="#ffd700" stroke-width="1" fill="none" opacity="0.5"/>
+  <path d="M65,355 H335" stroke="#ffd700" stroke-width="1" fill="none" opacity="0.5"/>
+  
+  <!-- Sol (gylden) -->
+  <circle cx="240" cy="120" r="44" fill="url(#gold-gradient)" filter="url(#gold-shadow)"/>
+  <circle cx="240" cy="120" r="40" fill="#ffed4e" opacity="0.7"/>
+  
+  <!-- Palme (gylden/svart) -->
+  <rect x="110" y="120" width="8" height="60" fill="#daa520" filter="url(#gold-shadow)"/>
+  <path d="M114,120 Q100,100 128,110" stroke="#ffd700" stroke-width="5" fill="none" stroke-linecap="round" filter="url(#gold-shadow)"/>
+  <path d="M114,120 Q98,115 130,120" stroke="#ffd700" stroke-width="5" fill="none" stroke-linecap="round" filter="url(#gold-shadow)"/>
+  <path d="M114,120 Q100,130 128,130" stroke="#ffd700" stroke-width="5" fill="none" stroke-linecap="round" filter="url(#gold-shadow)"/>
+  
+  <!-- Bølger (gylden linjer) -->
+  <path d="M80,220 Q160,180 200,200 Q240,220 320,180" stroke="url(#gold-gradient)" stroke-width="3" fill="none" filter="url(#gold-shadow)"/>
+  <path d="M80,320 Q160,260 200,280 Q240,300 320,260" stroke="#daa520" stroke-width="3" fill="none" opacity="0.8" filter="url(#gold-shadow)"/>
+  
+  <!-- Strand (gylden) -->
+  <path d="M140,280 Q200,320 260,300" stroke="#ffed4e" stroke-width="3" fill="none" filter="url(#gold-shadow)"/>
+  
+  <!-- Vannlinjer (subtil gyllent) -->
+  <path d="M200,260 Q210,270 220,265" stroke="#daa520" stroke-width="2.5" fill="none" opacity="0.7"/>
+  <path d="M230,270 Q240,280 250,275" stroke="#daa520" stroke-width="2.5" fill="none" opacity="0.7"/>
+  
+  <!-- Gyllent hjørne ornament -->
+  <circle cx="75" cy="60" r="3" fill="#ffd700" opacity="0.6"/>
+  <circle cx="325" cy="60" r="3" fill="#ffd700" opacity="0.6"/>
+  <circle cx="75" cy="340" r="3" fill="#ffd700" opacity="0.6"/>
+  <circle cx="325" cy="340" r="3" fill="#ffd700" opacity="0.6"/>
+</svg>

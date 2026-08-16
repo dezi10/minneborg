@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <!-- Konsept 8: "Infinity Groove" — Filosofisk, abstrakt.
+       Et uendelighetstegn (∞) der den ene sløyfen er en vinylplate 
+       og den andre er en jordklode. Kontinuerlig reise gjennom musikk. -->
+  <rect width="400" height="400" fill="#0f172a"/>
+  
+  <g transform="translate(200,195)">
+    <!-- Main infinity path — bold, clean -->
+    <path d="M0,-5 
+             C-30,-55 -80,-70 -100,-50 
+             C-125,-25 -110,15 -80,30 
+             C-50,45 -20,20 0,5
+             C20,-20 50,-45 80,-30
+             C110,-15 125,25 100,50
+             C80,70 30,55 0,5"
+          fill="none" stroke="#e2e8f0" stroke-width="4" stroke-linecap="round"/>
+    
+    <!-- Left loop — vinyl grooves texture -->
+    <circle cx="-65" cy="-10" r="35" fill="none" stroke="#e2e8f0" stroke-width="0.6" opacity="0.2"/>
+    <circle cx="-65" cy="-10" r="28" fill="none" stroke="#e2e8f0" stroke-width="0.5" opacity="0.2"/>
+    <circle cx="-65" cy="-10" r="21" fill="none" stroke="#e2e8f0" stroke-width="0.6" opacity="0.2"/>
+    <circle cx="-65" cy="-10" r="14" fill="none" stroke="#e2e8f0" stroke-width="0.5" opacity="0.2"/>
+    <circle cx="-65" cy="-10" r="7" fill="none" stroke="#e2e8f0" stroke-width="0.6" opacity="0.3"/>
+    <!-- Spindle -->
+    <circle cx="-65" cy="-10" r="2.5" fill="#e2e8f0"/>
+    
+    <!-- Right loop — globe/world lines -->
+    <!-- Equator -->
+    <ellipse cx="65" cy="12" rx="35" ry="8" fill="none" stroke="#e2e8f0" stroke-width="0.6" opacity="0.25"/>
+    <!-- Meridians -->
+    <ellipse cx="65" cy="12" rx="12" ry="32" fill="none" stroke="#e2e8f0" stroke-width="0.6" opacity="0.2"/>
+    <ellipse cx="65" cy="12" rx="25" ry="32" fill="none" stroke="#e2e8f0" stroke-width="0.5" opacity="0.15"/>
+    <!-- Tropics -->
+    <ellipse cx="65" cy="-5" rx="30" ry="6" fill="none" stroke="#e2e8f0" stroke-width="0.5" opacity="0.15"/>
+    <ellipse cx="65" cy="29" rx="30" ry="6" fill="none" stroke="#e2e8f0" stroke-width="0.5" opacity="0.15"/>
+    
+    <!-- Crossing point in the center — small glow -->
+    <circle cx="0" cy="0" r="6" fill="#0f172a" stroke="#e2e8f0" stroke-width="1.5"/>
+    <circle cx="0" cy="0" r="2" fill="#e2e8f0"/>
+  </g>
+</svg>

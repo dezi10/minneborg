@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <!-- Premium logo: Iskremvaffel med elegant, abstrakt fugl i én form -->
+  <rect width="400" height="400" fill="#1c1917"/>
+  <g transform="translate(200,220)">
+    <!-- Elegant iskremvaffel, minimalistisk -->
+    <polygon points="-24,60 0,10 24,60" fill="#e8dcc8" stroke="#1c1917" stroke-width="2"/>
+    <!-- Iskremkule, oval for premium look -->
+    <ellipse cx="0" cy="0" rx="22" ry="18" fill="#e8dcc8"/>
+    <!-- Abstrakt fugl: Én sammenhengende form, inspirert av Lufthansa/Twitter -->
+    <path d="M0,-18 C-12,-28 -32,-38 -44,-34 C-32,-32 -16,-24 0,-18 C16,-24 32,-32 44,-34 C32,-38 12,-28 0,-18Z" fill="#e8dcc8"/>
+    <!-- Topp (sjokolade) -->
+    <path d="M-12,-10 Q0,-22 12,-10 Q0,0 -12,-10Z" fill="#1c1917"/>
+  </g>
+</svg>

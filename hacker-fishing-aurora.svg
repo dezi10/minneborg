@@ -1,0 +1,102 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="aurora-sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a1428;stop-opacity:1" />
+      <stop offset="40%" style="stop-color:#1a3a52;stop-opacity:1" />
+      <stop offset="70%" style="stop-color:#0d9e7a;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#00ffb3;stop-opacity:0.3" />
+    </linearGradient>
+    <linearGradient id="aurora-green" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00ff88;stop-opacity:0" />
+      <stop offset="50%" style="stop-color:#00ffaa;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#00ff88;stop-opacity:0" />
+    </linearGradient>
+    <filter id="glow-aurora">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Nordlys-himmel -->
+  <rect width="800" height="350" fill="url(#aurora-sky)"/>
+  
+  <!-- Nordlys bølger -->
+  <path d="M 0 120 Q 200 80 400 100 T 800 120" fill="url(#aurora-green)" opacity="0.6" filter="url(#glow-aurora)"/>
+  <path d="M 0 150 Q 250 110 500 140 T 800 150" fill="url(#aurora-green)" opacity="0.4" filter="url(#glow-aurora)"/>
+  <path d="M 0 100 Q 150 60 300 80 T 800 100" fill="url(#aurora-green)" opacity="0.3" filter="url(#glow-aurora)"/>
+  
+  <!-- Fjell silhuett -->
+  <polygon points="0,350 150,150 300,350" fill="#1a1a2e" opacity="0.95"/>
+  <polygon points="250,350 450,120 650,350" fill="#16213e"/>
+  <polygon points="600,350 750,180 800,350" fill="#0f3460" opacity="0.9"/>
+  
+  <!-- Stjerner -->
+  <circle cx="50" cy="50" r="1.5" fill="white" opacity="0.8"/>
+  <circle cx="150" cy="80" r="1" fill="white" opacity="0.6"/>
+  <circle cx="300" cy="40" r="1.5" fill="white" opacity="0.7"/>
+  <circle cx="500" cy="60" r="1" fill="white" opacity="0.6"/>
+  <circle cx="700" cy="90" r="1.5" fill="white" opacity="0.8"/>
+  <circle cx="750" cy="45" r="1" fill="white" opacity="0.7"/>
+  
+  <!-- Innsjø (nattemørk) -->
+  <rect y="350" width="800" height="250" fill="#0f1620"/>
+  
+  <!-- Refleksjon av nordlys i vatnet -->
+  <path d="M 0 380 Q 200 360 400 380 T 800 380" fill="url(#aurora-green)" opacity="0.4" filter="url(#glow-aurora)"/>
+  <path d="M 0 420 Q 250 400 500 420 T 800 420" fill="url(#aurora-green)" opacity="0.2" filter="url(#glow-aurora)"/>
+  
+  <!-- Nattskog (svak silhuett) -->
+  <g opacity="0.3">
+    <ellipse cx="80" cy="320" rx="30" ry="45" fill="#00ff88"/>
+    <ellipse cx="140" cy="330" rx="25" ry="40" fill="#00ff88"/>
+    <ellipse cx="720" cy="320" rx="35" ry="50" fill="#00ff88"/>
+  </g>
+  
+  <!-- Mann i natt -->
+  <!-- Kropp -->
+  <ellipse cx="420" cy="395" rx="22" ry="30" fill="#1a1a2e"/>
+  
+  <!-- Hode -->
+  <circle cx="420" cy="358" r="16" fill="#2a2a3e"/>
+  
+  <!-- Hår -->
+  <ellipse cx="420" cy="348" rx="17" ry="12" fill="#1a1a1a"/>
+  
+  <!-- Øyne (gløder fra nordlys) -->
+  <circle cx="414" cy="356" r="2" fill="#00ffaa"/>
+  <circle cx="426" cy="356" r="2" fill="#00ffaa"/>
+  <circle cx="414" cy="356" r="0.8" fill="white"/>
+  <circle cx="426" cy="356" r="0.8" fill="white"/>
+  
+  <!-- Arm (fiskestang) -->
+  <line x1="398" y1="400" x2="280" y2="300" stroke="#2a2a3e" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="280" cy="300" r="5" fill="#2a2a3e"/>
+  
+  <!-- Arm (høyre) -->
+  <line x1="442" y1="400" x2="500" y2="420" stroke="#2a2a3e" stroke-width="7" stroke-linecap="round"/>
+  
+  <!-- Ben -->
+  <line x1="412" y1="425" x2="408" y2="490" stroke="#1a1a2e" stroke-width="8" stroke-linecap="round"/>
+  <line x1="428" y1="425" x2="432" y2="490" stroke="#1a1a2e" stroke-width="8" stroke-linecap="round"/>
+  
+  <!-- Sko -->
+  <ellipse cx="408" cy="495" rx="6" ry="5" fill="#0f1620"/>
+  <ellipse cx="432" cy="495" rx="6" ry="5" fill="#0f1620"/>
+  
+  <!-- Fiskestang -->
+  <line x1="280" y1="300" x2="140" y2="480" stroke="#4a4a5e" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Fiskesnor (glød effekt) -->
+  <path d="M 140 480 Q 110 510 100 545" fill="none" stroke="#00ffaa" stroke-width="1.5" opacity="0.6" filter="url(#glow-aurora)"/>
+  
+  <!-- Fisk som lysner opp -->
+  <ellipse cx="95" cy="555" rx="7" ry="5" fill="#00ffaa" opacity="0.7" filter="url(#glow-aurora)"/>
+  <polygon points="95,555 102,553 104,557" fill="#00ff88" opacity="0.8"/>
+  
+  <!-- Digitale strenger rundt manneskapet (teknisk poesi) -->
+  <text x="350" y="320" font-family="monospace" font-size="11" fill="#00ffaa" opacity="0.4" filter="url(#glow-aurora)">01010101</text>
+  <text x="510" y="430" font-family="monospace" font-size="10" fill="#00ff88" opacity="0.3">110</text>
+</svg>

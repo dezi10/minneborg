@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <!-- Iskremselger-logo: En stilisert iskremvaffel med en smilende figur bak disken -->
+  <rect width="400" height="400" fill="#1c1917"/>
+  <g transform="translate(200,220)">
+    <!-- Disk -->
+    <rect x="-80" y="60" width="160" height="24" rx="8" fill="#e8dcc8"/>
+    <!-- Figur bak disken -->
+    <ellipse cx="0" cy="40" rx="24" ry="18" fill="#e8dcc8"/>
+    <circle cx="0" cy="28" r="12" fill="#e8dcc8"/>
+    <!-- Smil -->
+    <path d="M-5,34 Q0,38 5,34" stroke="#1c1917" stroke-width="2" fill="none"/>
+    <!-- Iskremvaffel foran disken -->
+    <polygon points="-20,60 0,20 20,60" fill="#e8dcc8" stroke="#1c1917" stroke-width="2"/>
+    <!-- Iskremkule -->
+    <circle cx="0" cy="12" r="14" fill="#e8dcc8"/>
+    <!-- Topp (sjokolade) -->
+    <path d="M-8,4 Q0,-8 8,4 Q0,10 -8,4Z" fill="#1c1917"/>
+  </g>
+</svg>

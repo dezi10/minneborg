@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <!-- Logo: Historien om reisen fra servitør til iskremselger -->
+  <rect width="400" height="400" fill="#1c1917"/>
+  <!-- Venstre: Servitørhånd med fat -->
+  <g transform="translate(100,220)">
+    <path d="M-40,40 Q-20,20 0,20 Q20,20 40,40 Q20,60 0,60 Q-20,60 -40,40Z" fill="#e8dcc8"/>
+    <rect x="-10" y="60" width="20" height="30" rx="8" fill="#e8dcc8"/>
+    <ellipse cx="0" cy="10" rx="32" ry="12" fill="#e8dcc8"/>
+  </g>
+  <!-- Midten: Fatet blir til en iskremvaffel -->
+  <g transform="translate(200,220)">
+    <polygon points="-24,40 0,0 24,40" fill="#e8dcc8"/>
+    <ellipse cx="0" cy="-10" rx="22" ry="18" fill="#e8dcc8"/>
+    <path d="M-12,-20 Q0,-32 12,-20 Q0,-10 -12,-20Z" fill="#1c1917"/>
+  </g>
+  <!-- Høyre: Smilende figur bak iskremdisken -->
+  <g transform="translate(300,220)">
+    <rect x="-40" y="40" width="80" height="18" rx="6" fill="#e8dcc8"/>
+    <ellipse cx="0" cy="30" rx="18" ry="12" fill="#e8dcc8"/>
+    <circle cx="0" cy="20" r="8" fill="#e8dcc8"/>
+    <path d="M-4,26 Q0,30 4,26" stroke="#1c1917" stroke-width="2" fill="none"/>
+  </g>
+  <!-- Pil som binder sammen elementene -->
+  <path d="M140,220 Q170,180 200,220 Q230,260 260,220" stroke="#e8dcc8" stroke-width="4" fill="none" marker-end="url(#arrowhead)"/>
+  <defs>
+    <marker id="arrowhead" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <polygon points="0,0 8,4 0,8" fill="#e8dcc8"/>
+    </marker>
+  </defs>
+</svg>

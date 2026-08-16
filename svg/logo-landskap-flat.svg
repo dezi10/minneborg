@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <!-- Flat design versjon -->
+  <rect width="400" height="400" fill="#e8f5e9"/>
+  
+  <!-- Ytre ramme -->
+  <path d="M60,360 V80 Q60,40 200,40 Q340,40 340,80 V360" stroke="#2c3e50" stroke-width="3" fill="none"/>
+  <path d="M60,360 H340" stroke="#2c3e50" stroke-width="3" fill="none"/>
+  
+  <!-- Himmel område (flat) -->
+  <path d="M60,40 Q60,40 200,40 Q340,40 340,80 L340,180 Q200,160 60,180 Z" fill="#b3e5fc" opacity="0.8"/>
+  
+  <!-- Sol (flat) -->
+  <circle cx="240" cy="120" r="44" fill="#ffc107"/>
+  
+  <!-- Palme (flat, fyllinger) -->
+  <ellipse cx="114" cy="135" rx="20" ry="25" fill="#4caf50"/>
+  <rect x="110" y="150" width="8" height="35" fill="#795548"/>
+  
+  <!-- Bølger (flat fylling) -->
+  <path d="M80,220 Q160,180 200,200 Q240,220 320,180 L340,280 Q200,250 60,280 Z" fill="#81d4fa" opacity="0.9"/>
+  <path d="M80,300 Q160,260 200,280 Q240,300 320,260 L340,360 L60,360 Z" fill="#4fc3f7" opacity="0.8"/>
+  
+  <!-- Strand (flat) -->
+  <ellipse cx="200" cy="300" rx="80" ry="25" fill="#ffb74d" opacity="0.9"/>
+  
+  <!-- Vannlinjer (rund) -->
+  <circle cx="210" cy="265" r="4" fill="#0288d1" opacity="0.6"/>
+  <circle cx="240" cy="280" r="4" fill="#0288d1" opacity="0.5"/>
+</svg>

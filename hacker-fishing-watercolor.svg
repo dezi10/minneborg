@@ -1,0 +1,96 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="watercolor-sky" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#a8d8ea;stop-opacity:0.8" />
+      <stop offset="50%" style="stop-color:#aa96da;stop-opacity:0.7" />
+      <stop offset="100%" style="stop-color:#fcbad3;stop-opacity:0.8" />
+    </linearGradient>
+    <linearGradient id="watercolor-water" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8fb3d9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#5b8fc4;stop-opacity:1" />
+    </linearGradient>
+    <filter id="watercolor-blur">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3" />
+    </filter>
+    <filter id="watercolor-turbulence">
+      <feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="3" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="8" />
+    </filter>
+  </defs>
+  
+  <!-- Akvarell himmel -->
+  <rect width="800" height="350" fill="url(#watercolor-sky)" filter="url(#watercolor-turbulence)"/>
+  
+  <!-- Akvarell fjell (utydelige kanter) -->
+  <polygon points="0,350 120,160 240,350" fill="#9b8ba8" opacity="0.6" filter="url(#watercolor-blur)"/>
+  <polygon points="180,350 420,80 660,350" fill="#8b9aaf" opacity="0.5" filter="url(#watercolor-blur)"/>
+  <polygon points="620,350 730,150 800,350" fill="#9b8ba8" opacity="0.55" filter="url(#watercolor-blur)"/>
+  
+  <!-- Akvarell snø (bleik hvit) -->
+  <ellipse cx="120" cy="160" rx="30" ry="40" fill="white" opacity="0.4" filter="url(#watercolor-blur)"/>
+  <ellipse cx="420" cy="80" rx="50" ry="60" fill="white" opacity="0.35" filter="url(#watercolor-blur)"/>
+  
+  <!-- Akvarell skog (duse farger) -->
+  <ellipse cx="70" cy="310" rx="45" ry="60" fill="#7a8f6b" opacity="0.4" filter="url(#watercolor-blur)"/>
+  <ellipse cx="750" cy="320" rx="50" ry="65" fill="#7a8f6b" opacity="0.35" filter="url(#watercolor-blur)"/>
+  
+  <!-- Akvarell vatn -->
+  <rect y="350" width="800" height="250" fill="url(#watercolor-water)" filter="url(#watercolor-turbulence)"/>
+  
+  <!-- Akvarell bølger (utydelige) -->
+  <ellipse cx="200" cy="400" rx="150" ry="40" fill="white" opacity="0.15" filter="url(#watercolor-blur)"/>
+  <ellipse cx="600" cy="430" rx="180" ry="50" fill="white" opacity="0.12" filter="url(#watercolor-blur)"/>
+  <ellipse cx="400" cy="480" rx="200" ry="60" fill="white" opacity="0.1" filter="url(#watercolor-blur)"/>
+  
+  <!-- Mann (akvarell stil - myk og utydelig) -->
+  <!-- Hode -->
+  <ellipse cx="420" cy="360" rx="17" ry="18" fill="#d9c0a8" opacity="0.7" filter="url(#watercolor-blur)"/>
+  
+  <!-- Kropp -->
+  <ellipse cx="420" cy="400" rx="26" ry="35" fill="#8b7355" opacity="0.6" filter="url(#watercolor-blur)"/>
+  
+  <!-- Hår (akvarell strøk) -->
+  <ellipse cx="415" cy="348" rx="20" ry="15" fill="#4a3f35" opacity="0.5" filter="url(#watercolor-blur)"/>
+  
+  <!-- Ansiktsdetaljer (subtile) -->
+  <circle cx="414" cy="358" r="2" fill="#3d2817" opacity="0.5"/>
+  <circle cx="426" cy="358" r="2" fill="#3d2817" opacity="0.5"/>
+  
+  <!-- Arm (fiskestang) -->
+  <path d="M 400 400 Q 320 350 280 310" 
+        fill="none" stroke="#d9c0a8" stroke-width="8" opacity="0.6" stroke-linecap="round" filter="url(#watercolor-blur)"/>
+  <ellipse cx="280" cy="310" rx="6" ry="7" fill="#d9c0a8" opacity="0.6" filter="url(#watercolor-blur)"/>
+  
+  <!-- Arm (høyre) -->
+  <path d="M 442 400 L 490 425" 
+        fill="none" stroke="#d9c0a8" stroke-width="7" opacity="0.6" stroke-linecap="round" filter="url(#watercolor-blur)"/>
+  
+  <!-- Ben -->
+  <line x1="410" y1="435" x2="408" y2="495" stroke="#8b7355" stroke-width="8" opacity="0.6" stroke-linecap="round" filter="url(#watercolor-blur)"/>
+  <line x1="430" y1="435" x2="432" y2="495" stroke="#8b7355" stroke-width="8" opacity="0.6" stroke-linecap="round" filter="url(#watercolor-blur)"/>
+  
+  <!-- Sko (akvarell) -->
+  <ellipse cx="408" cy="500" rx="7" ry="6" fill="#2c3e50" opacity="0.5" filter="url(#watercolor-blur)"/>
+  <ellipse cx="432" cy="500" rx="7" ry="6" fill="#2c3e50" opacity="0.5" filter="url(#watercolor-blur)"/>
+  
+  <!-- Fiskestang (myk) -->
+  <path d="M 280 310 Q 200 400 150 480" 
+        fill="none" stroke="#8b6f47" stroke-width="5" opacity="0.6" stroke-linecap="round" filter="url(#watercolor-blur)"/>
+  
+  <!-- Snor (akvarell) -->
+  <path d="M 150 480 Q 125 515 115 545" 
+        fill="none" stroke="#a8a8a8" stroke-width="2" opacity="0.4" stroke-linecap="round" filter="url(#watercolor-blur)"/>
+  
+  <!-- Fisk (akvarell - organisk form) -->
+  <ellipse cx="110" cy="555" rx="8" ry="6" fill="#ff6b35" opacity="0.6" filter="url(#watercolor-blur)"/>
+  <ellipse cx="115" cy="553" rx="5" ry="3" fill="#ff8c42" opacity="0.5" filter="url(#watercolor-blur)"/>
+  
+  <!-- Vannsprut (akvarell) -->
+  <circle cx="100" cy="545" r="3" fill="#8fb3d9" opacity="0.4" filter="url(#watercolor-blur)"/>
+  <circle cx="105" cy="540" r="2" fill="#8fb3d9" opacity="0.3" filter="url(#watercolor-blur)"/>
+  
+  <!-- Poesi (akvarell tekst) -->
+  <text x="420" y="580" font-family="Georgia, serif" font-size="16" text-anchor="middle" fill="#5b7d8a" opacity="0.5" font-style="italic" filter="url(#watercolor-blur)">
+    i stillhetens dype
+  </text>
+</svg>

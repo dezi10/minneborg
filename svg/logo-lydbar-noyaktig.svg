@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 580">
+  <!-- Logo: Nøyaktig kopi av skissen med lang vertikal linje og organisk waveform -->
+  <rect width="1024" height="580" fill="#f5f3e7"/>
+  <!-- Lang vertikal linje -->
+  <line x1="60" y1="60" x2="60" y2="520" stroke="#6c3fa6" stroke-width="8"/>
+  <!-- Waveform, organisk og flat -->
+  <path d="M60,520 Q220,320 420,520 Q620,720 820,520 Q1020,320 1020,520" stroke="#6c3fa6" stroke-width="8" fill="none"/>
+</svg>
