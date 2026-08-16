@@ -111,7 +111,7 @@ nav {
 .nav-logo {
 	width: auto;
 	height: auto;
-	max-width: 100%;
+	max-width: 120px;
 	display: block;
 	filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.15));
 }
