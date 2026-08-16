@@ -221,6 +221,19 @@ main > p:first-of-type {
 	margin-bottom: 0;
 }
 
+.signature-container {
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+	text-align: left;
+}
+
+.signature {
+	height: 18px;
+	width: auto;
+	max-width: 200px;
+	display: block;
+}
+
 .badge-container {
 	text-align: center;
 	padding-top: 1rem;
