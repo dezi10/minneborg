@@ -5,7 +5,7 @@ const translations = {
 	"Artikler": "Articles",
 	"Verktøy": "Tools",
 	"Kontakt": "Contact",
-	"Cybersikkerhet i praksis": "Cybersecurity in Practice",
+	"Cybersikkerhet i praksis": "Cybersecurity in practice",
 	"En nettside med innsikt, verktøy og ressurser innen cybersikkerhet": "A website with insights, tools and resources in cybersecurity",
 	"Utvalgte artikler": "Featured Articles",
 	"Fra Chat til Checkout": "From Chat to Checkout",
