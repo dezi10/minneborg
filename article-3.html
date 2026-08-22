@@ -46,7 +46,7 @@ Denne filen inneholder en fagartikkel om OSI-modellen og feilsøking i nettverk.
             <p>I praksis kan man da spørre: Ligger feilen på lag 1 (for eksempel en kabel), eller ligger den høyere oppe, som på lag 4 (for eksempel knyttet til ruting eller håndtering av transport)? På den måten kan man jobbe stegvis, enten fra lag 1 til 7 eller fra 7 til 1, og løse problemer mer strukturert. Selve modellen består av sju lag, nummerert fra 1 til 7. De fire øverste lagene (lag 4–7) kalles ofte host-/vert-lagene. Det er her meldinger blir «pakket inn» før sending og deretter «pakket ut» hos mottaker, slik at informasjonen blir forståelig for program og bruker. Lag 1–3 omtales som medielagene, og det er på disse lagene at meldinger blir adressert, rutet og fysisk overført (s. 208). Personlig synes jeg at det er mest interessant hvordan meldinger sendes og mottas i nettverket, og skriver derfor kort om disse.</p>
 
             <div class="article-featured-image">
-                <img src="images/OSI_modellen.jpg" alt="Nettverkskabling">
+                <img src="images/OSI_modellen.png" alt="Nettverkskabling">
             </div>
 
             <p>Datalinklaget – eller lag 2 – består av to underlag. Det øvre underlaget kalles Logical Link Control (LLC) og legger til rette for at overlappende meldinger kan fraktes samtidig, altså at flere meldinger fra ulike nettverksprotokoller kan sendes parallelt. Denne evnen kalles multipleksing. Informasjonen fra datalinklaget brukes av nettverkssvitsjer (switches). Når en svitsj mottar en melding, går den til lag 2 for å lese informasjon som forteller hvor meldingen skal sendes. På dette laget deles data inn i rammer (frames) (Fox, 2025, s. 208).</p>
