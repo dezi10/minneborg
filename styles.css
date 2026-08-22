@@ -108,6 +108,7 @@ nav {
 
 .logo-link:hover {
 	transform: scale(1.05);
+	box-shadow: none;
 }
 
 .nav-logo {
