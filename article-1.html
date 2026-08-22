@@ -26,6 +26,25 @@ Denne filen inneholder en fagartikkel skrevet av eier, med akademisk struktur og
       <li><a href="articles.html">Artikler</a></li>
       <li><a href="tools-and-websites.html">Verktøy</a></li>
       <li><a href="contact.html">Kontakt</a></li>
+      <!-- Tilgjengelighetskontroller -->
+      <li class="accessibility-controls">
+        <!-- Språk -->
+        <button class="control-btn" onclick="translatePage('en')" aria-label="Oversett til engelsk" title="English"><span class="lang-icon">🌐</span> <span class="lang-text">English</span></button>
+        <button class="control-btn" onclick="translatePage('no')" aria-label="Oversett til norsk" title="Norsk"><span class="lang-icon">🇳🇴</span> <span class="lang-text">Norsk</span></button>
+        
+        <!-- Tekststørrelse -->
+        <div class="text-size-controls">
+          <button onclick="decreaseTextSize()" aria-label="Reduser tekststørrelse" title="Reduser tekststørrelse">−</button>
+          <span class="text-size-value" id="text-size-value">100%</span>
+          <button onclick="increaseTextSize()" aria-label="Øk tekststørrelse" title="Øk tekststørrelse">+</button>
+        </div>
+        
+        <!-- Fet skrift -->
+        <button class="control-btn" id="bold-text-btn" onclick="toggleBoldText()" aria-label="Slå på/av fet skrift" title="Fet skrift">𝐁</button>
+        
+        <!-- Hacker-modus -->
+        <button class="control-btn" id="hacker-mode-btn" onclick="toggleHackerMode()" aria-label="Slå på/av hacker-modus" title="Hacker-modus">💻</button>
+      </li>
     </ul>
   </nav>
 </header>
@@ -71,6 +90,7 @@ Denne filen inneholder en fagartikkel skrevet av eier, med akademisk struktur og
     <footer>
         <p>&copy; Laget av Dejan Zivanovic i vs code, 2026</p>
     </footer>
+    <script src="translations.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
